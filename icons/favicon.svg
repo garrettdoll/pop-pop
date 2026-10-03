@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <rect width="64" height="64" rx="13" fill="#ffe600"/>
+  <text x="32" y="30" text-anchor="middle" font-family="Impact, 'Arial Narrow', Arial, sans-serif" font-weight="900" font-size="26" fill="#0a0a0a">POP!</text>
+  <rect x="7" y="35" width="50" height="21" rx="4" fill="#0a0a0a" transform="rotate(-4 32 45)"/>
+  <text x="32" y="52" text-anchor="middle" font-family="Impact, 'Arial Narrow', Arial, sans-serif" font-weight="900" font-size="20" fill="#ffe600" transform="rotate(-4 32 45)">POP!</text>
+</svg>

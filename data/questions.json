@@ -1,0 +1,208 @@
+{
+  "version": 1,
+  "items": [
+    {
+      "type": "question",
+      "related": {
+        "marketIds": [
+          "osh-fall-bazaar-2026-10-17",
+          "fad-fall-cobble-hill-2026",
+          "fad-early-bird-holiday-nov-2026",
+          "fort-greene-artisans-bazaar",
+          "osh-holiday-bazaar-2026-12-05",
+          "mcny-holiday-market-2026-12-05",
+          "red-hook-holiday-2026-12-12"
+        ],
+        "organizerIds": []
+      },
+      "options": [
+        {
+          "label": "Applied",
+          "status": "applied"
+        },
+        {
+          "label": "Not yet",
+          "status": "to-apply"
+        },
+        {
+          "label": "Skip it",
+          "status": "skipped"
+        }
+      ],
+      "createdAt": "2026-10-03",
+      "answeredAt": null,
+      "answer": null,
+      "id": "q-001",
+      "text": "Which of these have you already applied to?",
+      "perMarket": true
+    },
+    {
+      "type": "question",
+      "related": {
+        "marketIds": [
+          "bq-flea-dumbo-final-2026"
+        ],
+        "organizerIds": [
+          "brooklyn-flea"
+        ]
+      },
+      "options": null,
+      "createdAt": "2026-10-03",
+      "answeredAt": null,
+      "answer": null,
+      "id": "q-002",
+      "text": "What is the date of the Brooklyn Flea final DUMBO flea?",
+      "input": "date"
+    },
+    {
+      "type": "question",
+      "related": {
+        "marketIds": [
+          "bq-flea-dumbo-final-2026"
+        ],
+        "organizerIds": [
+          "brooklyn-flea"
+        ]
+      },
+      "options": [
+        "Yes, upgraded to $200",
+        "Yes, staying at $150",
+        "No reply yet"
+      ],
+      "createdAt": "2026-10-03",
+      "answeredAt": null,
+      "answer": null,
+      "id": "q-003",
+      "text": "Did Lena reply about upgrading to the $200 booth?"
+    },
+    {
+      "type": "question",
+      "related": {
+        "marketIds": [
+          "fad-holiday-dumbo-2026"
+        ],
+        "organizerIds": [
+          "fad-market"
+        ]
+      },
+      "options": [
+        "Dec 19+20 is right",
+        "Different dates"
+      ],
+      "createdAt": "2026-10-03",
+      "answeredAt": null,
+      "answer": null,
+      "id": "q-004",
+      "text": "What are the actual dates of the FAD Holiday Pop-up at Empire Stores? You mentioned Dec 19+20."
+    },
+    {
+      "type": "question",
+      "related": {
+        "marketIds": [
+          "bq-living-furniture-decor-fair-2026-07-19",
+          "bq-art-mart-2026-08-09",
+          "bq-living-furniture-decor-fair-2026-08-16",
+          "bq-living-furniture-decor-fair-2026-09-13"
+        ],
+        "organizerIds": [
+          "brooklyn-flea"
+        ]
+      },
+      "options": [
+        {
+          "label": "Vended",
+          "status": "completed"
+        },
+        {
+          "label": "Didn't vend",
+          "status": "skipped"
+        }
+      ],
+      "createdAt": "2026-10-03",
+      "answeredAt": null,
+      "answer": null,
+      "id": "q-005",
+      "text": "Which of the BQ Flea events did you actually vend?",
+      "perMarket": true
+    },
+    {
+      "type": "question",
+      "related": {
+        "marketIds": [
+          "artists-and-fleas-williamsburg"
+        ],
+        "organizerIds": [
+          "artists-and-fleas"
+        ]
+      },
+      "options": [
+        "Not yet",
+        "Yes (tell me which dates)"
+      ],
+      "createdAt": "2026-10-03",
+      "answeredAt": null,
+      "answer": null,
+      "id": "q-006",
+      "text": "Have you booked any dates with Artists & Fleas Williamsburg yet?"
+    },
+    {
+      "type": "question",
+      "related": {
+        "marketIds": [],
+        "organizerIds": []
+      },
+      "options": null,
+      "createdAt": "2026-10-03",
+      "answeredAt": null,
+      "answer": null,
+      "id": "q-007",
+      "text": "Which days does your company give off around upcoming holidays (Columbus/Indigenous Peoples' Day, Thanksgiving, Christmas, New Year's)? These make weekday events available."
+    },
+    {
+      "type": "question",
+      "related": {
+        "marketIds": [
+          "aandc-super-popup-2026-09-20"
+        ],
+        "organizerIds": [
+          "aandc-super"
+        ]
+      },
+      "options": [
+        "Yes, monthly",
+        "One-off for now"
+      ],
+      "createdAt": "2026-10-03",
+      "answeredAt": null,
+      "answer": null,
+      "id": "q-008",
+      "text": "Do you want me to keep the A&C Super backyard pop-up as a recurring monthly event in the hub?"
+    },
+    {
+      "type": "question",
+      "related": {
+        "marketIds": [
+          "fort-greene-halloween-2026"
+        ],
+        "organizerIds": [
+          "brooklyn-pop-up"
+        ]
+      },
+      "options": [
+        {
+          "label": "Skip it",
+          "status": "skipped"
+        },
+        {
+          "label": "Keep it for now",
+          "status": null
+        }
+      ],
+      "createdAt": "2026-10-03",
+      "answeredAt": null,
+      "answer": null,
+      "id": "q-009",
+      "text": "The Fort Greene Halloween + Harvest Fest (Oct 24) is only for pet, Halloween/harvest and food vendors. Want me to mark it skipped?"
+    }
+  ]
+}

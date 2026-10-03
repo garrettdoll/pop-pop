@@ -1,0 +1,26 @@
+{
+  "version": 1,
+  "timezone": "America/New_York",
+  "holidayRules": {
+    "adjacentDays": 1,
+    "bridgeDays": true
+  },
+  "companyLongWeekends": [],
+  "searchEveryDays": 3,
+  "searchAreas": [
+    "Williamsburg",
+    "Bushwick",
+    "Bed-Stuy",
+    "DUMBO",
+    "Manhattan (big markets only)"
+  ],
+  "searchQueries": [
+    "Williamsburg Bushwick pop-up market vendor applications {monthYear}",
+    "Bed-Stuy DUMBO makers market vendors wanted {monthYear}",
+    "Brooklyn holiday market vendor applications {year}",
+    "Manhattan large holiday market vendor applications {year}",
+    "NYC streetwear clothing pop-up vendor call zines stickers {monthYear}"
+  ],
+  "lastEmailSweep": null,
+  "lastSearch": null
+}

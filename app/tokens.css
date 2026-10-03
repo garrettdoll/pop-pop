@@ -1,0 +1,95 @@
+/* ==========================================================================
+   POP! POP! design tokens.
+   The whole look lives in this one file: swap the accent, the type, the
+   spacing, the corners. styles.css only ever reads these variables.
+   ========================================================================== */
+
+/* --- Typeface: Archivo, a variable font with a width axis. One family does the
+       condensed poster headers (narrow) and the clean body text (normal width).
+       Self-hosted so it works offline. To try another face: drop the files in
+       app/fonts/, change these @font-face blocks and --font-display / --font-text. --- */
+@font-face {
+  font-family: "Archivo";
+  src: url("fonts/archivo-latin-ext.woff2") format("woff2");
+  font-weight: 100 900;
+  font-stretch: 62% 125%;
+  font-style: normal;
+  font-display: swap;
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: "Archivo";
+  src: url("fonts/archivo-latin.woff2") format("woff2");
+  font-weight: 100 900;
+  font-stretch: 62% 125%;
+  font-style: normal;
+  font-display: swap;
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+:root {
+  color-scheme: light dark;
+
+  /* ----- The one accent. Change this line (and --on-accent if needed) to re-skin the app. ----- */
+  --accent: #ffe600;       /* electric yellow. Try #ff4a1c for a hot red-orange */
+  --on-accent: #0a0a0a;    /* text that sits on the accent */
+
+  /* ----- Light palette: warm paper, black ink ----- */
+  --paper: #fbfaf6;        /* page */
+  --surface: #ffffff;      /* raised things: inputs, date blocks */
+  --wash: #f1efe7;         /* expanded cards, quiet fills */
+  --ink: #0a0a0a;          /* text and every border */
+  --ink-soft: #3b3a36;
+  --mute: #5e5d57;         /* secondary text */
+  --hair: #d9d7cd;         /* hairlines */
+  --black: #0a0a0a;        /* a black that stays black in dark mode (PAID stickers) */
+
+  /* ----- Type ----- */
+  --font-display: "Archivo", "Avenir Next Condensed", "Arial Narrow", "Roboto Condensed", Impact, "Helvetica Neue", sans-serif;
+  --font-text: "Archivo", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+  --display-stretch: 70%;  /* how condensed the headlines are (62%-125%) */
+  --display-weight: 800;
+  --text-stretch: 100%;
+
+  --fs-xs: 0.75rem;
+  --fs-sm: 0.84rem;
+  --fs-base: 1rem;
+  --fs-md: 1.125rem;
+  --fs-lg: 1.4rem;
+  --fs-xl: 1.9rem;
+  --fs-2xl: clamp(2.75rem, 12vw, 3.75rem);
+  --fs-hero: clamp(3.4rem, 17.5vw, 6rem);
+
+  /* ----- Space, shape, motion ----- */
+  --gutter: 16px;
+  --sp-1: 4px;
+  --sp-2: 8px;
+  --sp-3: 12px;
+  --sp-4: 16px;
+  --sp-5: 24px;
+  --sp-6: 32px;
+  --sp-7: 48px;
+  --radius: 12px;
+  --radius-sm: 7px;
+  --bw: 2px;               /* borders */
+  --bw-thick: 3px;         /* rules and the tab bar */
+  --sticker-shadow: 2px 2px 0 var(--ink);
+  --card-shadow: 4px 4px 0 var(--ink);
+  --ease: cubic-bezier(0.2, 0.8, 0.2, 1);
+  --dur: 280ms;
+  --tabbar-h: 62px;
+  --rail-w: 224px;         /* desktop side nav */
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --paper: #0c0c0b;
+    --surface: #171716;
+    --wash: #1d1d1b;
+    --ink: #f4f2ea;
+    --ink-soft: #d0cec4;
+    --mute: #a3a198;
+    --hair: #2e2e2b;
+    /* --black stays #0a0a0a on purpose */
+  }
+}

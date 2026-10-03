@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>POP! POP!</title>
+  <meta name="description" content="Every vendor market Brooklyn SoftBoys could vend, in one place.">
+  <meta name="theme-color" content="#FBFAF6" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0B0B0B" media="(prefers-color-scheme: dark)">
+  <meta name="color-scheme" content="light dark">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icons/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="icons/favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="POP! POP!">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <link rel="preload" href="app/fonts/archivo-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="app/tokens.css">
+  <link rel="stylesheet" href="app/styles.css">
+</head>
+<body>
+  <a class="skip" href="#view">Skip to content</a>
+  <div id="app">
+    <header id="topbar" class="topbar"></header>
+    <div id="banners" class="banners"></div>
+    <main id="view" tabindex="-1">
+      <!-- Shown until the app script takes over, so there is never a blank screen. -->
+      <div class="view loading">
+        <p class="wordmark" aria-hidden="true"><span>POP!</span><span class="hl">POP!</span></p>
+        <p class="muted">Loading your markets…</p>
+      </div>
+    </main>
+    <nav id="tabbar" class="tabbar" aria-label="Main"></nav>
+  </div>
+  <noscript><p style="padding:24px;font-family:system-ui">POP! POP! needs JavaScript to run.</p></noscript>
+  <script type="module" src="app/main.js"></script>
+</body>
+</html>

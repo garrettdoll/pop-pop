@@ -1,0 +1,172 @@
+{
+  "version": 1,
+  "organizers": [
+    {
+      "id": "fad-market",
+      "name": "FAD Market",
+      "account": {
+        "status": "in_system",
+        "note": "Applies each season and is on their list.",
+        "signupUrl": null,
+        "dashboardUrl": null
+      },
+      "contacts": [
+        {
+          "role": "General",
+          "name": null,
+          "email": "info@fadmarket.co",
+          "instagram": null,
+          "phone": null
+        }
+      ],
+      "emailSenders": [
+        "fadmarket.co"
+      ],
+      "website": "https://fadmarket.co",
+      "links": [
+        {
+          "label": "Vendor FAQ",
+          "url": "https://fadmarket.co/faq-vendors"
+        }
+      ],
+      "howItWorks": "Apply each season. If you withdraw an application, email them to say so. Failing to do that affects future consideration.",
+      "notes": ""
+    },
+    {
+      "id": "brooklyn-pop-up",
+      "name": "Brooklyn Pop-Up (BKPU)",
+      "account": {
+        "status": "in_system",
+        "note": "Vendor profile created 2026-06-28.",
+        "signupUrl": "https://brooklynpop-up.com/sign-up",
+        "dashboardUrl": "https://brooklynpop-up.com/sign-in"
+      },
+      "contacts": [
+        {
+          "role": "General",
+          "name": null,
+          "email": "info@brooklynpop-up.com",
+          "instagram": null,
+          "phone": null
+        }
+      ],
+      "emailSenders": [
+        "brooklynpop-up.com"
+      ],
+      "website": "https://brooklynpop-up.com",
+      "links": [],
+      "howItWorks": "Every application goes through the vendor dashboard. Acceptances sometimes land in spam, so check the dashboard.",
+      "notes": "More holiday markets (\"round two\") were announced as coming soon."
+    },
+    {
+      "id": "artists-and-fleas",
+      "name": "Artists & Fleas",
+      "account": {
+        "status": "in_system",
+        "note": "Accepted 2026-06-29 for Williamsburg (70 N 7th St), Clothing Design category.",
+        "signupUrl": null,
+        "dashboardUrl": "https://booking.artistsandfleas.com"
+      },
+      "contacts": [
+        {
+          "role": "Market curator",
+          "name": "Kelsey",
+          "email": "info@artistsandfleas.com",
+          "instagram": null,
+          "phone": null
+        },
+        {
+          "role": "Booking",
+          "name": null,
+          "email": "booking@artistsandfleas.com",
+          "instagram": null,
+          "phone": null
+        }
+      ],
+      "emailSenders": [
+        "artistsandfleas.com"
+      ],
+      "website": "https://artistsandfleas.com",
+      "links": [],
+      "howItWorks": "You are approved as a merchant first, then book individual dates at booking.artistsandfleas.com. Booking is first-to-pay and nonrefundable. Your first booking is limited to one weekend. Fall membership applications are open.",
+      "notes": ""
+    },
+    {
+      "id": "brooklyn-flea",
+      "name": "Brooklyn Flea / BQ Flea / Record Fair",
+      "account": {
+        "status": "in_system",
+        "note": "Vendor agreement completed 2026-08-17 (PandaDoc). Pays via Stripe.",
+        "signupUrl": null,
+        "dashboardUrl": null
+      },
+      "contacts": [
+        {
+          "role": "BQ Flea",
+          "name": "Lena",
+          "email": "bqflea@brooklynflea.com",
+          "instagram": null,
+          "phone": null
+        },
+        {
+          "role": "Record Fair",
+          "name": "Amanda",
+          "email": "amanda@brooklynflea.com",
+          "instagram": null,
+          "phone": null
+        }
+      ],
+      "emailSenders": [
+        "brooklynflea.com"
+      ],
+      "website": "https://brooklynflea.com",
+      "links": [],
+      "howItWorks": "Vendor agreement is signed (PandaDoc). Booth fees are paid through Stripe.",
+      "notes": "Record Fair feedback: the usual shopper merch price there is about $20-30, so BKSB prices felt high."
+    },
+    {
+      "id": "vendorsmap",
+      "name": "VendorsMap",
+      "account": {
+        "status": "in_system",
+        "note": "Free account created 2026-06-27.",
+        "signupUrl": null,
+        "dashboardUrl": null
+      },
+      "contacts": [],
+      "emailSenders": [
+        "vendorsmap.com"
+      ],
+      "website": "https://vendorsmap.com",
+      "links": [],
+      "howItWorks": "Emails leads for events that \"may fit\" (for example Staten Island 10/3 and Glendale 8/29).",
+      "notes": "Lower priority. Send the relevant ones to the hub."
+    },
+    {
+      "id": "aandc-super",
+      "name": "A&C Super",
+      "account": {
+        "status": "direct",
+        "note": "No account system. Arranged directly with the owner.",
+        "signupUrl": null,
+        "dashboardUrl": null
+      },
+      "contacts": [
+        {
+          "role": "Owner contact",
+          "name": "Chrissa Yee",
+          "email": "chrissa@aandcsuper.com",
+          "instagram": null,
+          "phone": null
+        }
+      ],
+      "emailSenders": [
+        "aandcsuper.com"
+      ],
+      "website": null,
+      "links": [],
+      "howItWorks": "Williamsburg bakery/cafe. Garrett arranged his own pop-up in their backyard. Fee waived in exchange for keeping about half the space open for guests and donating 15% of that day's profits to North Brooklyn Mutual Aid.",
+      "notes": "Garrett floated making it a monthly event."
+    }
+  ]
+}
