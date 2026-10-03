@@ -249,7 +249,8 @@ await test('Explore: add to hub and dismiss', async () => {
 await test('Questions: per-market answers set status, date answers set the date, counts update', async () => {
   const t = await open({ token: true, hash: '#/foryou' });
   const badge = () => t.page.locator('.tab[data-tab="foryou"] .badge').innerText();
-  assert.equal(await badge(), '9');
+  const waiting = initial('data/questions.json').items.filter((q) => q.type === 'question' && !q.answeredAt).length;
+  assert.equal(await badge(), String(waiting), 'badge counts unanswered questions, not ideas');
   // q-001 row: Old Stone House Oct 17 → Applied
   const row = t.page.locator('.q-row', { hasText: 'Old Stone House Fall' });
   await row.getByRole('button', { name: 'Applied', exact: true }).click();
@@ -262,7 +263,7 @@ await test('Questions: per-market answers set status, date answers set the date,
   const bq = t.mock.json('data/markets.json').markets.find((m) => m.id === 'bq-flea-dumbo-final-2026');
   assert.equal(bq.dates[0].date, '2026-11-14');
   assert.ok(!bq.flags.some((f) => f.field === 'dates'), 'date flag cleared');
-  await until(async () => (await badge()) === '8', { what: 'badge down to 8' });
+  await until(async () => (await badge()) === String(waiting - 1), { what: 'badge goes down by one' });
   await t.close();
 });
 

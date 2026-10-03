@@ -51,7 +51,7 @@
       "answeredAt": null,
       "answer": null,
       "id": "q-002",
-      "text": "What is the date of the Brooklyn Flea final DUMBO flea?",
+      "text": "What is the date of the Brooklyn Flea final DUMBO flea? (It isn't in your inbox, and Lena hasn't replied to your Sep 29 email there yet.)",
       "input": "date"
     },
     {
@@ -93,7 +93,7 @@
       "answeredAt": null,
       "answer": null,
       "id": "q-004",
-      "text": "What are the actual dates of the FAD Holiday Pop-up at Empire Stores? You mentioned Dec 19+20."
+      "text": "What are the actual dates of the FAD Holiday Pop-up at Empire Stores? You mentioned Dec 19+20. FAD's confirmation email doesn't list them."
     },
     {
       "type": "question",
@@ -122,7 +122,7 @@
       "answeredAt": null,
       "answer": null,
       "id": "q-005",
-      "text": "Which of the BQ Flea events did you actually vend?",
+      "text": "Which of the BQ Flea events did you actually vend? Lena booked you for all of them except the Art Mart, then you asked to add the Art Mart.",
       "perMarket": true
     },
     {
@@ -143,7 +143,7 @@
       "answeredAt": null,
       "answer": null,
       "id": "q-006",
-      "text": "Have you booked any dates with Artists & Fleas Williamsburg yet?"
+      "text": "Have you booked any dates with Artists & Fleas Williamsburg yet? I couldn't find a booking confirmation."
     },
     {
       "type": "question",
@@ -162,7 +162,7 @@
       "type": "question",
       "related": {
         "marketIds": [
-          "aandc-super-popup-2026-09-20"
+          "aandc-super-popup-2026-10-04"
         ],
         "organizerIds": [
           "aandc-super"
@@ -176,7 +176,7 @@
       "answeredAt": null,
       "answer": null,
       "id": "q-008",
-      "text": "Do you want me to keep the A&C Super backyard pop-up as a recurring monthly event in the hub?"
+      "text": "Do you want me to keep the A&C Super backyard pop-up as a recurring monthly event in the hub? (Chrissa has another event there on Oct 11.)"
     },
     {
       "type": "question",
@@ -203,6 +203,110 @@
       "answer": null,
       "id": "q-009",
       "text": "The Fort Greene Halloween + Harvest Fest (Oct 24) is only for pet, Halloween/harvest and food vendors. Want me to mark it skipped?"
+    },
+    {
+      "type": "question",
+      "related": {
+        "marketIds": [
+          "aandc-super-popup-2026-10-04"
+        ],
+        "organizerIds": [
+          "aandc-super"
+        ]
+      },
+      "options": [
+        "10am-2pm",
+        "Different hours"
+      ],
+      "createdAt": "2026-10-03",
+      "answeredAt": null,
+      "answer": null,
+      "id": "q-010",
+      "text": "Your A&C Super pop-up is tomorrow (Sun Oct 4). What hours are you setting up? The Sep 20 plan was 10am-2pm."
+    },
+    {
+      "type": "question",
+      "related": {
+        "marketIds": [],
+        "organizerIds": [
+          "brooklyn-flea"
+        ]
+      },
+      "options": [
+        "Both",
+        "Jewelry Mart only",
+        "Thick Thrift only",
+        "Neither"
+      ],
+      "createdAt": "2026-10-03",
+      "answeredAt": null,
+      "answer": null,
+      "id": "q-011",
+      "text": "Lena said you would have a booth for all BQ Flea events except the Art Mart. That would include the Jewelry Mart (Aug 30) and Thick Thrift (Sep 6). Did you vend either?"
+    },
+    {
+      "id": "i-001",
+      "type": "idea",
+      "text": "A calendar feed: every deadline, decision date and event day in one file you subscribe to once, so they show up in Google or Apple Calendar on your phone and stay current. Want it?",
+      "related": {
+        "marketIds": [],
+        "organizerIds": []
+      },
+      "options": [
+        "Yes, set it up",
+        "Not for me"
+      ],
+      "createdAt": "2026-10-03",
+      "answeredAt": null,
+      "answer": null
+    },
+    {
+      "id": "i-002",
+      "type": "idea",
+      "text": "Brooklyn Pop-Up runs 8 of your cards and every application goes through the same dashboard. Want a checklist on their organizer card so you can send all the holiday applications in one sitting?",
+      "related": {
+        "marketIds": [],
+        "organizerIds": []
+      },
+      "options": [
+        "Yes, set it up",
+        "Not for me"
+      ],
+      "createdAt": "2026-10-03",
+      "answeredAt": null,
+      "answer": null
+    },
+    {
+      "id": "i-003",
+      "type": "idea",
+      "text": "Both Brooklyn Flea contacts have mentioned price points (Record Fair: shoppers usually spend $20-30; BQ: an under-$100 section). Want a \"price fit\" note on every card, so I can flag markets where BKSB prices may run high?",
+      "related": {
+        "marketIds": [],
+        "organizerIds": []
+      },
+      "options": [
+        "Yes, set it up",
+        "Not for me"
+      ],
+      "createdAt": "2026-10-03",
+      "answeredAt": null,
+      "answer": null
+    },
+    {
+      "id": "i-004",
+      "type": "idea",
+      "text": "The Sep 20 pop-up got rained out. Want me to flag outdoor markets that have no rain date, and put the rain date on the card where there is one?",
+      "related": {
+        "marketIds": [],
+        "organizerIds": []
+      },
+      "options": [
+        "Yes, set it up",
+        "Not for me"
+      ],
+      "createdAt": "2026-10-03",
+      "answeredAt": null,
+      "answer": null
     }
   ]
 }

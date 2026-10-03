@@ -30,7 +30,7 @@
         }
       ],
       "howItWorks": "Apply each season. If you withdraw an application, email them to say so. Failing to do that affects future consideration.",
-      "notes": ""
+      "notes": "Fall 2026 applications (Brooklyn Heights, Cobble Hill, DUMBO, Greenpoint-Williamsburg) closed Jul 27. Holiday Pop-up applications closed Sep 27, decisions by Oct 13."
     },
     {
       "id": "brooklyn-pop-up",
@@ -88,7 +88,7 @@
       ],
       "website": "https://artistsandfleas.com",
       "links": [],
-      "howItWorks": "You are approved as a merchant first, then book individual dates at booking.artistsandfleas.com. Booking is first-to-pay and nonrefundable. Your first booking is limited to one weekend. Fall membership applications are open.",
+      "howItWorks": "You are approved as a merchant first, then book individual dates at booking.artistsandfleas.com. Booking is first-to-pay and nonrefundable. Your first booking is limited to one weekend. Fall is Saturday/Sunday only (Fridays closed until the holidays), booking is open through November, and the Rewind weekend rate is $400 through October.",
       "notes": ""
     },
     {
@@ -121,8 +121,8 @@
       ],
       "website": "https://brooklynflea.com",
       "links": [],
-      "howItWorks": "Vendor agreement is signed (PandaDoc). Booth fees are paid through Stripe.",
-      "notes": "Record Fair feedback: the usual shopper merch price there is about $20-30, so BKSB prices felt high."
+      "howItWorks": "Complete the annual onboarding form (with your signed vendor agreement) before booking. Pay through the link Lena sends. Regular BQ booths were $150 per day, and you can ask to be placed with vendors who sell mostly under $100. BQ Flea only holds fairs at BQ; the regular Sunday market is paused for the season, with special-event Sundays only.",
+      "notes": "Record Fair feedback (Amanda): the usual shopper merch price there is about $20-30, so BKSB prices felt high. She also said the fair usually only has music-related vendors."
     },
     {
       "id": "vendorsmap",
@@ -165,7 +165,7 @@
       ],
       "website": null,
       "links": [],
-      "howItWorks": "Williamsburg bakery/cafe. Garrett arranged his own pop-up in their backyard. Fee waived in exchange for keeping about half the space open for guests and donating 15% of that day's profits to North Brooklyn Mutual Aid.",
+      "howItWorks": "Williamsburg bakery/cafe. Garrett arranged his own pop-up in their backyard. Fee waived in exchange for keeping about half the space open for guests and donating 15% of that day's profits to North Brooklyn Mutual Aid. The Sep 20 date was rained out and moved to Oct 4. They have another event on Oct 11.",
       "notes": "Garrett floated making it a monthly event."
     }
   ]

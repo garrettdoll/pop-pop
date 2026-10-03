@@ -3,7 +3,7 @@
   "markets": [
     {
       "id": "fad-holiday-dumbo-2026",
-      "name": "FAD Market Holiday Pop-up",
+      "name": "FAD Market [Weekend] Holiday Pop-up",
       "organizerId": "fad-market",
       "status": "applied",
       "kind": "event",
@@ -52,7 +52,7 @@
         "vendorInfo": "https://fadmarket.co/faq-vendors"
       },
       "contact": null,
-      "notes": "Garrett wants a full booth, his own rack, and prime placement.",
+      "notes": "Garrett wants a full booth, his own rack, and prime placement. FAD's 9/25 confirmation email does not list the event dates.",
       "flags": [
         {
           "type": "unconfirmed",
@@ -79,6 +79,11 @@
           "at": "2026-10-03",
           "by": "claude",
           "change": "Created from the initial inbox review (applied; applications closed 2026-09-27)"
+        },
+        {
+          "at": "2026-10-03",
+          "by": "claude",
+          "change": "Verified by the 9/25 FAD confirmation email: application received, closed Sun Sep 27 11:59pm, decision by Oct 13. Event dates are still not stated."
         }
       ]
     },
@@ -133,7 +138,7 @@
         "vendorInfo": "https://fadmarket.co/faq-vendors"
       },
       "contact": null,
-      "notes": "Announced in FAD's 10/1 email. No application found in the inbox.",
+      "notes": "Announced in FAD's 10/1 email (Empire Stores, Nov 7+8). That email gave no application link or deadline, and says to \"stay tuned\" for the December Holiday Pop-ups.",
       "flags": [
         {
           "type": "unconfirmed",
@@ -160,6 +165,11 @@
           "at": "2026-10-03",
           "by": "claude",
           "change": "Created from the initial inbox review"
+        },
+        {
+          "at": "2026-10-03",
+          "by": "claude",
+          "change": "Email sweep: re-checked the 10/1 FAD email. Still no application found or deadline stated."
         }
       ]
     },
@@ -219,7 +229,7 @@
         {
           "type": "unconfirmed",
           "field": "status",
-          "text": "Unclear whether Garrett applied before the 2026-07-27 deadline"
+          "text": "No FAD fall application confirmation in the inbox (the Holiday one arrived 9/25). Probably not applied. Fall applications closed 7/27."
         }
       ],
       "source": {
@@ -241,6 +251,11 @@
           "at": "2026-10-03",
           "by": "claude",
           "change": "Created from the initial inbox review"
+        },
+        {
+          "at": "2026-10-03",
+          "by": "claude",
+          "change": "Email sweep: found no fall application confirmation from FAD, so you probably did not apply. Left as unconfirmed."
         }
       ]
     },
@@ -282,7 +297,7 @@
         "vendorInfo": null
       },
       "contact": null,
-      "notes": "Paid 2026-09-29. Asked Lena about upgrading to a $200 booth for more space.",
+      "notes": "Paid a $150 booth on 2026-09-29 and asked Lena about upgrading to $200 for more space. Lena's Jul 1 email said Sep 13 was the scheduled final BQ Flea day, so this DUMBO flea is a separate, later event.",
       "flags": [
         {
           "type": "unconfirmed",
@@ -314,6 +329,11 @@
           "at": "2026-10-03",
           "by": "claude",
           "change": "Created from the initial inbox review (booth paid 2026-09-29)"
+        },
+        {
+          "at": "2026-10-03",
+          "by": "claude",
+          "change": "Email sweep: no date for the DUMBO flea anywhere in the inbox, and no reply from Lena after your Sep 29 email."
         }
       ]
     },
@@ -362,7 +382,7 @@
         "vendorInfo": null
       },
       "contact": null,
-      "notes": "Merged Fall Artisans Bazaar and Traditional Makers Fair. 100+ makers.",
+      "notes": "Two markets in one: the Fall Artisans Bazaar plus the new Traditional Makers Fair (moved here after its September date was postponed for extreme weather). 100+ makers combined. Rain date: Sun Oct 18. Confirmed in BKPU's October newsletter.",
       "flags": [
         {
           "type": "unconfirmed",
@@ -389,6 +409,11 @@
           "at": "2026-10-03",
           "by": "claude",
           "change": "Created from the initial inbox review"
+        },
+        {
+          "at": "2026-10-03",
+          "by": "claude",
+          "change": "Email sweep: details and rain date confirmed by the BKPU October newsletter."
         }
       ]
     },
@@ -402,7 +427,7 @@
       "recurrence": "Every Saturday, year-round, 9am-4pm",
       "location": {
         "venue": "Fort Greene Park",
-        "address": "DeKalb Ave at Fort Greene Park",
+        "address": "DeKalb Ave between South Portland and Washington Aves, Fort Greene Park",
         "neighborhood": "Fort Greene",
         "borough": "Brooklyn"
       },
@@ -485,7 +510,7 @@
       ],
       "recurrence": null,
       "location": {
-        "venue": "Fort Greene Park",
+        "venue": "Fort Greene Park, around the Prison Ship Martyrs Monument",
         "address": "DeKalb Ave at Fort Greene Park",
         "neighborhood": "Fort Greene",
         "borough": "Brooklyn"
@@ -514,7 +539,7 @@
         "vendorInfo": null
       },
       "contact": null,
-      "notes": "",
+      "notes": "20+ pet and Halloween/harvest vendors plus food, part of the park's Halloween Fest next to the Great PUPkin Dog Costume Contest.",
       "flags": [
         {
           "type": "fit-conflict",
@@ -599,7 +624,7 @@
         "vendorInfo": null
       },
       "contact": null,
-      "notes": "Applications open. Space fills fast.",
+      "notes": "Applications open (as of the 9/17 BKPU email). 50+ makers. Space fills fast. Hot cider and family activities.",
       "flags": [
         {
           "type": "unconfirmed",
@@ -685,7 +710,7 @@
         "vendorInfo": null
       },
       "contact": null,
-      "notes": "32+ makers. Manhattan, so it fits the \"bigger Manhattan market\" interest. Applications open.",
+      "notes": "32+ makers in the museum's main lobby, alongside the Gingerbread NYC exhibit. Manhattan, so it fits the \"bigger Manhattan market\" interest. Applications open (9/17 BKPU email).",
       "flags": [
         {
           "type": "unconfirmed",
@@ -771,7 +796,7 @@
         "vendorInfo": null
       },
       "contact": null,
-      "notes": "60+ makers. Applications open.",
+      "notes": "60+ artists, artisans and makers over the weekend. Applications open (9/17 BKPU email).",
       "flags": [
         {
           "type": "unconfirmed",
@@ -813,7 +838,7 @@
       "status": "accepted",
       "kind": "recurring",
       "dates": [],
-      "recurrence": "Weekend market. Book individual dates at booking.artistsandfleas.com",
+      "recurrence": "Saturdays and Sundays (Fridays closed until the holidays). Book individual dates at booking.artistsandfleas.com",
       "location": {
         "venue": "Artists & Fleas",
         "address": "70 N 7th St, Williamsburg, Brooklyn",
@@ -829,8 +854,8 @@
       },
       "fees": {
         "application": null,
-        "booth": null,
-        "notes": null
+        "booth": 400,
+        "notes": "Rewind rate: $400 for the full weekend (normally $645), honored through October (8/31 email). Your first booking is limited to one weekend."
       },
       "requirements": [],
       "vendorRules": "Accepted in the Clothing Design category.",
@@ -844,12 +869,12 @@
         "vendorInfo": null
       },
       "contact": null,
-      "notes": "Garrett is accepted as a merchant. Dates are booked individually: first-to-pay, nonrefundable, first booking limited to one weekend. Fall membership applications are open.",
+      "notes": "Accepted as a merchant (Clothing Design). Booking is open through November (8/21 email). Fall bookings are Saturday and Sunday only. No booking confirmation emails found as of 10/3.",
       "flags": [
         {
           "type": "unconfirmed",
           "field": "dates",
-          "text": "No booked date found in the inbox"
+          "text": "No booked date or booking confirmation found in the inbox"
         }
       ],
       "source": {
@@ -871,6 +896,11 @@
           "at": "2026-10-03",
           "by": "claude",
           "change": "Created from the initial inbox review (accepted 2026-06-29; no booked date found)"
+        },
+        {
+          "at": "2026-10-03",
+          "by": "claude",
+          "change": "Email sweep: no booking confirmations found. Fall schedule is Sat/Sun only; $400 weekend rate through October."
         }
       ]
     },
@@ -925,7 +955,7 @@
         "vendorInfo": null
       },
       "contact": null,
-      "notes": "Postponed by FAD to spring 2027, so it is not happening this fall.",
+      "notes": "Postponed by FAD to spring 2027 (10/1 email), due to ongoing construction and delays in city permits at the venue. Not happening this fall.",
       "flags": [
         {
           "type": "postponed",
@@ -1026,9 +1056,9 @@
     },
     {
       "id": "aandc-super-popup-2026-09-20",
-      "name": "BKSB pop-up at A&C Super",
+      "name": "BKSB pop-up at A&C Super (rained out)",
       "organizerId": "aandc-super",
-      "status": "completed",
+      "status": "skipped",
       "kind": "event",
       "dates": [
         {
@@ -1073,8 +1103,14 @@
         "vendorInfo": null
       },
       "contact": null,
-      "notes": "Garrett arranged this one himself. Fee waived in exchange for keeping about half the space open for guests and donating 15% of that day's profits to North Brooklyn Mutual Aid.",
-      "flags": [],
+      "notes": "Called off on Sep 17 because of a 75% chance of rain. Rescheduled to Sunday Oct 4. Arrangement: fee waived in exchange for keeping about half the space open for guests and donating 15% of that day's profits to North Brooklyn Mutual Aid.",
+      "flags": [
+        {
+          "type": "postponed",
+          "field": "dates",
+          "text": "Called off for rain (75% chance). Moved to Sun Oct 4."
+        }
+      ],
       "source": {
         "type": "seed",
         "ref": "Build brief appendix (inbox review as of 2026-10-03)",
@@ -1094,6 +1130,90 @@
           "at": "2026-10-03",
           "by": "claude",
           "change": "Created from the initial inbox review"
+        },
+        {
+          "at": "2026-10-03",
+          "by": "claude",
+          "change": "Corrected from the email sweep: this date was called off for rain (Sep 17 emails with Chrissa), not held. Rescheduled to Oct 4."
+        }
+      ]
+    },
+    {
+      "id": "aandc-super-popup-2026-10-04",
+      "name": "BKSB pop-up at A&C Super",
+      "organizerId": "aandc-super",
+      "status": "accepted",
+      "kind": "event",
+      "dates": [
+        {
+          "date": "2026-10-04",
+          "start": null,
+          "end": null,
+          "rainDate": null
+        }
+      ],
+      "recurrence": null,
+      "location": {
+        "venue": "A&C Super (backyard)",
+        "address": null,
+        "neighborhood": "Williamsburg",
+        "borough": "Brooklyn"
+      },
+      "application": {
+        "opens": null,
+        "closes": null,
+        "decisionBy": null,
+        "paymentDeadline": null,
+        "state": "unknown"
+      },
+      "fees": {
+        "application": null,
+        "booth": 0,
+        "notes": "Fee waived. 15% of that day's profits went to North Brooklyn Mutual Aid."
+      },
+      "requirements": [
+        "Vendors bring their own table and rack",
+        "Goods only (no food)",
+        "Keep about half the space open for guests"
+      ],
+      "vendorRules": null,
+      "fit": {
+        "rating": "unknown",
+        "note": null
+      },
+      "links": {
+        "apply": null,
+        "event": null,
+        "vendorInfo": null
+      },
+      "contact": null,
+      "notes": "Rescheduled from Sep 20 (rain). Chrissa confirmed Oct 1 (\"we're good to go\"), you walked through the setup with her and Abby that day, and sent flyers Oct 2. Chrissa has another event at A&C on Oct 11, so there is no easy backup date. Fee waived; keep about half the space open for guests; 15% of that day's profits go to North Brooklyn Mutual Aid.",
+      "flags": [
+        {
+          "type": "unconfirmed",
+          "field": "dates",
+          "text": "Hours for Oct 4 not in the emails. The Sep 20 plan was 10am-2pm."
+        }
+      ],
+      "source": {
+        "type": "email",
+        "ref": "Thread \"Pop-up still on for the 20th\" (A&C Super)",
+        "addedAt": "2026-10-03"
+      },
+      "lastVerified": "2026-10-03",
+      "results": {
+        "salesTotal": null,
+        "boothFee": null,
+        "thumbs": null,
+        "bestSellers": null,
+        "footTraffic": null,
+        "notes": null
+      },
+      "history": [
+        {
+          "at": "2026-10-03",
+          "by": "claude",
+          "change": "Created from the email sweep: the Sep 20 pop-up was rained out and rescheduled to Sun Oct 4, confirmed by A&C on Oct 1"
         }
       ]
     },
@@ -1113,7 +1233,7 @@
       ],
       "recurrence": null,
       "location": {
-        "venue": null,
+        "venue": "BQ Flea (under the BQE)",
         "address": null,
         "neighborhood": null,
         "borough": null
@@ -1147,7 +1267,7 @@
         {
           "type": "unconfirmed",
           "field": "status",
-          "text": "Not confirmed whether Garrett vended this one"
+          "text": "Booth arranged, but not confirmed you vended it. Lena (Jul 4): \"You'll have a booth for all events except the Art Mart.\" No payment confirmation seen."
         }
       ],
       "source": {
@@ -1169,6 +1289,11 @@
           "at": "2026-10-03",
           "by": "claude",
           "change": "Created from the initial inbox review"
+        },
+        {
+          "at": "2026-10-03",
+          "by": "claude",
+          "change": "Email sweep: found booth arrangements in the BQ Flea thread but nothing confirming you attended."
         }
       ]
     },
@@ -1188,7 +1313,7 @@
       ],
       "recurrence": null,
       "location": {
-        "venue": null,
+        "venue": "BQ Flea (under the BQE)",
         "address": null,
         "neighborhood": null,
         "borough": null
@@ -1222,7 +1347,7 @@
         {
           "type": "unconfirmed",
           "field": "status",
-          "text": "Not confirmed whether Garrett vended this one"
+          "text": "Booth arranged, but not confirmed you vended it. You asked to join on Aug 3, Lena reserved a space Aug 5 (in the under-$100 vendor section), and you said you would pay that day."
         }
       ],
       "source": {
@@ -1244,6 +1369,11 @@
           "at": "2026-10-03",
           "by": "claude",
           "change": "Created from the initial inbox review"
+        },
+        {
+          "at": "2026-10-03",
+          "by": "claude",
+          "change": "Email sweep: found booth arrangements in the BQ Flea thread but nothing confirming you attended."
         }
       ]
     },
@@ -1263,7 +1393,7 @@
       ],
       "recurrence": null,
       "location": {
-        "venue": null,
+        "venue": "BQ Flea (under the BQE)",
         "address": null,
         "neighborhood": null,
         "borough": null
@@ -1297,7 +1427,7 @@
         {
           "type": "unconfirmed",
           "field": "status",
-          "text": "Not confirmed whether Garrett vended this one"
+          "text": "Booth arranged, but not confirmed you vended it. Lena (Jul 4): \"You'll have a booth for all events except the Art Mart.\" You were on the Aug 15 logistics email."
         }
       ],
       "source": {
@@ -1319,6 +1449,11 @@
           "at": "2026-10-03",
           "by": "claude",
           "change": "Created from the initial inbox review"
+        },
+        {
+          "at": "2026-10-03",
+          "by": "claude",
+          "change": "Email sweep: found booth arrangements in the BQ Flea thread but nothing confirming you attended."
         }
       ]
     },
@@ -1338,7 +1473,7 @@
       ],
       "recurrence": null,
       "location": {
-        "venue": null,
+        "venue": "BQ Flea (under the BQE)",
         "address": null,
         "neighborhood": null,
         "borough": null
@@ -1372,7 +1507,7 @@
         {
           "type": "unconfirmed",
           "field": "status",
-          "text": "Not confirmed whether Garrett vended this one"
+          "text": "Booth arranged, but not confirmed you vended it. On Sep 11 you said you had forgotten to pay and Lena replied \"I kept your spot for you! See you tomorrow.\""
         }
       ],
       "source": {
@@ -1394,6 +1529,11 @@
           "at": "2026-10-03",
           "by": "claude",
           "change": "Created from the initial inbox review"
+        },
+        {
+          "at": "2026-10-03",
+          "by": "claude",
+          "change": "Email sweep: found booth arrangements in the BQ Flea thread but nothing confirming you attended."
         }
       ]
     },
