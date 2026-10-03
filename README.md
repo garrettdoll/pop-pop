@@ -101,7 +101,7 @@ Claude Code can run recurring jobs ("Routines") in the cloud. The plan is:
 
 You can also run either one yourself any time by telling Claude **"check my email for markets"** or **"run the market search"**.
 
-*Status: see the end of Claude's first report. Turning the schedules on needs Claude to be able to save to this repo first.*
+*Status (Oct 3, 2026): not switched on yet. Claude first needs permission to save to this repo (the Claude GitHub App has to be installed on it). Once that's done, switching both schedules on is one step. You can run them by hand in the meantime.*
 
 ---
 
