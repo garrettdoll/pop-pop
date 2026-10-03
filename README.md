@@ -94,14 +94,15 @@ That's it. You're set up.
 
 ## What's automated
 
-Claude Code can run recurring jobs ("Routines") in the cloud. The plan is:
+**Nothing runs on its own yet** (status as of Oct 3, 2026). I tried to set up two scheduled jobs: a daily email sweep and a market search every 3 days. A dry run showed that the cloud scheduler starts a blank session with **no copy of this repo and no access to your Gmail**, so the jobs couldn't do their work. I switched them off instead of letting them fail every morning.
 
-- **Email sweep:** every morning, Claude reads (never sends, never changes) your `info@brooklynsoftboys.com` inbox for market announcements, deadlines, acceptances and payment reminders, and updates the hub.
-- **Market search:** every 3 days, a short web search for new markets in Williamsburg, Bushwick, Bed-Stuy, DUMBO and bigger Manhattan markets. Finds go to Explore, never straight into your hub. It stops early when there's nothing new.
+What works today, any time you want it. In a Claude session that has this repo and your Gmail connected, say:
 
-You can also run either one yourself any time by telling Claude **"check my email for markets"** or **"run the market search"**.
+- **"check my email for markets"** reads (never sends, never changes) your `info@brooklynsoftboys.com` inbox for announcements, deadlines, acceptances and payment reminders, and updates the hub.
+- **"run the market search"** does a short web search for new markets in Williamsburg, Bushwick, Bed-Stuy, DUMBO and bigger Manhattan markets. Finds go to Explore, never straight into your hub. It stops early when there's nothing new.
+- **"add this market"** with a screenshot attached.
 
-*Status (Oct 3, 2026): not switched on yet. Claude first needs permission to save to this repo (the Claude GitHub App has to be installed on it). Once that's done, switching both schedules on is one step. You can run them by hand in the meantime.*
+To make the first two run on a schedule, the routines have to be created on the claude.ai Routines screen, with this repo and the Gmail connector attached there. `CLAUDE.md` has the exact prompts.
 
 ---
 

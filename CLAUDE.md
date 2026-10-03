@@ -119,7 +119,12 @@ Notes: cron cannot express "every exactly 3 days", so the search runs on days 1,
 - `add this market` (with a screenshot attached)
 - `apply my answers` (to pick up anything answered in the app)
 
-**Status of scheduling:** see the bottom of `README.md` ("What's automated").
+**Status of scheduling (Oct 3, 2026): not running.** Two routines were created through the scheduling tool and then disabled after a dry run. Routines created that way start a fresh session with **no repo source, no `add_repo` tool and no Gmail connector** (only web search works), so they cannot do the job. To switch scheduling on properly, create each routine on the claude.ai Routines screen with the GitHub repo `garrettdoll/pop-pop` (push access) and the Gmail connector attached, set the schedule above, use the prompts below, then **fire it once with a dry-run note and read the result before trusting it**. A routine that can't reach the repo or Gmail must stop and say so, never improvise.
+
+Routine prompts (each begins by confirming `git ls-remote origin` works and stops if it doesn't, then pulls, follows the matching section of this file, runs `node tools/validate-data.mjs`, commits to `main`, and ends with a 2-3 line summary):
+
+- Email sweep: "Run the POP! POP! email sweep as described in CLAUDE.md. Gmail is read-only."
+- Market search: "Run the POP! POP! market search as described in CLAUDE.md. Stop early if nothing is new."
 
 ## Developing the app
 
