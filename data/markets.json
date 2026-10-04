@@ -749,7 +749,7 @@
       "id": "red-hook-holiday-2026-12-12",
       "name": "BKPU x Red Hook Holiday Market",
       "organizerId": "brooklyn-pop-up",
-      "status": "unknown",
+      "status": "applied",
       "kind": "event",
       "dates": [
         {
@@ -800,11 +800,6 @@
       "flags": [
         {
           "type": "unconfirmed",
-          "field": "status",
-          "text": "Application status not confirmed by Garrett"
-        },
-        {
-          "type": "unconfirmed",
           "field": "application",
           "text": "Application close date not stated"
         }
@@ -828,6 +823,12 @@
           "at": "2026-10-03",
           "by": "claude",
           "change": "Created from the initial inbox review"
+        },
+        {
+          "at": "2026-10-03",
+          "by": "app",
+          "change": "Status: unknown → applied",
+          "op": "mut3hu09-yrtc"
         }
       ]
     },
