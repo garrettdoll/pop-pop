@@ -433,10 +433,10 @@
       },
       "application": {
         "opens": null,
-        "closes": null,
+        "closes": "2026-10-14",
         "decisionBy": null,
         "paymentDeadline": null,
-        "state": "unknown"
+        "state": "open"
       },
       "fees": {
         "application": null,
@@ -455,7 +455,7 @@
         "vendorInfo": null
       },
       "contact": null,
-      "notes": "50+ weekly vendors.",
+      "notes": "50+ weekly vendors. Applications are per Saturday on your BKPU dashboard. Open as of Oct 4 for the general (non-food) bazaar: Sat Nov 28 (closes Oct 14) and Sat Dec 5 (closes Oct 21). Nov 21 shows \"Applications Closed\", and listings for Oct 10 to Nov 14 are not open. Anything labeled FOOD & BEVERAGE VENDORS is for food and drink makers only. Deadlines run about 45 days before each Saturday.",
       "flags": [
         {
           "type": "unconfirmed",
@@ -468,7 +468,7 @@
         "ref": "Build brief appendix (inbox review as of 2026-10-03)",
         "addedAt": "2026-10-03"
       },
-      "lastVerified": "2026-10-03",
+      "lastVerified": "2026-10-04",
       "results": {
         "salesTotal": null,
         "boothFee": null,
@@ -482,6 +482,11 @@
           "at": "2026-10-03",
           "by": "claude",
           "change": "Created from the initial inbox review"
+        },
+        {
+          "at": "2026-10-04",
+          "by": "claude",
+          "change": "From BKPU vendor dashboard screenshot (Upcoming Events, Oct 4): per-Saturday listings. Nov 28 closes Oct 14, Dec 5 closes Oct 21. FOOD & BEVERAGE listings are not for clothing vendors."
         }
       ],
       "recurrenceRule": {
@@ -539,7 +544,7 @@
         "vendorInfo": null
       },
       "contact": null,
-      "notes": "20+ pet and Halloween/harvest vendors plus food, part of the park's Halloween Fest next to the Great PUPkin Dog Costume Contest.",
+      "notes": "20+ pet and Halloween/harvest vendors plus food, part of the park's Halloween Fest next to the Great PUPkin Dog Costume Contest. On the BKPU dashboard (Oct 4) the only Oct 24 listing is a FOOD & BEVERAGE VENDORS one (application close date reads 9/9), so there is no listing for clothing vendors.",
       "flags": [
         {
           "type": "fit-conflict",
@@ -562,7 +567,7 @@
         "ref": "Build brief appendix (inbox review as of 2026-10-03)",
         "addedAt": "2026-10-03"
       },
-      "lastVerified": "2026-10-03",
+      "lastVerified": "2026-10-04",
       "results": {
         "salesTotal": null,
         "boothFee": null,
@@ -576,6 +581,11 @@
           "at": "2026-10-03",
           "by": "claude",
           "change": "Created from the initial inbox review"
+        },
+        {
+          "at": "2026-10-04",
+          "by": "claude",
+          "change": "From BKPU vendor dashboard screenshot (Upcoming Events, Oct 4): only a food and beverage listing exists for Oct 24, which supports skipping this one."
         }
       ]
     },
@@ -583,7 +593,7 @@
       "id": "osh-holiday-bazaar-2026-12-05",
       "name": "Old Stone House Holiday Artisans Bazaar",
       "organizerId": "brooklyn-pop-up",
-      "status": "unknown",
+      "status": "to-apply",
       "kind": "event",
       "dates": [
         {
@@ -602,7 +612,7 @@
       },
       "application": {
         "opens": null,
-        "closes": null,
+        "closes": "2026-10-11",
         "decisionBy": null,
         "paymentDeadline": null,
         "state": "open"
@@ -624,25 +634,14 @@
         "vendorInfo": null
       },
       "contact": null,
-      "notes": "Applications open (as of the 9/17 BKPU email). 50+ makers. Space fills fast. Hot cider and family activities.",
-      "flags": [
-        {
-          "type": "unconfirmed",
-          "field": "status",
-          "text": "Application status not confirmed by Garrett"
-        },
-        {
-          "type": "unconfirmed",
-          "field": "application",
-          "text": "Application close date not stated"
-        }
-      ],
+      "notes": "Applications open. Space fills fast. 50+ makers, hot cider and family activities. Apply from your BKPU dashboard (Upcoming Events); the listing is \"Old Stone House Holiday Bazaar (OUTDOORS)\".",
+      "flags": [],
       "source": {
         "type": "seed",
         "ref": "Build brief appendix (inbox review as of 2026-10-03)",
         "addedAt": "2026-10-03"
       },
-      "lastVerified": "2026-10-03",
+      "lastVerified": "2026-10-04",
       "results": {
         "salesTotal": null,
         "boothFee": null,
@@ -656,6 +655,11 @@
           "at": "2026-10-03",
           "by": "claude",
           "change": "Created from the initial inbox review"
+        },
+        {
+          "at": "2026-10-04",
+          "by": "claude",
+          "change": "From BKPU vendor dashboard screenshot (Upcoming Events, Oct 4): applications close Sun Oct 11. The listing still shows \"Apply Now\". Garrett said he plans to apply, so status set to \"to apply\"."
         }
       ]
     },
@@ -663,7 +667,7 @@
       "id": "mcny-holiday-market-2026-12-05",
       "name": "Holiday Market at the Museum of the City of New York",
       "organizerId": "brooklyn-pop-up",
-      "status": "unknown",
+      "status": "to-apply",
       "kind": "event",
       "dates": [
         {
@@ -688,7 +692,7 @@
       },
       "application": {
         "opens": null,
-        "closes": null,
+        "closes": "2026-10-11",
         "decisionBy": null,
         "paymentDeadline": null,
         "state": "open"
@@ -698,7 +702,9 @@
         "booth": null,
         "notes": null
       },
-      "requirements": [],
+      "requirements": [
+        "Pick one of three BKPU listings: both days, Saturday Dec 5 only, or Sunday Dec 6 only"
+      ],
       "vendorRules": null,
       "fit": {
         "rating": "unknown",
@@ -710,25 +716,14 @@
         "vendorInfo": null
       },
       "contact": null,
-      "notes": "32+ makers in the museum's main lobby, alongside the Gingerbread NYC exhibit. Manhattan, so it fits the \"bigger Manhattan market\" interest. Applications open (9/17 BKPU email).",
-      "flags": [
-        {
-          "type": "unconfirmed",
-          "field": "status",
-          "text": "Application status not confirmed by Garrett"
-        },
-        {
-          "type": "unconfirmed",
-          "field": "application",
-          "text": "Application close date not stated"
-        }
-      ],
+      "notes": "32+ makers in the museum's main lobby, alongside the Gingerbread NYC exhibit. Manhattan, so it fits the \"bigger Manhattan market\" interest. Your BKPU dashboard has three separate listings: both days (10am-5:30pm both days) and Saturday-only close Sun Oct 11; Sunday-only closes Mon Oct 12.",
+      "flags": [],
       "source": {
         "type": "seed",
         "ref": "Build brief appendix (inbox review as of 2026-10-03)",
         "addedAt": "2026-10-03"
       },
-      "lastVerified": "2026-10-03",
+      "lastVerified": "2026-10-04",
       "results": {
         "salesTotal": null,
         "boothFee": null,
@@ -742,6 +737,11 @@
           "at": "2026-10-03",
           "by": "claude",
           "change": "Created from the initial inbox review"
+        },
+        {
+          "at": "2026-10-04",
+          "by": "claude",
+          "change": "From BKPU vendor dashboard screenshot (Upcoming Events, Oct 4): three listings (both days, Sat only, Sun only). Both days and Sat only close Oct 11, Sun only closes Oct 12. Garrett said he plans to apply, so status set to \"to apply\"."
         }
       ]
     },

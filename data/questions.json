@@ -34,7 +34,11 @@
       "answer": null,
       "id": "q-001",
       "text": "Which of these have you already applied to?",
-      "perMarket": true
+      "perMarket": true,
+      "answers": {
+        "osh-holiday-bazaar-2026-12-05": "Not yet",
+        "mcny-holiday-market-2026-12-05": "Not yet"
+      }
     },
     {
       "type": "question",
