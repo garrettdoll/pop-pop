@@ -421,7 +421,7 @@
       "id": "fort-greene-artisans-bazaar",
       "name": "Fort Greene Artisans Bazaar",
       "organizerId": "brooklyn-pop-up",
-      "status": "unknown",
+      "status": "applied",
       "kind": "recurring",
       "dates": [],
       "recurrence": "Every Saturday, year-round, 9am-4pm",
@@ -456,13 +456,7 @@
       },
       "contact": null,
       "notes": "50+ weekly vendors. Applications are per Saturday on your BKPU dashboard. Open as of Oct 4 for the general (non-food) bazaar: Sat Nov 28 (closes Oct 14) and Sat Dec 5 (closes Oct 21). Nov 21 shows \"Applications Closed\", and listings for Oct 10 to Nov 14 are not open. Anything labeled FOOD & BEVERAGE VENDORS is for food and drink makers only. Deadlines run about 45 days before each Saturday.",
-      "flags": [
-        {
-          "type": "unconfirmed",
-          "field": "status",
-          "text": "Application status not confirmed by Garrett"
-        }
-      ],
+      "flags": [],
       "source": {
         "type": "seed",
         "ref": "Build brief appendix (inbox review as of 2026-10-03)",
@@ -487,6 +481,12 @@
           "at": "2026-10-04",
           "by": "claude",
           "change": "From BKPU vendor dashboard screenshot (Upcoming Events, Oct 4): per-Saturday listings. Nov 28 closes Oct 14, Dec 5 closes Oct 21. FOOD & BEVERAGE listings are not for clothing vendors."
+        },
+        {
+          "at": "2026-10-03",
+          "by": "app",
+          "change": "Status: unknown → applied",
+          "op": "mut4lg2x-az3g"
         }
       ],
       "recurrenceRule": {
