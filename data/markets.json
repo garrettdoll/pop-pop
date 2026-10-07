@@ -673,7 +673,7 @@
       "id": "mcny-holiday-market-2026-12-05",
       "name": "Holiday Market at the Museum of the City of New York",
       "organizerId": "brooklyn-pop-up",
-      "status": "to-apply",
+      "status": "skipped",
       "kind": "event",
       "dates": [
         {
@@ -748,6 +748,12 @@
           "at": "2026-10-04",
           "by": "claude",
           "change": "From BKPU vendor dashboard screenshot (Upcoming Events, Oct 4): three listings (both days, Sat only, Sun only). Both days and Sat only close Oct 11, Sun only closes Oct 12. Garrett said he plans to apply, so status set to \"to apply\"."
+        },
+        {
+          "at": "2026-10-07",
+          "by": "app",
+          "change": "Status: to-apply → skipped",
+          "op": "muyiwhmg-61yy"
         }
       ]
     },
