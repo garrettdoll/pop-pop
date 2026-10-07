@@ -341,7 +341,7 @@
       "id": "osh-fall-bazaar-2026-10-17",
       "name": "Old Stone House Fall Artisans Bazaar + Traditional Makers Fair",
       "organizerId": "brooklyn-pop-up",
-      "status": "unknown",
+      "status": "skipped",
       "kind": "event",
       "dates": [
         {
@@ -383,13 +383,7 @@
       },
       "contact": null,
       "notes": "Two markets in one: the Fall Artisans Bazaar plus the new Traditional Makers Fair (moved here after its September date was postponed for extreme weather). 100+ makers combined. Rain date: Sun Oct 18. Confirmed in BKPU's October newsletter.",
-      "flags": [
-        {
-          "type": "unconfirmed",
-          "field": "status",
-          "text": "Application status not confirmed by Garrett"
-        }
-      ],
+      "flags": [],
       "source": {
         "type": "seed",
         "ref": "Build brief appendix (inbox review as of 2026-10-03)",
@@ -414,6 +408,12 @@
           "at": "2026-10-03",
           "by": "claude",
           "change": "Email sweep: details and rain date confirmed by the BKPU October newsletter."
+        },
+        {
+          "at": "2026-10-07",
+          "by": "app",
+          "change": "Status: unknown → skipped (answered a question)",
+          "op": "muyivs3l-v4jv"
         }
       ]
     },
