@@ -593,7 +593,7 @@
       "id": "osh-holiday-bazaar-2026-12-05",
       "name": "Old Stone House Holiday Artisans Bazaar",
       "organizerId": "brooklyn-pop-up",
-      "status": "to-apply",
+      "status": "skipped",
       "kind": "event",
       "dates": [
         {
@@ -660,6 +660,12 @@
           "at": "2026-10-04",
           "by": "claude",
           "change": "From BKPU vendor dashboard screenshot (Upcoming Events, Oct 4): applications close Sun Oct 11. The listing still shows \"Apply Now\". Garrett said he plans to apply, so status set to \"to apply\"."
+        },
+        {
+          "at": "2026-10-07",
+          "by": "app",
+          "change": "Status: to-apply → skipped",
+          "op": "muyiw4wh-kwg7"
         }
       ]
     },
