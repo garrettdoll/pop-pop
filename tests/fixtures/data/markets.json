@@ -1,0 +1,1823 @@
+{
+  "version": 1,
+  "markets": [
+    {
+      "id": "fad-holiday-dumbo-2026",
+      "name": "FAD Market [Weekend] Holiday Pop-up",
+      "organizerId": "fad-market",
+      "status": "applied",
+      "kind": "event",
+      "dates": [
+        {
+          "date": "2026-12-19",
+          "start": null,
+          "end": null,
+          "rainDate": null
+        },
+        {
+          "date": "2026-12-20",
+          "start": null,
+          "end": null,
+          "rainDate": null
+        }
+      ],
+      "recurrence": null,
+      "location": {
+        "venue": "Empire Stores",
+        "address": null,
+        "neighborhood": "DUMBO",
+        "borough": "Brooklyn"
+      },
+      "application": {
+        "opens": null,
+        "closes": "2026-09-27",
+        "decisionBy": "2026-10-13",
+        "paymentDeadline": null,
+        "state": "closed"
+      },
+      "fees": {
+        "application": null,
+        "booth": null,
+        "notes": null
+      },
+      "requirements": [],
+      "vendorRules": null,
+      "fit": {
+        "rating": "unknown",
+        "note": null
+      },
+      "links": {
+        "apply": null,
+        "event": null,
+        "vendorInfo": "https://fadmarket.co/faq-vendors"
+      },
+      "contact": null,
+      "notes": "Garrett wants a full booth, his own rack, and prime placement. FAD's 9/25 confirmation email does not list the event dates.",
+      "flags": [
+        {
+          "type": "unconfirmed",
+          "field": "dates",
+          "text": "Dec 19+20 is the date Garrett is aiming for. Actual event dates not confirmed."
+        }
+      ],
+      "source": {
+        "type": "seed",
+        "ref": "Build brief appendix (inbox review as of 2026-10-03)",
+        "addedAt": "2026-10-03"
+      },
+      "lastVerified": "2026-10-03",
+      "results": {
+        "salesTotal": null,
+        "boothFee": null,
+        "thumbs": null,
+        "bestSellers": null,
+        "footTraffic": null,
+        "notes": null
+      },
+      "history": [
+        {
+          "at": "2026-10-03",
+          "by": "claude",
+          "change": "Created from the initial inbox review (applied; applications closed 2026-09-27)"
+        },
+        {
+          "at": "2026-10-03",
+          "by": "claude",
+          "change": "Verified by the 9/25 FAD confirmation email: application received, closed Sun Sep 27 11:59pm, decision by Oct 13. Event dates are still not stated."
+        }
+      ]
+    },
+    {
+      "id": "fad-early-bird-holiday-nov-2026",
+      "name": "FAD Early Bird Holiday Market",
+      "organizerId": "fad-market",
+      "status": "unknown",
+      "kind": "event",
+      "dates": [
+        {
+          "date": "2026-11-07",
+          "start": null,
+          "end": null,
+          "rainDate": null
+        },
+        {
+          "date": "2026-11-08",
+          "start": null,
+          "end": null,
+          "rainDate": null
+        }
+      ],
+      "recurrence": null,
+      "location": {
+        "venue": "Empire Stores",
+        "address": null,
+        "neighborhood": "DUMBO",
+        "borough": "Brooklyn"
+      },
+      "application": {
+        "opens": null,
+        "closes": null,
+        "decisionBy": null,
+        "paymentDeadline": null,
+        "state": "unknown"
+      },
+      "fees": {
+        "application": null,
+        "booth": null,
+        "notes": null
+      },
+      "requirements": [],
+      "vendorRules": null,
+      "fit": {
+        "rating": "unknown",
+        "note": null
+      },
+      "links": {
+        "apply": null,
+        "event": "https://fadmarket.co/fall-empire-stores-dumbo-brooklyn",
+        "vendorInfo": "https://fadmarket.co/faq-vendors"
+      },
+      "contact": null,
+      "notes": "Announced in FAD's 10/1 email (Empire Stores, Nov 7+8). That email gave no application link or deadline, and says to \"stay tuned\" for the December Holiday Pop-ups.",
+      "flags": [
+        {
+          "type": "unconfirmed",
+          "field": "status",
+          "text": "Application status not confirmed by Garrett"
+        }
+      ],
+      "source": {
+        "type": "seed",
+        "ref": "Build brief appendix (inbox review as of 2026-10-03)",
+        "addedAt": "2026-10-03"
+      },
+      "lastVerified": "2026-10-03",
+      "results": {
+        "salesTotal": null,
+        "boothFee": null,
+        "thumbs": null,
+        "bestSellers": null,
+        "footTraffic": null,
+        "notes": null
+      },
+      "history": [
+        {
+          "at": "2026-10-03",
+          "by": "claude",
+          "change": "Created from the initial inbox review"
+        },
+        {
+          "at": "2026-10-03",
+          "by": "claude",
+          "change": "Email sweep: re-checked the 10/1 FAD email. Still no application found or deadline stated."
+        }
+      ]
+    },
+    {
+      "id": "fad-fall-cobble-hill-2026",
+      "name": "FAD Fall Weekend, St. Paul",
+      "organizerId": "fad-market",
+      "status": "unknown",
+      "kind": "event",
+      "dates": [
+        {
+          "date": "2026-10-24",
+          "start": "11:00",
+          "end": "18:00",
+          "rainDate": null
+        },
+        {
+          "date": "2026-10-25",
+          "start": "11:00",
+          "end": "18:00",
+          "rainDate": null
+        }
+      ],
+      "recurrence": null,
+      "location": {
+        "venue": "St. Paul",
+        "address": "Court St, Cobble Hill, Brooklyn",
+        "neighborhood": "Cobble Hill",
+        "borough": "Brooklyn"
+      },
+      "application": {
+        "opens": null,
+        "closes": "2026-07-27",
+        "decisionBy": null,
+        "paymentDeadline": null,
+        "state": "closed"
+      },
+      "fees": {
+        "application": null,
+        "booth": null,
+        "notes": null
+      },
+      "requirements": [],
+      "vendorRules": null,
+      "fit": {
+        "rating": "unknown",
+        "note": null
+      },
+      "links": {
+        "apply": null,
+        "event": "https://fadmarket.co/fall-st-paul",
+        "vendorInfo": "https://fadmarket.co/faq-vendors"
+      },
+      "contact": null,
+      "notes": "60+ makers. Fall applications closed 2026-07-27.",
+      "flags": [
+        {
+          "type": "unconfirmed",
+          "field": "status",
+          "text": "No FAD fall application confirmation in the inbox (the Holiday one arrived 9/25). Probably not applied. Fall applications closed 7/27."
+        }
+      ],
+      "source": {
+        "type": "seed",
+        "ref": "Build brief appendix (inbox review as of 2026-10-03)",
+        "addedAt": "2026-10-03"
+      },
+      "lastVerified": "2026-10-03",
+      "results": {
+        "salesTotal": null,
+        "boothFee": null,
+        "thumbs": null,
+        "bestSellers": null,
+        "footTraffic": null,
+        "notes": null
+      },
+      "history": [
+        {
+          "at": "2026-10-03",
+          "by": "claude",
+          "change": "Created from the initial inbox review"
+        },
+        {
+          "at": "2026-10-03",
+          "by": "claude",
+          "change": "Email sweep: found no fall application confirmation from FAD, so you probably did not apply. Left as unconfirmed."
+        }
+      ]
+    },
+    {
+      "id": "bq-flea-dumbo-final-2026",
+      "name": "Brooklyn Flea, final DUMBO flea of the year",
+      "organizerId": "brooklyn-flea",
+      "status": "paid",
+      "kind": "event",
+      "dates": [],
+      "recurrence": null,
+      "location": {
+        "venue": null,
+        "address": null,
+        "neighborhood": "DUMBO",
+        "borough": "Brooklyn"
+      },
+      "application": {
+        "opens": null,
+        "closes": null,
+        "decisionBy": null,
+        "paymentDeadline": null,
+        "state": "unknown"
+      },
+      "fees": {
+        "application": null,
+        "booth": 150,
+        "notes": "Paid $150 booth on 2026-09-29. Asked Lena (BQ Flea) about upgrading to $200 for more space."
+      },
+      "requirements": [],
+      "vendorRules": null,
+      "fit": {
+        "rating": "unknown",
+        "note": null
+      },
+      "links": {
+        "apply": null,
+        "event": null,
+        "vendorInfo": null
+      },
+      "contact": null,
+      "notes": "Paid a $150 booth on 2026-09-29 and asked Lena about upgrading to $200 for more space. Lena's Jul 1 email said Sep 13 was the scheduled final BQ Flea day, so this DUMBO flea is a separate, later event.",
+      "flags": [
+        {
+          "type": "unconfirmed",
+          "field": "dates",
+          "text": "Event date not stated in the email"
+        },
+        {
+          "type": "unconfirmed",
+          "field": "fees",
+          "text": "Lena's reply about the $200 upgrade not confirmed"
+        }
+      ],
+      "source": {
+        "type": "seed",
+        "ref": "Build brief appendix (inbox review as of 2026-10-03)",
+        "addedAt": "2026-10-03"
+      },
+      "lastVerified": "2026-10-03",
+      "results": {
+        "salesTotal": null,
+        "boothFee": null,
+        "thumbs": null,
+        "bestSellers": null,
+        "footTraffic": null,
+        "notes": null
+      },
+      "history": [
+        {
+          "at": "2026-10-03",
+          "by": "claude",
+          "change": "Created from the initial inbox review (booth paid 2026-09-29)"
+        },
+        {
+          "at": "2026-10-03",
+          "by": "claude",
+          "change": "Email sweep: no date for the DUMBO flea anywhere in the inbox, and no reply from Lena after your Sep 29 email."
+        }
+      ]
+    },
+    {
+      "id": "osh-fall-bazaar-2026-10-17",
+      "name": "Old Stone House Fall Artisans Bazaar + Traditional Makers Fair",
+      "organizerId": "brooklyn-pop-up",
+      "status": "unknown",
+      "kind": "event",
+      "dates": [
+        {
+          "date": "2026-10-17",
+          "start": "10:00",
+          "end": "17:00",
+          "rainDate": "2026-10-18"
+        }
+      ],
+      "recurrence": null,
+      "location": {
+        "venue": "Washington Park",
+        "address": "336 3rd St, Park Slope, Brooklyn",
+        "neighborhood": "Park Slope",
+        "borough": "Brooklyn"
+      },
+      "application": {
+        "opens": null,
+        "closes": null,
+        "decisionBy": null,
+        "paymentDeadline": null,
+        "state": "unknown"
+      },
+      "fees": {
+        "application": null,
+        "booth": null,
+        "notes": null
+      },
+      "requirements": [],
+      "vendorRules": null,
+      "fit": {
+        "rating": "unknown",
+        "note": null
+      },
+      "links": {
+        "apply": null,
+        "event": "https://brooklynpop-up.com/market-details/old-stone-house-artisans-bazaar/r/reckGJDMg1yPcntSA",
+        "vendorInfo": null
+      },
+      "contact": null,
+      "notes": "Two markets in one: the Fall Artisans Bazaar plus the new Traditional Makers Fair (moved here after its September date was postponed for extreme weather). 100+ makers combined. Rain date: Sun Oct 18. Confirmed in BKPU's October newsletter.",
+      "flags": [
+        {
+          "type": "unconfirmed",
+          "field": "status",
+          "text": "Application status not confirmed by Garrett"
+        }
+      ],
+      "source": {
+        "type": "seed",
+        "ref": "Build brief appendix (inbox review as of 2026-10-03)",
+        "addedAt": "2026-10-03"
+      },
+      "lastVerified": "2026-10-03",
+      "results": {
+        "salesTotal": null,
+        "boothFee": null,
+        "thumbs": null,
+        "bestSellers": null,
+        "footTraffic": null,
+        "notes": null
+      },
+      "history": [
+        {
+          "at": "2026-10-03",
+          "by": "claude",
+          "change": "Created from the initial inbox review"
+        },
+        {
+          "at": "2026-10-03",
+          "by": "claude",
+          "change": "Email sweep: details and rain date confirmed by the BKPU October newsletter."
+        }
+      ]
+    },
+    {
+      "id": "fort-greene-artisans-bazaar",
+      "name": "Fort Greene Artisans Bazaar",
+      "organizerId": "brooklyn-pop-up",
+      "status": "unknown",
+      "kind": "recurring",
+      "dates": [],
+      "recurrence": "Every Saturday, year-round, 9am-4pm",
+      "location": {
+        "venue": "Fort Greene Park",
+        "address": "DeKalb Ave between South Portland and Washington Aves, Fort Greene Park",
+        "neighborhood": "Fort Greene",
+        "borough": "Brooklyn"
+      },
+      "application": {
+        "opens": null,
+        "closes": "2026-10-14",
+        "decisionBy": null,
+        "paymentDeadline": null,
+        "state": "open"
+      },
+      "fees": {
+        "application": null,
+        "booth": null,
+        "notes": null
+      },
+      "requirements": [],
+      "vendorRules": null,
+      "fit": {
+        "rating": "unknown",
+        "note": null
+      },
+      "links": {
+        "apply": null,
+        "event": "https://brooklynpop-up.com/market-details/fort-greene-park-artisans-bazaar/r/recJUr0FbK4XTYISB",
+        "vendorInfo": null
+      },
+      "contact": null,
+      "notes": "50+ weekly vendors. Applications are per Saturday on your BKPU dashboard. Open as of Oct 4 for the general (non-food) bazaar: Sat Nov 28 (closes Oct 14) and Sat Dec 5 (closes Oct 21). Nov 21 shows \"Applications Closed\", and listings for Oct 10 to Nov 14 are not open. Anything labeled FOOD & BEVERAGE VENDORS is for food and drink makers only. Deadlines run about 45 days before each Saturday.",
+      "flags": [
+        {
+          "type": "unconfirmed",
+          "field": "status",
+          "text": "Application status not confirmed by Garrett"
+        }
+      ],
+      "source": {
+        "type": "seed",
+        "ref": "Build brief appendix (inbox review as of 2026-10-03)",
+        "addedAt": "2026-10-03"
+      },
+      "lastVerified": "2026-10-04",
+      "results": {
+        "salesTotal": null,
+        "boothFee": null,
+        "thumbs": null,
+        "bestSellers": null,
+        "footTraffic": null,
+        "notes": null
+      },
+      "history": [
+        {
+          "at": "2026-10-03",
+          "by": "claude",
+          "change": "Created from the initial inbox review"
+        },
+        {
+          "at": "2026-10-04",
+          "by": "claude",
+          "change": "From BKPU vendor dashboard screenshot (Upcoming Events, Oct 4): per-Saturday listings. Nov 28 closes Oct 14, Dec 5 closes Oct 21. FOOD & BEVERAGE listings are not for clothing vendors."
+        }
+      ],
+      "recurrenceRule": {
+        "weekdays": [
+          6
+        ],
+        "start": "09:00",
+        "end": "16:00",
+        "from": null,
+        "until": null
+      }
+    },
+    {
+      "id": "fort-greene-halloween-2026",
+      "name": "Fort Greene Halloween + Harvest Fest Market",
+      "organizerId": "brooklyn-pop-up",
+      "status": "unknown",
+      "kind": "event",
+      "dates": [
+        {
+          "date": "2026-10-24",
+          "start": "09:00",
+          "end": "16:00",
+          "rainDate": null
+        }
+      ],
+      "recurrence": null,
+      "location": {
+        "venue": "Fort Greene Park, around the Prison Ship Martyrs Monument",
+        "address": "DeKalb Ave at Fort Greene Park",
+        "neighborhood": "Fort Greene",
+        "borough": "Brooklyn"
+      },
+      "application": {
+        "opens": null,
+        "closes": null,
+        "decisionBy": null,
+        "paymentDeadline": null,
+        "state": "unknown"
+      },
+      "fees": {
+        "application": null,
+        "booth": null,
+        "notes": null
+      },
+      "requirements": [],
+      "vendorRules": "Only for pet, Halloween/harvest, and food vendors.",
+      "fit": {
+        "rating": "poor",
+        "note": "Vendor categories are pet, Halloween/harvest and food only. Streetwear likely does not qualify."
+      },
+      "links": {
+        "apply": null,
+        "event": "https://brooklynpop-up.com/market-details/fort-greene-artisans-market-december/r/recWKpktmpzEKHVbb",
+        "vendorInfo": null
+      },
+      "contact": null,
+      "notes": "20+ pet and Halloween/harvest vendors plus food, part of the park's Halloween Fest next to the Great PUPkin Dog Costume Contest. On the BKPU dashboard (Oct 4) the only Oct 24 listing is a FOOD & BEVERAGE VENDORS one (application close date reads 9/9), so there is no listing for clothing vendors.",
+      "flags": [
+        {
+          "type": "fit-conflict",
+          "field": "vendorRules",
+          "text": "Only pet, Halloween/harvest, and food vendors. Likely not a fit for streetwear."
+        },
+        {
+          "type": "unconfirmed",
+          "field": "links",
+          "text": "The link slug says \"december\". Confirm it opens the Halloween market."
+        },
+        {
+          "type": "unconfirmed",
+          "field": "status",
+          "text": "Application status not confirmed by Garrett"
+        }
+      ],
+      "source": {
+        "type": "seed",
+        "ref": "Build brief appendix (inbox review as of 2026-10-03)",
+        "addedAt": "2026-10-03"
+      },
+      "lastVerified": "2026-10-04",
+      "results": {
+        "salesTotal": null,
+        "boothFee": null,
+        "thumbs": null,
+        "bestSellers": null,
+        "footTraffic": null,
+        "notes": null
+      },
+      "history": [
+        {
+          "at": "2026-10-03",
+          "by": "claude",
+          "change": "Created from the initial inbox review"
+        },
+        {
+          "at": "2026-10-04",
+          "by": "claude",
+          "change": "From BKPU vendor dashboard screenshot (Upcoming Events, Oct 4): only a food and beverage listing exists for Oct 24, which supports skipping this one."
+        }
+      ]
+    },
+    {
+      "id": "osh-holiday-bazaar-2026-12-05",
+      "name": "Old Stone House Holiday Artisans Bazaar",
+      "organizerId": "brooklyn-pop-up",
+      "status": "to-apply",
+      "kind": "event",
+      "dates": [
+        {
+          "date": "2026-12-05",
+          "start": "10:00",
+          "end": "16:00",
+          "rainDate": null
+        }
+      ],
+      "recurrence": null,
+      "location": {
+        "venue": "Washington Park",
+        "address": "336 3rd St, Park Slope, Brooklyn",
+        "neighborhood": "Park Slope",
+        "borough": "Brooklyn"
+      },
+      "application": {
+        "opens": null,
+        "closes": "2026-10-11",
+        "decisionBy": null,
+        "paymentDeadline": null,
+        "state": "open"
+      },
+      "fees": {
+        "application": null,
+        "booth": null,
+        "notes": null
+      },
+      "requirements": [],
+      "vendorRules": null,
+      "fit": {
+        "rating": "unknown",
+        "note": null
+      },
+      "links": {
+        "apply": null,
+        "event": "https://brooklynpop-up.com/market-details/old-stone-house-holiday-bazaar/r/recVH4TQplSHQkKSy",
+        "vendorInfo": null
+      },
+      "contact": null,
+      "notes": "Applications open. Space fills fast. 50+ makers, hot cider and family activities. Apply from your BKPU dashboard (Upcoming Events); the listing is \"Old Stone House Holiday Bazaar (OUTDOORS)\".",
+      "flags": [],
+      "source": {
+        "type": "seed",
+        "ref": "Build brief appendix (inbox review as of 2026-10-03)",
+        "addedAt": "2026-10-03"
+      },
+      "lastVerified": "2026-10-04",
+      "results": {
+        "salesTotal": null,
+        "boothFee": null,
+        "thumbs": null,
+        "bestSellers": null,
+        "footTraffic": null,
+        "notes": null
+      },
+      "history": [
+        {
+          "at": "2026-10-03",
+          "by": "claude",
+          "change": "Created from the initial inbox review"
+        },
+        {
+          "at": "2026-10-04",
+          "by": "claude",
+          "change": "From BKPU vendor dashboard screenshot (Upcoming Events, Oct 4): applications close Sun Oct 11. The listing still shows \"Apply Now\". Garrett said he plans to apply, so status set to \"to apply\"."
+        }
+      ]
+    },
+    {
+      "id": "mcny-holiday-market-2026-12-05",
+      "name": "Holiday Market at the Museum of the City of New York",
+      "organizerId": "brooklyn-pop-up",
+      "status": "to-apply",
+      "kind": "event",
+      "dates": [
+        {
+          "date": "2026-12-05",
+          "start": "10:00",
+          "end": "17:30",
+          "rainDate": null
+        },
+        {
+          "date": "2026-12-06",
+          "start": "10:00",
+          "end": "17:30",
+          "rainDate": null
+        }
+      ],
+      "recurrence": null,
+      "location": {
+        "venue": "Museum of the City of New York",
+        "address": "1220 5th Ave, New York",
+        "neighborhood": null,
+        "borough": "Manhattan"
+      },
+      "application": {
+        "opens": null,
+        "closes": "2026-10-11",
+        "decisionBy": null,
+        "paymentDeadline": null,
+        "state": "open"
+      },
+      "fees": {
+        "application": null,
+        "booth": null,
+        "notes": null
+      },
+      "requirements": [
+        "Pick one of three BKPU listings: both days, Saturday Dec 5 only, or Sunday Dec 6 only"
+      ],
+      "vendorRules": null,
+      "fit": {
+        "rating": "unknown",
+        "note": null
+      },
+      "links": {
+        "apply": null,
+        "event": "https://brooklynpop-up.com/market-details/brooklyn-museum+of+the+city+of+new+york-december/r/recMiVSoOHuFO8dta",
+        "vendorInfo": null
+      },
+      "contact": null,
+      "notes": "32+ makers in the museum's main lobby, alongside the Gingerbread NYC exhibit. Manhattan, so it fits the \"bigger Manhattan market\" interest. Your BKPU dashboard has three separate listings: both days (10am-5:30pm both days) and Saturday-only close Sun Oct 11; Sunday-only closes Mon Oct 12.",
+      "flags": [],
+      "source": {
+        "type": "seed",
+        "ref": "Build brief appendix (inbox review as of 2026-10-03)",
+        "addedAt": "2026-10-03"
+      },
+      "lastVerified": "2026-10-04",
+      "results": {
+        "salesTotal": null,
+        "boothFee": null,
+        "thumbs": null,
+        "bestSellers": null,
+        "footTraffic": null,
+        "notes": null
+      },
+      "history": [
+        {
+          "at": "2026-10-03",
+          "by": "claude",
+          "change": "Created from the initial inbox review"
+        },
+        {
+          "at": "2026-10-04",
+          "by": "claude",
+          "change": "From BKPU vendor dashboard screenshot (Upcoming Events, Oct 4): three listings (both days, Sat only, Sun only). Both days and Sat only close Oct 11, Sun only closes Oct 12. Garrett said he plans to apply, so status set to \"to apply\"."
+        }
+      ]
+    },
+    {
+      "id": "red-hook-holiday-2026-12-12",
+      "name": "BKPU x Red Hook Holiday Market",
+      "organizerId": "brooklyn-pop-up",
+      "status": "unknown",
+      "kind": "event",
+      "dates": [
+        {
+          "date": "2026-12-12",
+          "start": "12:00",
+          "end": "18:00",
+          "rainDate": null
+        },
+        {
+          "date": "2026-12-13",
+          "start": "12:00",
+          "end": "18:00",
+          "rainDate": null
+        }
+      ],
+      "recurrence": null,
+      "location": {
+        "venue": "Hook Studios",
+        "address": "161 Dikeman St, Red Hook, Brooklyn",
+        "neighborhood": "Red Hook",
+        "borough": "Brooklyn"
+      },
+      "application": {
+        "opens": null,
+        "closes": null,
+        "decisionBy": null,
+        "paymentDeadline": null,
+        "state": "open"
+      },
+      "fees": {
+        "application": null,
+        "booth": null,
+        "notes": null
+      },
+      "requirements": [],
+      "vendorRules": null,
+      "fit": {
+        "rating": "unknown",
+        "note": null
+      },
+      "links": {
+        "apply": null,
+        "event": "https://brooklynpop-up.com/market-details/red-hook-artisan-market/r/recHhWFoK8DNnZTr2",
+        "vendorInfo": null
+      },
+      "contact": null,
+      "notes": "60+ artists, artisans and makers over the weekend. Applications open (9/17 BKPU email).",
+      "flags": [
+        {
+          "type": "unconfirmed",
+          "field": "status",
+          "text": "Application status not confirmed by Garrett"
+        },
+        {
+          "type": "unconfirmed",
+          "field": "application",
+          "text": "Application close date not stated"
+        }
+      ],
+      "source": {
+        "type": "seed",
+        "ref": "Build brief appendix (inbox review as of 2026-10-03)",
+        "addedAt": "2026-10-03"
+      },
+      "lastVerified": "2026-10-03",
+      "results": {
+        "salesTotal": null,
+        "boothFee": null,
+        "thumbs": null,
+        "bestSellers": null,
+        "footTraffic": null,
+        "notes": null
+      },
+      "history": [
+        {
+          "at": "2026-10-03",
+          "by": "claude",
+          "change": "Created from the initial inbox review"
+        }
+      ]
+    },
+    {
+      "id": "artists-and-fleas-williamsburg",
+      "name": "Artists & Fleas Williamsburg",
+      "organizerId": "artists-and-fleas",
+      "status": "accepted",
+      "kind": "recurring",
+      "dates": [],
+      "recurrence": "Saturdays and Sundays (Fridays closed until the holidays). Book individual dates at booking.artistsandfleas.com",
+      "location": {
+        "venue": "Artists & Fleas",
+        "address": "70 N 7th St, Williamsburg, Brooklyn",
+        "neighborhood": "Williamsburg",
+        "borough": "Brooklyn"
+      },
+      "application": {
+        "opens": null,
+        "closes": null,
+        "decisionBy": null,
+        "paymentDeadline": null,
+        "state": "unknown"
+      },
+      "fees": {
+        "application": null,
+        "booth": 400,
+        "notes": "Rewind rate: $400 for the full weekend (normally $645), honored through October (8/31 email). Your first booking is limited to one weekend."
+      },
+      "requirements": [],
+      "vendorRules": "Accepted in the Clothing Design category.",
+      "fit": {
+        "rating": "unknown",
+        "note": null
+      },
+      "links": {
+        "apply": "https://booking.artistsandfleas.com",
+        "event": null,
+        "vendorInfo": null
+      },
+      "contact": null,
+      "notes": "Accepted as a merchant (Clothing Design). Booking is open through November (8/21 email). Fall bookings are Saturday and Sunday only. No booking confirmation emails found as of 10/3.",
+      "flags": [
+        {
+          "type": "unconfirmed",
+          "field": "dates",
+          "text": "No booked date or booking confirmation found in the inbox"
+        }
+      ],
+      "source": {
+        "type": "seed",
+        "ref": "Build brief appendix (inbox review as of 2026-10-03)",
+        "addedAt": "2026-10-03"
+      },
+      "lastVerified": "2026-10-03",
+      "results": {
+        "salesTotal": null,
+        "boothFee": null,
+        "thumbs": null,
+        "bestSellers": null,
+        "footTraffic": null,
+        "notes": null
+      },
+      "history": [
+        {
+          "at": "2026-10-03",
+          "by": "claude",
+          "change": "Created from the initial inbox review (accepted 2026-06-29; no booked date found)"
+        },
+        {
+          "at": "2026-10-03",
+          "by": "claude",
+          "change": "Email sweep: no booking confirmations found. Fall schedule is Sat/Sun only; $400 weekend rate through October."
+        }
+      ]
+    },
+    {
+      "id": "fad-brooklyn-brewery-2026-10-17",
+      "name": "FAD Pop-up at Brooklyn Brewery",
+      "organizerId": "fad-market",
+      "status": "skipped",
+      "kind": "event",
+      "dates": [
+        {
+          "date": "2026-10-17",
+          "start": null,
+          "end": null,
+          "rainDate": null
+        },
+        {
+          "date": "2026-10-18",
+          "start": null,
+          "end": null,
+          "rainDate": null
+        }
+      ],
+      "recurrence": null,
+      "location": {
+        "venue": "Brooklyn Brewery",
+        "address": null,
+        "neighborhood": "Williamsburg",
+        "borough": "Brooklyn"
+      },
+      "application": {
+        "opens": null,
+        "closes": null,
+        "decisionBy": null,
+        "paymentDeadline": null,
+        "state": "unknown"
+      },
+      "fees": {
+        "application": null,
+        "booth": null,
+        "notes": null
+      },
+      "requirements": [],
+      "vendorRules": null,
+      "fit": {
+        "rating": "unknown",
+        "note": null
+      },
+      "links": {
+        "apply": null,
+        "event": null,
+        "vendorInfo": null
+      },
+      "contact": null,
+      "notes": "Postponed by FAD to spring 2027 (10/1 email), due to ongoing construction and delays in city permits at the venue. Not happening this fall.",
+      "flags": [
+        {
+          "type": "postponed",
+          "field": "dates",
+          "text": "Postponed to spring 2027"
+        }
+      ],
+      "source": {
+        "type": "seed",
+        "ref": "Build brief appendix (inbox review as of 2026-10-03)",
+        "addedAt": "2026-10-03"
+      },
+      "lastVerified": "2026-10-03",
+      "results": {
+        "salesTotal": null,
+        "boothFee": null,
+        "thumbs": null,
+        "bestSellers": null,
+        "footTraffic": null,
+        "notes": null
+      },
+      "history": [
+        {
+          "at": "2026-10-03",
+          "by": "claude",
+          "change": "Added so it is not forgotten: FAD postponed this Oct 17+18 pop-up to spring 2027"
+        }
+      ]
+    },
+    {
+      "id": "record-fair-2026-09-19",
+      "name": "Brooklyn Flea Record Fair",
+      "organizerId": "brooklyn-flea",
+      "status": "completed",
+      "kind": "event",
+      "dates": [
+        {
+          "date": "2026-09-19",
+          "start": "11:00",
+          "end": "18:00",
+          "rainDate": null
+        }
+      ],
+      "recurrence": null,
+      "location": {
+        "venue": "Marsha P. Johnson State Park",
+        "address": null,
+        "neighborhood": "Williamsburg",
+        "borough": "Brooklyn"
+      },
+      "application": {
+        "opens": null,
+        "closes": null,
+        "decisionBy": null,
+        "paymentDeadline": null,
+        "state": "unknown"
+      },
+      "fees": {
+        "application": null,
+        "booth": null,
+        "notes": null
+      },
+      "requirements": [],
+      "vendorRules": null,
+      "fit": {
+        "rating": "maybe",
+        "note": "Organizer said the usual shopper merch price is about $20-30, so BKSB prices felt high there."
+      },
+      "links": {
+        "apply": null,
+        "event": null,
+        "vendorInfo": null
+      },
+      "contact": null,
+      "notes": "Next to Smorgasburg Williamsburg. Garrett paid for a table.",
+      "flags": [],
+      "source": {
+        "type": "seed",
+        "ref": "Build brief appendix (inbox review as of 2026-10-03)",
+        "addedAt": "2026-10-03"
+      },
+      "lastVerified": "2026-10-03",
+      "results": {
+        "salesTotal": null,
+        "boothFee": null,
+        "thumbs": null,
+        "bestSellers": null,
+        "footTraffic": null,
+        "notes": null
+      },
+      "history": [
+        {
+          "at": "2026-10-03",
+          "by": "claude",
+          "change": "Created from the initial inbox review"
+        }
+      ]
+    },
+    {
+      "id": "aandc-super-popup-2026-09-20",
+      "name": "BKSB pop-up at A&C Super (rained out)",
+      "organizerId": "aandc-super",
+      "status": "skipped",
+      "kind": "event",
+      "dates": [
+        {
+          "date": "2026-09-20",
+          "start": "10:00",
+          "end": "14:00",
+          "rainDate": null
+        }
+      ],
+      "recurrence": null,
+      "location": {
+        "venue": "A&C Super (backyard)",
+        "address": null,
+        "neighborhood": "Williamsburg",
+        "borough": "Brooklyn"
+      },
+      "application": {
+        "opens": null,
+        "closes": null,
+        "decisionBy": null,
+        "paymentDeadline": null,
+        "state": "unknown"
+      },
+      "fees": {
+        "application": null,
+        "booth": 0,
+        "notes": "Fee waived. 15% of that day's profits went to North Brooklyn Mutual Aid."
+      },
+      "requirements": [
+        "Vendors bring their own table and rack",
+        "Goods only (no food)",
+        "Keep about half the space open for guests"
+      ],
+      "vendorRules": null,
+      "fit": {
+        "rating": "unknown",
+        "note": null
+      },
+      "links": {
+        "apply": null,
+        "event": null,
+        "vendorInfo": null
+      },
+      "contact": null,
+      "notes": "Called off on Sep 17 because of a 75% chance of rain. Rescheduled to Sunday Oct 4. Arrangement: fee waived in exchange for keeping about half the space open for guests and donating 15% of that day's profits to North Brooklyn Mutual Aid.",
+      "flags": [
+        {
+          "type": "postponed",
+          "field": "dates",
+          "text": "Called off for rain (75% chance). Moved to Sun Oct 4."
+        }
+      ],
+      "source": {
+        "type": "seed",
+        "ref": "Build brief appendix (inbox review as of 2026-10-03)",
+        "addedAt": "2026-10-03"
+      },
+      "lastVerified": "2026-10-03",
+      "results": {
+        "salesTotal": null,
+        "boothFee": null,
+        "thumbs": null,
+        "bestSellers": null,
+        "footTraffic": null,
+        "notes": null
+      },
+      "history": [
+        {
+          "at": "2026-10-03",
+          "by": "claude",
+          "change": "Created from the initial inbox review"
+        },
+        {
+          "at": "2026-10-03",
+          "by": "claude",
+          "change": "Corrected from the email sweep: this date was called off for rain (Sep 17 emails with Chrissa), not held. Rescheduled to Oct 4."
+        }
+      ]
+    },
+    {
+      "id": "aandc-super-popup-2026-10-04",
+      "name": "BKSB pop-up at A&C Super",
+      "organizerId": "aandc-super",
+      "status": "accepted",
+      "kind": "event",
+      "dates": [
+        {
+          "date": "2026-10-04",
+          "start": null,
+          "end": null,
+          "rainDate": null
+        }
+      ],
+      "recurrence": null,
+      "location": {
+        "venue": "A&C Super (backyard)",
+        "address": null,
+        "neighborhood": "Williamsburg",
+        "borough": "Brooklyn"
+      },
+      "application": {
+        "opens": null,
+        "closes": null,
+        "decisionBy": null,
+        "paymentDeadline": null,
+        "state": "unknown"
+      },
+      "fees": {
+        "application": null,
+        "booth": 0,
+        "notes": "Fee waived. 15% of that day's profits went to North Brooklyn Mutual Aid."
+      },
+      "requirements": [
+        "Vendors bring their own table and rack",
+        "Goods only (no food)",
+        "Keep about half the space open for guests"
+      ],
+      "vendorRules": null,
+      "fit": {
+        "rating": "unknown",
+        "note": null
+      },
+      "links": {
+        "apply": null,
+        "event": null,
+        "vendorInfo": null
+      },
+      "contact": null,
+      "notes": "Rescheduled from Sep 20 (rain). Chrissa confirmed Oct 1 (\"we're good to go\"), you walked through the setup with her and Abby that day, and sent flyers Oct 2. Chrissa has another event at A&C on Oct 11, so there is no easy backup date. Fee waived; keep about half the space open for guests; 15% of that day's profits go to North Brooklyn Mutual Aid.",
+      "flags": [
+        {
+          "type": "unconfirmed",
+          "field": "dates",
+          "text": "Hours for Oct 4 not in the emails. The Sep 20 plan was 10am-2pm."
+        }
+      ],
+      "source": {
+        "type": "email",
+        "ref": "Thread \"Pop-up still on for the 20th\" (A&C Super)",
+        "addedAt": "2026-10-03"
+      },
+      "lastVerified": "2026-10-03",
+      "results": {
+        "salesTotal": null,
+        "boothFee": null,
+        "thumbs": null,
+        "bestSellers": null,
+        "footTraffic": null,
+        "notes": null
+      },
+      "history": [
+        {
+          "at": "2026-10-03",
+          "by": "claude",
+          "change": "Created from the email sweep: the Sep 20 pop-up was rained out and rescheduled to Sun Oct 4, confirmed by A&C on Oct 1"
+        }
+      ]
+    },
+    {
+      "id": "bq-living-furniture-decor-fair-2026-07-19",
+      "name": "BQ Flea: Living Furniture & Decor Fair",
+      "organizerId": "brooklyn-flea",
+      "status": "unknown",
+      "kind": "event",
+      "dates": [
+        {
+          "date": "2026-07-19",
+          "start": null,
+          "end": null,
+          "rainDate": null
+        }
+      ],
+      "recurrence": null,
+      "location": {
+        "venue": "BQ Flea (under the BQE)",
+        "address": null,
+        "neighborhood": null,
+        "borough": null
+      },
+      "application": {
+        "opens": null,
+        "closes": null,
+        "decisionBy": null,
+        "paymentDeadline": null,
+        "state": "unknown"
+      },
+      "fees": {
+        "application": null,
+        "booth": null,
+        "notes": null
+      },
+      "requirements": [],
+      "vendorRules": null,
+      "fit": {
+        "rating": "unknown",
+        "note": null
+      },
+      "links": {
+        "apply": null,
+        "event": null,
+        "vendorInfo": null
+      },
+      "contact": null,
+      "notes": "",
+      "flags": [
+        {
+          "type": "unconfirmed",
+          "field": "status",
+          "text": "Booth arranged, but not confirmed you vended it. Lena (Jul 4): \"You'll have a booth for all events except the Art Mart.\" No payment confirmation seen."
+        }
+      ],
+      "source": {
+        "type": "seed",
+        "ref": "Build brief appendix (inbox review as of 2026-10-03)",
+        "addedAt": "2026-10-03"
+      },
+      "lastVerified": "2026-10-03",
+      "results": {
+        "salesTotal": null,
+        "boothFee": null,
+        "thumbs": null,
+        "bestSellers": null,
+        "footTraffic": null,
+        "notes": null
+      },
+      "history": [
+        {
+          "at": "2026-10-03",
+          "by": "claude",
+          "change": "Created from the initial inbox review"
+        },
+        {
+          "at": "2026-10-03",
+          "by": "claude",
+          "change": "Email sweep: found booth arrangements in the BQ Flea thread but nothing confirming you attended."
+        }
+      ]
+    },
+    {
+      "id": "bq-art-mart-2026-08-09",
+      "name": "BQ Flea: Art Mart",
+      "organizerId": "brooklyn-flea",
+      "status": "unknown",
+      "kind": "event",
+      "dates": [
+        {
+          "date": "2026-08-09",
+          "start": null,
+          "end": null,
+          "rainDate": null
+        }
+      ],
+      "recurrence": null,
+      "location": {
+        "venue": "BQ Flea (under the BQE)",
+        "address": null,
+        "neighborhood": null,
+        "borough": null
+      },
+      "application": {
+        "opens": null,
+        "closes": null,
+        "decisionBy": null,
+        "paymentDeadline": null,
+        "state": "unknown"
+      },
+      "fees": {
+        "application": null,
+        "booth": null,
+        "notes": null
+      },
+      "requirements": [],
+      "vendorRules": null,
+      "fit": {
+        "rating": "unknown",
+        "note": null
+      },
+      "links": {
+        "apply": null,
+        "event": null,
+        "vendorInfo": null
+      },
+      "contact": null,
+      "notes": "",
+      "flags": [
+        {
+          "type": "unconfirmed",
+          "field": "status",
+          "text": "Booth arranged, but not confirmed you vended it. You asked to join on Aug 3, Lena reserved a space Aug 5 (in the under-$100 vendor section), and you said you would pay that day."
+        }
+      ],
+      "source": {
+        "type": "seed",
+        "ref": "Build brief appendix (inbox review as of 2026-10-03)",
+        "addedAt": "2026-10-03"
+      },
+      "lastVerified": "2026-10-03",
+      "results": {
+        "salesTotal": null,
+        "boothFee": null,
+        "thumbs": null,
+        "bestSellers": null,
+        "footTraffic": null,
+        "notes": null
+      },
+      "history": [
+        {
+          "at": "2026-10-03",
+          "by": "claude",
+          "change": "Created from the initial inbox review"
+        },
+        {
+          "at": "2026-10-03",
+          "by": "claude",
+          "change": "Email sweep: found booth arrangements in the BQ Flea thread but nothing confirming you attended."
+        }
+      ]
+    },
+    {
+      "id": "bq-living-furniture-decor-fair-2026-08-16",
+      "name": "BQ Flea: Living Furniture & Decor Fair",
+      "organizerId": "brooklyn-flea",
+      "status": "unknown",
+      "kind": "event",
+      "dates": [
+        {
+          "date": "2026-08-16",
+          "start": null,
+          "end": null,
+          "rainDate": null
+        }
+      ],
+      "recurrence": null,
+      "location": {
+        "venue": "BQ Flea (under the BQE)",
+        "address": null,
+        "neighborhood": null,
+        "borough": null
+      },
+      "application": {
+        "opens": null,
+        "closes": null,
+        "decisionBy": null,
+        "paymentDeadline": null,
+        "state": "unknown"
+      },
+      "fees": {
+        "application": null,
+        "booth": null,
+        "notes": null
+      },
+      "requirements": [],
+      "vendorRules": null,
+      "fit": {
+        "rating": "unknown",
+        "note": null
+      },
+      "links": {
+        "apply": null,
+        "event": null,
+        "vendorInfo": null
+      },
+      "contact": null,
+      "notes": "",
+      "flags": [
+        {
+          "type": "unconfirmed",
+          "field": "status",
+          "text": "Booth arranged, but not confirmed you vended it. Lena (Jul 4): \"You'll have a booth for all events except the Art Mart.\" You were on the Aug 15 logistics email."
+        }
+      ],
+      "source": {
+        "type": "seed",
+        "ref": "Build brief appendix (inbox review as of 2026-10-03)",
+        "addedAt": "2026-10-03"
+      },
+      "lastVerified": "2026-10-03",
+      "results": {
+        "salesTotal": null,
+        "boothFee": null,
+        "thumbs": null,
+        "bestSellers": null,
+        "footTraffic": null,
+        "notes": null
+      },
+      "history": [
+        {
+          "at": "2026-10-03",
+          "by": "claude",
+          "change": "Created from the initial inbox review"
+        },
+        {
+          "at": "2026-10-03",
+          "by": "claude",
+          "change": "Email sweep: found booth arrangements in the BQ Flea thread but nothing confirming you attended."
+        }
+      ]
+    },
+    {
+      "id": "bq-living-furniture-decor-fair-2026-09-13",
+      "name": "BQ Flea: Living Furniture & Decor Fair",
+      "organizerId": "brooklyn-flea",
+      "status": "unknown",
+      "kind": "event",
+      "dates": [
+        {
+          "date": "2026-09-13",
+          "start": null,
+          "end": null,
+          "rainDate": null
+        }
+      ],
+      "recurrence": null,
+      "location": {
+        "venue": "BQ Flea (under the BQE)",
+        "address": null,
+        "neighborhood": null,
+        "borough": null
+      },
+      "application": {
+        "opens": null,
+        "closes": null,
+        "decisionBy": null,
+        "paymentDeadline": null,
+        "state": "unknown"
+      },
+      "fees": {
+        "application": null,
+        "booth": null,
+        "notes": null
+      },
+      "requirements": [],
+      "vendorRules": null,
+      "fit": {
+        "rating": "unknown",
+        "note": null
+      },
+      "links": {
+        "apply": null,
+        "event": null,
+        "vendorInfo": null
+      },
+      "contact": null,
+      "notes": "",
+      "flags": [
+        {
+          "type": "unconfirmed",
+          "field": "status",
+          "text": "Booth arranged, but not confirmed you vended it. On Sep 11 you said you had forgotten to pay and Lena replied \"I kept your spot for you! See you tomorrow.\""
+        }
+      ],
+      "source": {
+        "type": "seed",
+        "ref": "Build brief appendix (inbox review as of 2026-10-03)",
+        "addedAt": "2026-10-03"
+      },
+      "lastVerified": "2026-10-03",
+      "results": {
+        "salesTotal": null,
+        "boothFee": null,
+        "thumbs": null,
+        "bestSellers": null,
+        "footTraffic": null,
+        "notes": null
+      },
+      "history": [
+        {
+          "at": "2026-10-03",
+          "by": "claude",
+          "change": "Created from the initial inbox review"
+        },
+        {
+          "at": "2026-10-03",
+          "by": "claude",
+          "change": "Email sweep: found booth arrangements in the BQ Flea thread but nothing confirming you attended."
+        }
+      ]
+    },
+    {
+      "id": "red-hook-summer-market-2026-07-25",
+      "name": "BKPU x Red Hook Summer Market",
+      "organizerId": "brooklyn-pop-up",
+      "status": "lapsed",
+      "kind": "event",
+      "dates": [
+        {
+          "date": "2026-07-25",
+          "start": null,
+          "end": null,
+          "rainDate": null
+        },
+        {
+          "date": "2026-07-26",
+          "start": null,
+          "end": null,
+          "rainDate": null
+        }
+      ],
+      "recurrence": null,
+      "location": {
+        "venue": null,
+        "address": null,
+        "neighborhood": "Red Hook",
+        "borough": "Brooklyn"
+      },
+      "application": {
+        "opens": null,
+        "closes": null,
+        "decisionBy": null,
+        "paymentDeadline": null,
+        "state": "unknown"
+      },
+      "fees": {
+        "application": null,
+        "booth": null,
+        "notes": null
+      },
+      "requirements": [],
+      "vendorRules": null,
+      "fit": {
+        "rating": "unknown",
+        "note": null
+      },
+      "links": {
+        "apply": null,
+        "event": null,
+        "vendorInfo": null
+      },
+      "contact": null,
+      "notes": "Accepted, but the payment deadline passed and the spot lapsed.",
+      "flags": [],
+      "source": {
+        "type": "seed",
+        "ref": "Build brief appendix (inbox review as of 2026-10-03)",
+        "addedAt": "2026-10-03"
+      },
+      "lastVerified": "2026-10-03",
+      "results": {
+        "salesTotal": null,
+        "boothFee": null,
+        "thumbs": null,
+        "bestSellers": null,
+        "footTraffic": null,
+        "notes": null
+      },
+      "history": [
+        {
+          "at": "2026-10-03",
+          "by": "claude",
+          "change": "Created from the initial inbox review"
+        }
+      ]
+    },
+    {
+      "id": "fad-summer-empire-stores-2026",
+      "name": "FAD Summer Pop-up",
+      "organizerId": "fad-market",
+      "status": "waitlisted",
+      "kind": "event",
+      "dates": [],
+      "recurrence": null,
+      "location": {
+        "venue": "Empire Stores",
+        "address": null,
+        "neighborhood": "DUMBO",
+        "borough": "Brooklyn"
+      },
+      "application": {
+        "opens": null,
+        "closes": null,
+        "decisionBy": null,
+        "paymentDeadline": null,
+        "state": "unknown"
+      },
+      "fees": {
+        "application": null,
+        "booth": null,
+        "notes": null
+      },
+      "requirements": [],
+      "vendorRules": null,
+      "fit": {
+        "rating": "unknown",
+        "note": null
+      },
+      "links": {
+        "apply": null,
+        "event": null,
+        "vendorInfo": null
+      },
+      "contact": null,
+      "notes": "Waitlisted (notice 2026-05-04). Event dates are not in the inbox.",
+      "flags": [
+        {
+          "type": "unconfirmed",
+          "field": "dates",
+          "text": "Event dates not recorded"
+        }
+      ],
+      "source": {
+        "type": "seed",
+        "ref": "Build brief appendix (inbox review as of 2026-10-03)",
+        "addedAt": "2026-10-03"
+      },
+      "lastVerified": "2026-10-03",
+      "results": {
+        "salesTotal": null,
+        "boothFee": null,
+        "thumbs": null,
+        "bestSellers": null,
+        "footTraffic": null,
+        "notes": null
+      },
+      "history": [
+        {
+          "at": "2026-10-03",
+          "by": "claude",
+          "change": "Created from the initial inbox review"
+        }
+      ],
+      "archived": true
+    },
+    {
+      "id": "vendorsmap-staten-island-makers-2026-10-03",
+      "name": "Neighborhood Makers Market (Staten Island)",
+      "organizerId": "vendorsmap",
+      "status": "skipped",
+      "kind": "event",
+      "dates": [
+        {
+          "date": "2026-10-03",
+          "start": null,
+          "end": null,
+          "rainDate": null
+        }
+      ],
+      "recurrence": null,
+      "location": {
+        "venue": null,
+        "address": null,
+        "neighborhood": null,
+        "borough": "Staten Island"
+      },
+      "application": {
+        "opens": null,
+        "closes": null,
+        "decisionBy": null,
+        "paymentDeadline": null,
+        "state": "unknown"
+      },
+      "fees": {
+        "application": null,
+        "booth": null,
+        "notes": null
+      },
+      "requirements": [],
+      "vendorRules": null,
+      "fit": {
+        "rating": "unknown",
+        "note": null
+      },
+      "links": {
+        "apply": null,
+        "event": null,
+        "vendorInfo": null
+      },
+      "contact": null,
+      "notes": "Low-priority VendorsMap lead. Skipped by default; change the status if you want it.",
+      "flags": [],
+      "source": {
+        "type": "seed",
+        "ref": "Build brief appendix (inbox review as of 2026-10-03)",
+        "addedAt": "2026-10-03"
+      },
+      "lastVerified": "2026-10-03",
+      "results": {
+        "salesTotal": null,
+        "boothFee": null,
+        "thumbs": null,
+        "bestSellers": null,
+        "footTraffic": null,
+        "notes": null
+      },
+      "history": [
+        {
+          "at": "2026-10-03",
+          "by": "claude",
+          "change": "Created from the initial inbox review"
+        }
+      ]
+    },
+    {
+      "id": "vendorsmap-glendale-back-to-school-2026-08-29",
+      "name": "Back to School Market (Glendale)",
+      "organizerId": "vendorsmap",
+      "status": "skipped",
+      "kind": "event",
+      "dates": [
+        {
+          "date": "2026-08-29",
+          "start": null,
+          "end": null,
+          "rainDate": null
+        }
+      ],
+      "recurrence": null,
+      "location": {
+        "venue": null,
+        "address": null,
+        "neighborhood": "Glendale",
+        "borough": "Queens"
+      },
+      "application": {
+        "opens": null,
+        "closes": null,
+        "decisionBy": null,
+        "paymentDeadline": null,
+        "state": "unknown"
+      },
+      "fees": {
+        "application": null,
+        "booth": null,
+        "notes": null
+      },
+      "requirements": [],
+      "vendorRules": null,
+      "fit": {
+        "rating": "unknown",
+        "note": null
+      },
+      "links": {
+        "apply": null,
+        "event": null,
+        "vendorInfo": null
+      },
+      "contact": null,
+      "notes": "Low-priority VendorsMap lead that has already passed. Skipped by default.",
+      "flags": [],
+      "source": {
+        "type": "seed",
+        "ref": "Build brief appendix (inbox review as of 2026-10-03)",
+        "addedAt": "2026-10-03"
+      },
+      "lastVerified": "2026-10-03",
+      "results": {
+        "salesTotal": null,
+        "boothFee": null,
+        "thumbs": null,
+        "bestSellers": null,
+        "footTraffic": null,
+        "notes": null
+      },
+      "history": [
+        {
+          "at": "2026-10-03",
+          "by": "claude",
+          "change": "Created from the initial inbox review"
+        }
+      ]
+    }
+  ]
+}

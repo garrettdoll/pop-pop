@@ -16,6 +16,7 @@ const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const APP_PORT = 8125, API_PORT = 8126;
 const APP = `http://localhost:${APP_PORT}/`;
 const TODAY = '2026-10-03';
+const FIXTURES = path.join(root, 'tests/fixtures/data'); // a frozen copy of the data: tests must never depend on the live hub
 
 // ---------- static server for the app ----------
 const TYPES = { '.html': 'text/html', '.js': 'text/javascript', '.css': 'text/css', '.json': 'application/json', '.webmanifest': 'application/manifest+json', '.png': 'image/png', '.svg': 'image/svg+xml', '.woff2': 'font/woff2' };
@@ -56,7 +57,7 @@ const until = async (fn, { ms = 6000, what = 'condition' } = {}) => {
 
 /** A fresh browser context + page wired to a fresh mock GitHub. */
 async function open({ token = false, sw = false, hash = '#/markets', route } = {}) {
-  const mock = await startMock({ port: API_PORT, dataDir: path.join(root, 'data') });
+  const mock = await startMock({ port: API_PORT, dataDir: FIXTURES });
   const ctx = await browser.newContext({ viewport: { width: 390, height: 844 }, serviceWorkers: sw ? 'allow' : 'block' });
   await ctx.addInitScript(({ token, port }) => {
     try {
@@ -65,6 +66,14 @@ async function open({ token = false, sw = false, hash = '#/markets', route } = {
       if (token) localStorage.setItem('pop.token', token);
     } catch { /* ignore */ }
   }, { token: token ? TOKEN : null, port: API_PORT });
+  if (!sw) {
+    await ctx.route((u) => u.origin === new URL(APP).origin && u.pathname.startsWith('/data/'), (r) => { // the app's own files only, never the mock GitHub API
+      const name = path.basename(new URL(r.request().url()).pathname);
+      const file = path.join(FIXTURES, name);
+      if (fs.existsSync(file)) r.fulfill({ body: fs.readFileSync(file), contentType: 'application/json' });
+      else r.continue();
+    });
+  }
   const page = await ctx.newPage();
   page.on('pageerror', (e) => pageErrors.push(e.message));
   if (route) await route(page, ctx);
@@ -82,7 +91,7 @@ const expand = async (page, id) => {
   await page.waitForTimeout(350);
   return c;
 };
-const initial = (p) => JSON.parse(fs.readFileSync(path.join(root, p), 'utf8'));
+const initial = (p) => JSON.parse(fs.readFileSync(path.join(FIXTURES, path.basename(p)), 'utf8'));
 
 // =====================================================================
 

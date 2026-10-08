@@ -1,0 +1,172 @@
+{
+  "version": 1,
+  "organizers": [
+    {
+      "id": "fad-market",
+      "name": "FAD Market",
+      "account": {
+        "status": "in_system",
+        "note": "Applies each season and is on their list.",
+        "signupUrl": null,
+        "dashboardUrl": null
+      },
+      "contacts": [
+        {
+          "role": "General",
+          "name": null,
+          "email": "info@fadmarket.co",
+          "instagram": null,
+          "phone": null
+        }
+      ],
+      "emailSenders": [
+        "fadmarket.co"
+      ],
+      "website": "https://fadmarket.co",
+      "links": [
+        {
+          "label": "Vendor FAQ",
+          "url": "https://fadmarket.co/faq-vendors"
+        }
+      ],
+      "howItWorks": "Apply each season. If you withdraw an application, email them to say so. Failing to do that affects future consideration.",
+      "notes": "Fall 2026 applications (Brooklyn Heights, Cobble Hill, DUMBO, Greenpoint-Williamsburg) closed Jul 27. Holiday Pop-up applications closed Sep 27, decisions by Oct 13."
+    },
+    {
+      "id": "brooklyn-pop-up",
+      "name": "Brooklyn Pop-Up (BKPU)",
+      "account": {
+        "status": "in_system",
+        "note": "Vendor profile created 2026-06-28.",
+        "signupUrl": "https://brooklynpop-up.com/sign-up",
+        "dashboardUrl": "https://brooklynpop-up.com/sign-in"
+      },
+      "contacts": [
+        {
+          "role": "General",
+          "name": null,
+          "email": "info@brooklynpop-up.com",
+          "instagram": null,
+          "phone": null
+        }
+      ],
+      "emailSenders": [
+        "brooklynpop-up.com"
+      ],
+      "website": "https://brooklynpop-up.com",
+      "links": [],
+      "howItWorks": "Every listing on your dashboard's Upcoming Events page is its own application, and Fort Greene Saturdays are listed one date at a time. Listings labeled \"FOOD & BEVERAGE VENDORS\" are for food and drink makers, not BKSB. Fort Greene deadlines run about 45 days before each Saturday. Acceptances sometimes land in spam, so check the dashboard.",
+      "notes": "More holiday markets (\"round two\") were announced as coming soon."
+    },
+    {
+      "id": "artists-and-fleas",
+      "name": "Artists & Fleas",
+      "account": {
+        "status": "in_system",
+        "note": "Accepted 2026-06-29 for Williamsburg (70 N 7th St), Clothing Design category.",
+        "signupUrl": null,
+        "dashboardUrl": "https://booking.artistsandfleas.com"
+      },
+      "contacts": [
+        {
+          "role": "Market curator",
+          "name": "Kelsey",
+          "email": "info@artistsandfleas.com",
+          "instagram": null,
+          "phone": null
+        },
+        {
+          "role": "Booking",
+          "name": null,
+          "email": "booking@artistsandfleas.com",
+          "instagram": null,
+          "phone": null
+        }
+      ],
+      "emailSenders": [
+        "artistsandfleas.com"
+      ],
+      "website": "https://artistsandfleas.com",
+      "links": [],
+      "howItWorks": "You are approved as a merchant first, then book individual dates at booking.artistsandfleas.com. Booking is first-to-pay and nonrefundable. Your first booking is limited to one weekend. Fall is Saturday/Sunday only (Fridays closed until the holidays), booking is open through November, and the Rewind weekend rate is $400 through October.",
+      "notes": ""
+    },
+    {
+      "id": "brooklyn-flea",
+      "name": "Brooklyn Flea / BQ Flea / Record Fair",
+      "account": {
+        "status": "in_system",
+        "note": "Vendor agreement completed 2026-08-17 (PandaDoc). Pays via Stripe.",
+        "signupUrl": null,
+        "dashboardUrl": null
+      },
+      "contacts": [
+        {
+          "role": "BQ Flea",
+          "name": "Lena",
+          "email": "bqflea@brooklynflea.com",
+          "instagram": null,
+          "phone": null
+        },
+        {
+          "role": "Record Fair",
+          "name": "Amanda",
+          "email": "amanda@brooklynflea.com",
+          "instagram": null,
+          "phone": null
+        }
+      ],
+      "emailSenders": [
+        "brooklynflea.com"
+      ],
+      "website": "https://brooklynflea.com",
+      "links": [],
+      "howItWorks": "Complete the annual onboarding form (with your signed vendor agreement) before booking. Pay through the link Lena sends. Regular BQ booths were $150 per day, and you can ask to be placed with vendors who sell mostly under $100. BQ Flea only holds fairs at BQ; the regular Sunday market is paused for the season, with special-event Sundays only.",
+      "notes": "Record Fair feedback (Amanda): the usual shopper merch price there is about $20-30, so BKSB prices felt high. She also said the fair usually only has music-related vendors."
+    },
+    {
+      "id": "vendorsmap",
+      "name": "VendorsMap",
+      "account": {
+        "status": "in_system",
+        "note": "Free account created 2026-06-27.",
+        "signupUrl": null,
+        "dashboardUrl": null
+      },
+      "contacts": [],
+      "emailSenders": [
+        "vendorsmap.com"
+      ],
+      "website": "https://vendorsmap.com",
+      "links": [],
+      "howItWorks": "Emails leads for events that \"may fit\" (for example Staten Island 10/3 and Glendale 8/29).",
+      "notes": "Lower priority. Send the relevant ones to the hub."
+    },
+    {
+      "id": "aandc-super",
+      "name": "A&C Super",
+      "account": {
+        "status": "direct",
+        "note": "No account system. Arranged directly with the owner.",
+        "signupUrl": null,
+        "dashboardUrl": null
+      },
+      "contacts": [
+        {
+          "role": "Owner contact",
+          "name": "Chrissa Yee",
+          "email": "chrissa@aandcsuper.com",
+          "instagram": null,
+          "phone": null
+        }
+      ],
+      "emailSenders": [
+        "aandcsuper.com"
+      ],
+      "website": null,
+      "links": [],
+      "howItWorks": "Williamsburg bakery/cafe. Garrett arranged his own pop-up in their backyard. Fee waived in exchange for keeping about half the space open for guests and donating 15% of that day's profits to North Brooklyn Mutual Aid. The Sep 20 date was rained out and moved to Oct 4. They have another event on Oct 11.",
+      "notes": "Garrett floated making it a monthly event."
+    }
+  ]
+}
