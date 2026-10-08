@@ -145,8 +145,8 @@
         "Yes (tell me which dates)"
       ],
       "createdAt": "2026-10-03",
-      "answeredAt": null,
-      "answer": null,
+      "answeredAt": "2026-10-08",
+      "answer": "Yes: booked Sat Oct 10 + Sun Oct 11 (told Claude Oct 8)",
       "id": "q-006",
       "text": "Have you booked any dates with Artists & Fleas Williamsburg yet? I couldn't find a booking confirmation."
     },
@@ -224,8 +224,8 @@
         "Different hours"
       ],
       "createdAt": "2026-10-03",
-      "answeredAt": null,
-      "answer": null,
+      "answeredAt": "2026-10-08",
+      "answer": "Closed: the pop-up took place Oct 4",
       "id": "q-010",
       "text": "Your A&C Super pop-up is tomorrow (Sun Oct 4). What hours are you setting up? The Sep 20 plan was 10am-2pm."
     },

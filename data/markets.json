@@ -414,6 +414,11 @@
           "by": "app",
           "change": "Status: unknown → skipped (answered a question)",
           "op": "muyivs3l-v4jv"
+        },
+        {
+          "at": "2026-10-08",
+          "by": "claude",
+          "change": "Brooklyn Pop-Up sent an \"Expired\" payment notice on Oct 8. Garrett had already skipped it, so nothing to do."
         }
       ]
     },
@@ -761,7 +766,7 @@
       "id": "red-hook-holiday-2026-12-12",
       "name": "BKPU x Red Hook Holiday Market",
       "organizerId": "brooklyn-pop-up",
-      "status": "applied",
+      "status": "accepted",
       "kind": "event",
       "dates": [
         {
@@ -788,8 +793,8 @@
         "opens": null,
         "closes": null,
         "decisionBy": null,
-        "paymentDeadline": null,
-        "state": "open"
+        "paymentDeadline": "2026-10-28",
+        "state": "closed"
       },
       "fees": {
         "application": null,
@@ -808,20 +813,14 @@
         "vendorInfo": null
       },
       "contact": null,
-      "notes": "60+ artists, artisans and makers over the weekend. Applications open (9/17 BKPU email).",
-      "flags": [
-        {
-          "type": "unconfirmed",
-          "field": "application",
-          "text": "Application close date not stated"
-        }
-      ],
+      "notes": "60+ artists, artisans and makers over the weekend. Accepted Oct 7: pay your booth on the BKPU website by Oct 28 or the booking cancels and you must reapply. Space assignments and logistics go out 1-2 days before the market.",
+      "flags": [],
       "source": {
         "type": "seed",
         "ref": "Build brief appendix (inbox review as of 2026-10-03)",
         "addedAt": "2026-10-03"
       },
-      "lastVerified": "2026-10-03",
+      "lastVerified": "2026-10-08",
       "results": {
         "salesTotal": null,
         "boothFee": null,
@@ -841,6 +840,11 @@
           "by": "app",
           "change": "Status: unknown → applied",
           "op": "mut3hu09-yrtc"
+        },
+        {
+          "at": "2026-10-08",
+          "by": "claude",
+          "change": "Accepted email from Brooklyn Pop-Up (Oct 7): payment due by Oct 28 to keep the spot."
         }
       ]
     },
@@ -849,9 +853,22 @@
       "name": "Artists & Fleas Williamsburg",
       "organizerId": "artists-and-fleas",
       "status": "accepted",
-      "kind": "recurring",
-      "dates": [],
-      "recurrence": "Saturdays and Sundays (Fridays closed until the holidays). Book individual dates at booking.artistsandfleas.com",
+      "kind": "event",
+      "dates": [
+        {
+          "date": "2026-10-10",
+          "start": null,
+          "end": null,
+          "rainDate": null
+        },
+        {
+          "date": "2026-10-11",
+          "start": null,
+          "end": null,
+          "rainDate": null
+        }
+      ],
+      "recurrence": null,
       "location": {
         "venue": "Artists & Fleas",
         "address": "70 N 7th St, Williamsburg, Brooklyn",
@@ -867,10 +884,14 @@
       },
       "fees": {
         "application": null,
-        "booth": 400,
-        "notes": "Rewind rate: $400 for the full weekend (normally $645), honored through October (8/31 email). Your first booking is limited to one weekend."
+        "booth": null,
+        "notes": "Per your agreement (from your Oct 3 email): a flat booth fee, and a table + chair rental listed at $20/day (A&F also mentioned ~3ft tables). A&F's Aug 31 email offered a $400 weekend rate through October. What you actually paid is not in the inbox."
       },
-      "requirements": [],
+      "requirements": [
+        "Per your agreement: no folding tables and no collapsible garment racks",
+        "Per your agreement: no vinyl signage",
+        "Space is assigned on arrival (A&F does not take space requests)"
+      ],
       "vendorRules": "Accepted in the Clothing Design category.",
       "fit": {
         "rating": "unknown",
@@ -882,12 +903,22 @@
         "vendorInfo": null
       },
       "contact": null,
-      "notes": "Accepted as a merchant (Clothing Design). Booking is open through November (8/21 email). Fall bookings are Saturday and Sunday only. No booking confirmation emails found as of 10/3.",
+      "notes": "Your first booking: Sat Oct 10 + Sun Oct 11, first-time merchant, Clothing Design. Table + chair rental signed up for. Your Oct 3 email to booking@ (sent from your personal account) asked about: table/chair size and price, whether your breakdown rack and a cloth-covered folding table are allowed, the Guesst POS connection, Thursday load-in (agreement says 9am-12pm, seller's guide says 9am-5pm) and leaving stock overnight, and a matte foam-board sign. As of Oct 8 there was no reply. Seller's guide and agreement disagree on equipment (6ft tables and racks vs ~3ft table and chair). Past habit: A&F took about two months to answer your first email in spring, so follow up through a second channel.",
       "flags": [
         {
           "type": "unconfirmed",
-          "field": "dates",
-          "text": "No booked date or booking confirmation found in the inbox"
+          "field": "status",
+          "text": "No booking receipt or confirmation email in info@. Check the booking portal shows Oct 10-11 as booked and paid."
+        },
+        {
+          "type": "unconfirmed",
+          "field": "logistics",
+          "text": "A&F has not answered your Oct 3 questions: load-in time, racks and tables, table/chair, sign, Guesst."
+        },
+        {
+          "type": "unconfirmed",
+          "field": "times",
+          "text": "Market hours not confirmed (A&F site pages say 10am-7pm or 11am-7pm)."
         }
       ],
       "source": {
@@ -895,7 +926,7 @@
         "ref": "Build brief appendix (inbox review as of 2026-10-03)",
         "addedAt": "2026-10-03"
       },
-      "lastVerified": "2026-10-03",
+      "lastVerified": "2026-10-08",
       "results": {
         "salesTotal": null,
         "boothFee": null,
@@ -914,6 +945,11 @@
           "at": "2026-10-03",
           "by": "claude",
           "change": "Email sweep: no booking confirmations found. Fall schedule is Sat/Sun only; $400 weekend rate through October."
+        },
+        {
+          "at": "2026-10-08",
+          "by": "claude",
+          "change": "Garrett said he booked Sat Oct 10 + Sun Oct 11 (table and chair too) and shared his unanswered Oct 3 email to booking@. No receipt found in info@."
         }
       ]
     },
@@ -1155,7 +1191,7 @@
       "id": "aandc-super-popup-2026-10-04",
       "name": "BKSB pop-up at A&C Super",
       "organizerId": "aandc-super",
-      "status": "accepted",
+      "status": "completed",
       "kind": "event",
       "dates": [
         {
@@ -1201,19 +1237,13 @@
       },
       "contact": null,
       "notes": "Rescheduled from Sep 20 (rain). Chrissa confirmed Oct 1 (\"we're good to go\"), you walked through the setup with her and Abby that day, and sent flyers Oct 2. Chrissa has another event at A&C on Oct 11, so there is no easy backup date. Fee waived; keep about half the space open for guests; 15% of that day's profits go to North Brooklyn Mutual Aid.",
-      "flags": [
-        {
-          "type": "unconfirmed",
-          "field": "dates",
-          "text": "Hours for Oct 4 not in the emails. The Sep 20 plan was 10am-2pm."
-        }
-      ],
+      "flags": [],
       "source": {
         "type": "email",
         "ref": "Thread \"Pop-up still on for the 20th\" (A&C Super)",
         "addedAt": "2026-10-03"
       },
-      "lastVerified": "2026-10-03",
+      "lastVerified": "2026-10-08",
       "results": {
         "salesTotal": null,
         "boothFee": null,
@@ -1227,6 +1257,11 @@
           "at": "2026-10-03",
           "by": "claude",
           "change": "Created from the email sweep: the Sep 20 pop-up was rained out and rescheduled to Sun Oct 4, confirmed by A&C on Oct 1"
+        },
+        {
+          "at": "2026-10-08",
+          "by": "claude",
+          "change": "Marked completed: Chrissa confirmed the morning of Oct 4, and a donation receipt to North Brooklyn Mutual Aid arrived that evening."
         }
       ]
     },
