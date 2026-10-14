@@ -1866,6 +1866,190 @@
           "change": "Created from the initial inbox review"
         }
       ]
+    },
+    {
+      "id": "monsta-house-market-2026-11-14",
+      "name": "Monsta House Universe Market (87 George St)",
+      "organizerId": "monsta-house-universe",
+      "status": "researching",
+      "kind": "event",
+      "dates": [
+        {
+          "date": "2026-11-14",
+          "start": "13:00",
+          "end": "18:00",
+          "rainDate": null
+        }
+      ],
+      "recurrence": null,
+      "location": {
+        "venue": null,
+        "address": "87 George St, Bushwick, Brooklyn",
+        "neighborhood": "Bushwick",
+        "borough": "Brooklyn"
+      },
+      "application": {
+        "opens": null,
+        "closes": null,
+        "decisionBy": null,
+        "paymentDeadline": null,
+        "state": "open"
+      },
+      "fees": {
+        "application": null,
+        "booth": null,
+        "notes": "Pick one per date: $65 bring your own table (up to 4ft); $70 comes with a 4ft table; $75 bring your own 6ft table. Treats, pastry, sauce and juice vendors $85 (own table, up to 6ft). Food vendors $175. Youth vendors (5-16) are free. Payment is collected by email after you are selected. No refunds under any circumstances."
+      },
+      "requirements": [
+        "Arrive by 11:30am to set up (market runs 1pm-6pm). Late arrivals can lose their spot with no refund or exchange date.",
+        "No refunds and no rescheduling, under any circumstances",
+        "Only fill out the form when you are ready to pay",
+        "You must actively promote the event",
+        "Upload up to 5 photos of what you sell (also used to promote you)",
+        "Optional: donate an item to the community raffle"
+      ],
+      "vendorRules": "No flower (weed) or liquor vendors. 40+ vendors wanted each day.",
+      "fit": {
+        "rating": "maybe",
+        "note": "A general community market in Bushwick, one of your core neighborhoods, with a low table fee and no clothing restriction. The crowd and usual price points are unknown."
+      },
+      "links": {
+        "apply": null,
+        "event": "https://www.monstahouseuniverse.org",
+        "vendorInfo": null
+      },
+      "contact": null,
+      "notes": "Sat Nov 14, 1pm-6pm. Seen on a sign-up form you pasted on 2026-10-14. 75% of market proceeds go to the organizer's year-round community programming. Both Nov 14 and Nov 21 can be booked separately.",
+      "flags": [
+        {
+          "type": "unconfirmed",
+          "field": "application",
+          "text": "Sign-up deadline not stated"
+        },
+        {
+          "type": "unconfirmed",
+          "field": "links",
+          "text": "The form link was not in what you sent"
+        },
+        {
+          "type": "info",
+          "field": "fees",
+          "text": "No refunds or rescheduling, under any circumstances. Arrive by 11:30am."
+        }
+      ],
+      "source": {
+        "type": "screenshot",
+        "ref": "Pasted text of the Monsta House Universe Google Form (Nov 14 + Nov 21)",
+        "addedAt": "2026-10-14"
+      },
+      "lastVerified": "2026-10-14",
+      "results": {
+        "salesTotal": null,
+        "boothFee": null,
+        "thumbs": null,
+        "bestSellers": null,
+        "footTraffic": null,
+        "notes": null
+      },
+      "history": [
+        {
+          "at": "2026-10-14",
+          "by": "claude",
+          "change": "Created from the sign-up form text Garrett pasted"
+        }
+      ]
+    },
+    {
+      "id": "monsta-house-market-2026-11-21",
+      "name": "Monsta House Universe Market (87 George St)",
+      "organizerId": "monsta-house-universe",
+      "status": "researching",
+      "kind": "event",
+      "dates": [
+        {
+          "date": "2026-11-21",
+          "start": "13:00",
+          "end": "18:00",
+          "rainDate": null
+        }
+      ],
+      "recurrence": null,
+      "location": {
+        "venue": null,
+        "address": "87 George St, Bushwick, Brooklyn",
+        "neighborhood": "Bushwick",
+        "borough": "Brooklyn"
+      },
+      "application": {
+        "opens": null,
+        "closes": null,
+        "decisionBy": null,
+        "paymentDeadline": null,
+        "state": "open"
+      },
+      "fees": {
+        "application": null,
+        "booth": null,
+        "notes": "Pick one per date: $65 bring your own table (up to 4ft); $70 comes with a 4ft table; $75 bring your own 6ft table. Treats, pastry, sauce and juice vendors $85 (own table, up to 6ft). Food vendors $175. Youth vendors (5-16) are free. Payment is collected by email after you are selected. No refunds under any circumstances."
+      },
+      "requirements": [
+        "Arrive by 11:30am to set up (market runs 1pm-6pm). Late arrivals can lose their spot with no refund or exchange date.",
+        "No refunds and no rescheduling, under any circumstances",
+        "Only fill out the form when you are ready to pay",
+        "You must actively promote the event",
+        "Upload up to 5 photos of what you sell (also used to promote you)",
+        "Optional: donate an item to the community raffle"
+      ],
+      "vendorRules": "No flower (weed) or liquor vendors. 40+ vendors wanted each day.",
+      "fit": {
+        "rating": "maybe",
+        "note": "A general community market in Bushwick, one of your core neighborhoods, with a low table fee and no clothing restriction. The crowd and usual price points are unknown."
+      },
+      "links": {
+        "apply": null,
+        "event": "https://www.monstahouseuniverse.org",
+        "vendorInfo": null
+      },
+      "contact": null,
+      "notes": "Sat Nov 21, 1pm-6pm. Seen on a sign-up form you pasted on 2026-10-14. 75% of market proceeds go to the organizer's year-round community programming. Both Nov 14 and Nov 21 can be booked separately.",
+      "flags": [
+        {
+          "type": "unconfirmed",
+          "field": "application",
+          "text": "Sign-up deadline not stated"
+        },
+        {
+          "type": "unconfirmed",
+          "field": "links",
+          "text": "The form link was not in what you sent"
+        },
+        {
+          "type": "info",
+          "field": "fees",
+          "text": "No refunds or rescheduling, under any circumstances. Arrive by 11:30am."
+        }
+      ],
+      "source": {
+        "type": "screenshot",
+        "ref": "Pasted text of the Monsta House Universe Google Form (Nov 14 + Nov 21)",
+        "addedAt": "2026-10-14"
+      },
+      "lastVerified": "2026-10-14",
+      "results": {
+        "salesTotal": null,
+        "boothFee": null,
+        "thumbs": null,
+        "bestSellers": null,
+        "footTraffic": null,
+        "notes": null
+      },
+      "history": [
+        {
+          "at": "2026-10-14",
+          "by": "claude",
+          "change": "Created from the sign-up form text Garrett pasted"
+        }
+      ]
     }
   ]
 }

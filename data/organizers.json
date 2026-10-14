@@ -167,6 +167,31 @@
       "links": [],
       "howItWorks": "Williamsburg bakery/cafe. Garrett arranged his own pop-up in their backyard. Fee waived in exchange for keeping about half the space open for guests and donating 15% of that day's profits to North Brooklyn Mutual Aid. The Sep 20 date was rained out and moved to Oct 4. They have another event on Oct 11.",
       "notes": "Garrett floated making it a monthly event."
+    },
+    {
+      "id": "monsta-house-universe",
+      "name": "Monsta House Universe",
+      "account": {
+        "status": "direct",
+        "note": "No account. You sign up for each market date with a Google Form. If you are selected, they email you to collect payment.",
+        "signupUrl": null,
+        "dashboardUrl": null
+      },
+      "contacts": [],
+      "emailSenders": [
+        "monstahouseuniverse.org"
+      ],
+      "website": "https://www.monstahouseuniverse.org",
+      "links": [],
+      "howItWorks": "Only fill out the form when you are ready to pay. Pick your date(s) and table option, describe what you sell, and upload up to 5 photos (they also use them to promote you). If you are selected you get an email to pay. No refunds and no rescheduling under any circumstances. Vendors must arrive by 11:30am to set up, and you must actively promote the event.",
+      "notes": "A community organization: 75% of market proceeds go to their year-round community programming. The organizer name comes from their website address, so check it.",
+      "history": [
+        {
+          "at": "2026-10-14",
+          "by": "claude",
+          "change": "Created from the sign-up form text Garrett pasted"
+        }
+      ]
     }
   ]
 }

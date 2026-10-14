@@ -312,6 +312,25 @@
       "createdAt": "2026-10-03",
       "answeredAt": null,
       "answer": null
+    },
+    {
+      "id": "q-012",
+      "type": "question",
+      "text": "What is the link to the Monsta House Universe sign-up form? The text you pasted did not include it.",
+      "input": "text",
+      "related": {
+        "marketIds": [
+          "monsta-house-market-2026-11-14",
+          "monsta-house-market-2026-11-21"
+        ],
+        "organizerIds": [
+          "monsta-house-universe"
+        ]
+      },
+      "options": null,
+      "createdAt": "2026-10-14",
+      "answeredAt": null,
+      "answer": null
     }
   ]
 }
