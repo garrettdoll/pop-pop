@@ -10,7 +10,7 @@ const CHOICES = [['in_system', 'In system'], ['not_signed_up', 'Not signed up'],
 
 function organizerCard(o, env) {
   const mine = env.data.markets.filter((m) => m.organizerId === o.id);
-  const live = mine.filter((m) => !D.isPast(m, env.today)).sort((a, b) => V.compareMarkets(a, b, env.today, env.cal));
+  const live = mine.filter((m) => !D.isPast(m, env.today)).sort((a, b) => V.compareByEvent(a, b, env.today, env.cal));
   const past = mine.length - live.length;
   const status = o.account.status;
   const needsSignup = status === 'not_signed_up' || status === 'unknown';

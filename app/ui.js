@@ -1,17 +1,21 @@
 // Small shared components: stickers, flag chips, section headers, empty states, toasts.
 import { h, hashInt } from './util.js';
 import { STATUS_LABEL } from './dates.js';
-import { ACCOUNT_LABEL, FIT_LABEL } from './derive.js';
+import { ACCOUNT_LABEL, FIT_LABEL, statusGroup } from './derive.js';
 
 const STATUS_GLYPH = {
   unknown: '?', researching: '…', 'to-apply': '!', applied: '✓', waitlisted: '~', accepted: '★',
   paid: '$', declined: '✕', lapsed: '✕', completed: '✓', skipped: '–',
 };
 
-/** The sticker-style status tag. The label is always text (never color alone); the tilt is stable per card. */
+/**
+ * The sticker-style status tag. Four looks, one meaning each (the label still says the exact status):
+ *   need (yellow) = needs you · going (black) = confirmed · wait (outline) = waiting · out (faded) = done or not going.
+ * The label is always text (never color alone); the tilt is stable per card.
+ */
 export function sticker(status, seed = '') {
   const tilt = ((hashInt(`${status}${seed}`) % 5) - 2) * 0.8;
-  return h('span', { class: `sticker st-${status}`, style: { '--tilt': `${tilt}deg` } },
+  return h('span', { class: `sticker stg-${statusGroup(status)}`, style: { '--tilt': `${tilt}deg` } },
     h('span', { class: 'st-glyph', 'aria-hidden': 'true' }, STATUS_GLYPH[status] || '?'),
     STATUS_LABEL[status] || status);
 }

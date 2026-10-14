@@ -307,11 +307,20 @@ await test('holiday-weekend logic in the UI: Mon Oct 12 likely free, Wed Oct 14 
     ] } })),
   });
   const text = async (id) => card(t.page, id).innerText();
-  assert.match(await text('hol-mon'), /Falls on Columbus Day weekend/);
+  // collapsed cards carry only a short chip; the full reason is inside the card
+  assert.match(await text('hol-mon'), /Likely free/);
+  assert.doesNotMatch(await text('hol-mon'), /Weekday/);
+  assert.match(await text('plain-wed'), /Weekday/);
+  assert.doesNotMatch(await text('sat-ev'), /Weekday|Likely free/);
+  await card(t.page, 'hol-mon').locator('.card-head').click();
+  await card(t.page, 'plain-wed').locator('.card-head').click();
+  await card(t.page, 'sat-ev').locator('.card-head').click();
+  await until(async () => /Falls on Columbus Day weekend/.test(await text('hol-mon')), { what: 'holiday reason shown when expanded' });
   assert.doesNotMatch(await text('hol-mon'), /Availability to confirm/);
   assert.match(await text('plain-wed'), /Availability to confirm/);
   assert.doesNotMatch(await text('sat-ev'), /Availability|Falls on|Next to/);
-  // filters
+  // filters live behind one Filter button
+  await t.page.getByRole('button', { name: /^Filter/ }).click();
   await t.page.getByRole('button', { name: /Weekends only/ }).click();
   await until(async () => (await t.page.locator('.card').count()) === 1, { what: 'weekends only → 1 card' });
   await t.page.getByRole('button', { name: /Weekends only/ }).click();
@@ -319,6 +328,48 @@ await test('holiday-weekend logic in the UI: Mon Oct 12 likely free, Wed Oct 14 
   await until(async () => (await t.page.locator('.card').count()) === 2, { what: 'availability check → 2 cards' });
   // the likely-free holiday Monday sorts above the plain Wednesday
   assert.equal(await t.page.locator('.card').first().getAttribute('data-id'), 'hol-mon');
+  await t.close();
+});
+
+await test('Home and Markets: stat tiles, weekend strip, tabs, "Not going" tucked away, same-market dates grouped', async () => {
+  const t = await open({
+    hash: '#/home',
+    route: (page) => page.route('**/data/markets.json*', (r) => r.fulfill({ json: { version: 1, markets: [
+      { id: 'a-1', name: 'Alpha Market', organizerId: 'x', status: 'unknown', application: { state: 'open', closes: '2026-10-28' }, dates: [{ date: '2026-11-14' }] },
+      { id: 'a-2', name: 'Alpha Market', organizerId: 'x', status: 'unknown', application: { state: 'open', closes: '2026-10-28' }, dates: [{ date: '2026-11-21' }] },
+      { id: 'going', name: 'Going Market', organizerId: 'x', status: 'paid', dates: [{ date: '2026-10-10' }, { date: '2026-10-11' }] },
+      { id: 'nope', name: 'Nope Market', organizerId: 'x', status: 'skipped', dates: [{ date: '2026-10-24' }] },
+    ] } })),
+  });
+  const stat = (label) => t.page.locator('.stat', { hasText: label }).locator('b').innerText();
+  assert.equal(await stat('To apply'), '1'); // the two Alpha dates are one thing to apply for
+  // next weekend is booked, this one is free
+  const booked = t.page.locator('.wk').nth(1);
+  assert.match(await booked.innerText(), /going/i);
+  assert.match(await booked.innerText(), /Going Market/i);
+  assert.match(await t.page.locator('.wk').first().innerText(), /free/i);
+  assert.equal(await stat('Free weekends'), '7');
+  // tapping a weekend opens it on the calendar
+  await t.page.locator('.wk').first().click();
+  await until(async () => (await t.page.locator('.cal-day.is-selected').count()) === 1, { what: 'weekend tile → calendar day' });
+  assert.match(await t.page.locator('.day-panel').innerText(), /Nothing booked\. This one is free/);
+  // Markets list: grouped dates, skipped ones tucked under "Not going"
+  await t.page.goto(`${APP}?today=${TODAY}#/markets`);
+  await t.page.getByRole('tab', { name: /^List/ }).click();
+  await t.page.getByRole('tab', { name: /^Upcoming/ }).click();
+  await until(async () => (await t.page.locator('.view-markets .card').count()) > 0, { what: 'cards' });
+  assert.equal(await t.page.locator('.card.group').count(), 1);
+  assert.match(await t.page.locator('.card.group').first().innerText(), /Nov 14 & 21/);
+  const notGoing = t.page.locator('details.notgoing');
+  assert.match(await notGoing.locator(':scope > summary').innerText(), /Not going \(1\)/);
+  assert.equal(await notGoing.evaluate((el) => el.open), false);
+  // the date block always shows the event day, even when a deadline is sooner
+  const alpha = t.page.locator('.card.group .datebox').first();
+  assert.match(await alpha.innerText(), /NOV\s*14/i);
+  // nested date cards stay closed until tapped
+  await t.page.locator('.card.group > .card-head').click();
+  await until(async () => (await t.page.locator('.card.nested').count()) === 2, { what: 'two date cards' });
+  assert.equal(await t.page.locator('.card.nested.open').count(), 0);
   await t.close();
 });
 
@@ -376,7 +427,7 @@ await test('service worker: app opens offline, data is network-first (fresh when
   const t = await open({ sw: true, hash: '#/home' });
   await t.page.evaluate(() => navigator.serviceWorker.ready);
   await t.page.reload(); // now controlled by the worker
-  await t.page.waitForSelector('.hero');
+  await t.page.waitForSelector('.view-home .stats');
   // wait until the worker has actually stored all five data files (not just created a cache)
   await until(() => t.page.evaluate(async () => {
     let n = 0;
@@ -391,7 +442,7 @@ await test('service worker: app opens offline, data is network-first (fresh when
   assert.equal(fresh.fromCache, null, 'online data is not served from cache');
   await t.ctx.setOffline(true);
   await t.page.reload();
-  await t.page.waitForSelector('.hero', { timeout: 8000 });
+  await t.page.waitForSelector('.view-home .stats', { timeout: 8000 });
   await until(async () => (await t.page.locator('.banner-offline').count()) === 1, { what: 'offline banner' });
   assert.match(await t.page.locator('.banner-offline').innerText(), /Offline/);
   await t.page.locator('.tab[data-tab="markets"]').click();

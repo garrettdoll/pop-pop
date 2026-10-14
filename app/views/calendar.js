@@ -69,7 +69,7 @@ export function renderCalendar(env) {
     const ids = [...new Set(items.map((k) => k.marketId))];
     const panel = h('section', { class: 'day-panel', 'aria-label': D.fmtFull(st.day) },
       h('h3', {}, D.fmtFull(st.day).replace(/, \d{4}$/, '')));
-    if (!ids.length) panel.append(h('p', { class: 'muted' }, 'Nothing on this day.'));
+    if (!ids.length) panel.append(h('p', { class: 'muted' }, D.isWeekend(st.day) ? 'Nothing booked. This one is free.' : 'Nothing on this day.'));
     for (const id of ids) {
       const m = env.data.markets.find((x) => x.id === id);
       if (!m) continue;

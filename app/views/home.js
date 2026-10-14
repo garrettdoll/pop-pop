@@ -1,29 +1,34 @@
-// Home: action first. What to apply for, what's due this week, what's next.
-import { h, icon, pluralize } from '../util.js';
+// Home: what to apply for, what's due, what's next, and which weekends are free. Overview first, details second.
+import { h, icon } from '../util.js';
 import * as D from '../dates.js';
 import * as V from '../derive.js';
-import { marketCard, miniRow } from '../card.js';
+import { entryCard, miniRow } from '../card.js';
 import { sectionHead, empty } from '../ui.js';
 
-const WEEK = 7;
-const CONFIRMED_OR_APPLIED = ['applied', 'waitlisted', 'accepted', 'paid'];
+const jump = (id) => {
+  const el = document.getElementById(id);
+  if (el) el.scrollIntoView({ block: 'start', behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' });
+};
 
-/** Dated things coming up soon, one per market per kind, soonest first. */
-function upcomingItems(markets, today, windowDays) {
-  const end = D.addDays(today, windowDays);
-  const out = [];
-  for (const m of markets) {
-    if (D.isPast(m, today) || D.INACTIVE.includes(m.status)) continue;
-    const seen = new Set();
-    for (const k of D.upcomingDates(m, today)) {
-      if (D.diffDays(k.date, end) < 0 || seen.has(k.type)) continue;
-      if (k.type === 'appOpens') continue; // not a deadline
-      if (k.recurring && !CONFIRMED_OR_APPLIED.includes(m.status)) continue; // a weekly market you're not in isn't "due"
-      seen.add(k.type);
-      out.push({ m, k });
-    }
-  }
-  return out.sort((a, b) => (a.k.date < b.k.date ? -1 : a.k.date > b.k.date ? 1 : 0));
+/** One big number you can tap. Yellow when it's something you need to do. */
+function stat(n, label, { need, onClick }) {
+  return h('button', { type: 'button', class: `stat${need && n ? ' need' : ''}`, onClick, 'aria-label': `${n} ${label}` },
+    h('b', {}, String(n)), h('span', {}, label));
+}
+
+const REL = (i) => (i === 0 ? 'This weekend' : i === 1 ? 'Next weekend' : `In ${i} weeks`);
+
+function weekendTile(w, i, env) {
+  const first = (list) => (list.length ? `${list[0].name}${list.length > 1 ? ` +${list.length - 1}` : ''}` : '');
+  const word = w.state === 'going' ? 'Going' : w.state === 'waiting' ? 'Waiting' : 'Free';
+  const sub = w.state === 'going' ? first(w.going)
+    : w.state === 'waiting' ? first(w.waiting)
+      : w.options ? `${w.options} to consider` : 'Nothing yet';
+  return h('button', { type: 'button', class: `wk wk-${w.state}`, 'aria-label': `${REL(i)}, ${V.weekendLabel(w.sat)}: ${word.toLowerCase()}. ${sub}`, onClick: () => env.openWeekend(w.sat) },
+    h('span', { class: 'wk-rel' }, REL(i)),
+    h('span', { class: 'wk-date' }, V.weekendLabel(w.sat)),
+    h('span', { class: 'wk-word' }, word),
+    h('span', { class: 'wk-sub' }, sub));
 }
 
 export function renderHome(env) {
@@ -31,67 +36,55 @@ export function renderHome(env) {
   const { today } = env;
   const live = markets.filter((m) => !D.isPast(m, today));
 
-  const toApply = live.filter((m) => V.isOpenToApply(m, today)).sort((a, b) => {
-    const ca = a.application.closes || '9999', cb = b.application.closes || '9999';
-    return ca === cb ? V.compareMarkets(a, b, today) : ca < cb ? -1 : 1;
-  });
-  const week = upcomingItems(live, today, WEEK);
+  const applyEntries = V.groupSeries(V.applyFor(live, today));
+  const due = V.dueSoon(live, today, 14);
+  const nextUp = V.groupSeries(live.filter((m) => D.CONFIRMED.includes(m.status)).sort((a, b) => V.compareByEvent(a, b, today, env.cal)).slice(0, 3));
+  const weekends = V.weekendsAhead(markets, today, 8);
+  const free = weekends.filter((w) => w.state === 'free').length;
   const finds = V.pendingFinds(explore).filter((x) => x.worthALook).slice(0, 3);
   const waiting = V.openQuestions(questions);
-  const nextUp = live.filter((m) => D.CONFIRMED.includes(m.status))
-    .sort((a, b) => V.compareMarkets(a, b, today)).slice(0, 4);
-
-  const bits = [];
-  if (toApply.length) bits.push(`${toApply.length} to apply`);
-  if (week.length) bits.push(`${week.length} due this week`);
-  if (waiting.length) bits.push(`${waiting.length} for you`);
 
   const root = h('div', { class: 'view view-home' });
-  root.append(h('section', { class: 'hero' },
-    h('h1', { class: 'wordmark', 'aria-label': 'POP! POP!' }, h('span', {}, 'POP!'), h('span', { class: 'hl' }, 'POP!')),
-    h('p', { class: 'hero-date' }, D.fmtFull(today).replace(/, \d{4}$/, '')),
-    h('p', { class: 'hero-sub' }, bits.length ? bits.join(' · ') : "You're all caught up.")));
+  root.append(
+    h('p', { class: 'today-line' }, D.fmtFull(today).replace(/, \d{4}$/, '')),
+    h('div', { class: 'stats' },
+      stat(applyEntries.length, 'To apply', { need: true, onClick: () => jump('sec-apply') }),
+      stat(due.length, 'Due soon', { onClick: () => jump('sec-due') }),
+      stat(free, 'Free weekends', { onClick: () => jump('sec-weekends') }),
+      stat(waiting.length, 'Questions', { onClick: () => env.go('foryou') })));
 
-  // 1. Apply now
-  root.append(h('section', { class: 'block' },
-    sectionHead('Apply now', { count: toApply.length || null, sub: toApply.length ? 'Applications open that you haven’t sent yet. Soonest deadline first.' : null }),
-    toApply.length
-      ? h('div', { class: 'cards' }, toApply.map((m) => marketCard(m, env, { quick: true, scope: 'apply' })))
+  // The next 8 weekends, one tile each: going (black), waiting (outline), free (dashed)
+  root.append(h('section', { class: 'block', id: 'sec-weekends' },
+    sectionHead('Next 8 weekends'),
+    h('div', { class: 'weekends', role: 'list' }, weekends.map((w, i) => weekendTile(w, i, env))),
+    h('ul', { class: 'legend', 'aria-label': 'Legend' },
+      h('li', {}, h('i', { class: 'lg lg-going' }), 'Going'), h('li', {}, h('i', { class: 'lg lg-waiting' }), 'Waiting to hear'), h('li', {}, h('i', { class: 'lg lg-free' }), 'Free'))));
+
+  root.append(h('section', { class: 'block', id: 'sec-apply' },
+    sectionHead('Apply for', { count: applyEntries.length || null }),
+    applyEntries.length
+      ? h('div', { class: 'cards' }, applyEntries.map((e) => entryCard(e, env, { quick: true, scope: 'apply' })))
       : empty('Nothing open to apply for.', 'When a market opens applications, it shows up here.')));
 
-  // 2. Deadlines this week
-  const nextAny = week.length ? null : upcomingItems(live, today, 400)[0];
-  root.append(h('section', { class: 'block' },
-    sectionHead('Due this week', { count: week.length || null }),
-    week.length
-      ? h('div', { class: 'minis' }, week.map(({ m, k }) => miniRow(m, env, { label: D.KEY_LABEL[k.type], date: k.date })))
-      : empty('Nothing due in the next 7 days.', nextAny ? `Next is ${nextAny.m.name}. ${D.KEY_LABEL[nextAny.k.type]} ${D.fmtDay(nextAny.k.date)} (${D.relDays(nextAny.k.date, today)}).` : null)));
+  root.append(h('section', { class: 'block', id: 'sec-due' },
+    sectionHead('Due soon', { count: due.length || null }),
+    due.length
+      ? h('div', { class: 'minis' }, due.map(({ m, k }) => miniRow(m, env, { label: D.KEY_LABEL[k.type], date: k.date })))
+      : empty('Nothing due in the next 2 weeks.')));
 
-  // 3. Worth a look
+  root.append(h('section', { class: 'block', id: 'sec-next' },
+    sectionHead('Next up'),
+    nextUp.length
+      ? h('div', { class: 'cards' }, nextUp.map((e) => entryCard(e, env, { scope: 'next' })))
+      : empty('No confirmed events yet.', 'Accepted and paid markets show up here, in date order.')));
+
   if (finds.length) {
     root.append(h('section', { class: 'block' },
-      sectionHead('Worth a look', { sub: 'Starred finds from the web search. Not in your hub yet.' }),
+      sectionHead('Worth a look'),
       h('div', { class: 'finds' }, finds.map((f) => h('button', { type: 'button', class: 'find-row', onClick: () => env.go('explore') },
         h('span', { class: 'find-star', 'aria-hidden': 'true' }, '★'),
         h('span', { class: 'find-main' }, h('span', { class: 'mini-title' }, f.name), h('span', { class: 'card-meta' }, [f.dates[0] ? D.fmtDay(f.dates[0].date) : null, f.worthReason].filter(Boolean).join(' · '))),
         icon('right', { size: 18 }))))));
   }
-
-  // 4. Questions waiting
-  if (waiting.length) {
-    root.append(h('button', { type: 'button', class: 'nudge', onClick: () => env.go('foryou') },
-      h('span', { class: 'nudge-count' }, String(waiting.length)),
-      h('span', { class: 'nudge-text' }, `${pluralize(waiting.length, 'question')} waiting for you`),
-      icon('right', { size: 20 })));
-  }
-
-  // 5. Next up
-  root.append(h('section', { class: 'block' },
-    sectionHead('Next up', { sub: nextUp.length ? 'Your accepted and paid events.' : null }),
-    nextUp.length
-      ? h('div', { class: 'cards' }, nextUp.map((m) => marketCard(m, env, { scope: 'next' })))
-      : empty('No confirmed events yet.', 'Accepted and paid markets show up here, in date order.')));
-
   return root;
 }
-

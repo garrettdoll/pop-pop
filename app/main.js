@@ -7,7 +7,7 @@ import { storage } from './storage.js';
 import { getToken } from './config.js';
 import { toast, empty } from './ui.js';
 import { renderHome } from './views/home.js';
-import { renderMarkets, defaultMarketsUi } from './views/markets.js';
+import { renderMarkets, defaultMarketsUi, sanitizeMarketsUi } from './views/markets.js';
 import { renderExplore } from './views/explore.js';
 import { renderOrganizers } from './views/organizers.js';
 import { renderQuestions } from './views/questions.js';
@@ -22,10 +22,10 @@ const TABS = [
 ];
 
 // View state that lives only in this page, plus a few per-viewer conveniences kept in localStorage.
-const PERSISTED = ['view', 'filter', 'weekends', 'avail', 'place'];
+const PERSISTED = ['view', 'filter', 'status', 'weekends', 'avail', 'place'];
 const ui = {
   tab: 'home',
-  markets: { ...defaultMarketsUi(), ...pick(storage.getJSON('pop.ui.markets', {}) || {}, PERSISTED) },
+  markets: sanitizeMarketsUi({ ...defaultMarketsUi(), ...pick(storage.getJSON('pop.ui.markets', {}) || {}, PERSISTED) }),
   open: new Set(), // expanded market cards
   focus: null, // { kind: 'market' | 'organizers', id } to scroll to after the next render
   pop: null, // market id whose sticker should "pop" after a status change
@@ -57,11 +57,18 @@ function go(tab, id) {
   if (location.hash === next) route(); else location.hash = next;
 }
 
+/** Tapping a weekend tile on Home: show that Saturday on the calendar. */
+function openWeekend(sat) {
+  Object.assign(ui.markets, { view: 'calendar', month: sat.slice(0, 7), day: sat });
+  persistUi();
+  go('markets');
+}
+
 function makeEnv() {
   const d = state.data;
   return {
     data: d, today: state.today, cal: makeCalendar(d.settings), orgMap: new Map(d.organizers.map((o) => [o.id, o])),
-    open: ui.open, ui, act, go, toast, rerender: scheduleRender, persistUi,
+    open: ui.open, ui, act, go, toast, rerender: scheduleRender, persistUi, openWeekend,
   };
 }
 
@@ -80,7 +87,7 @@ function route() {
   if (tab === 'markets' && id) {
     const m = state.data.markets.find((x) => x.id === id);
     if (m) {
-      Object.assign(ui.markets, { view: 'list', filter: isPast(m, state.today) ? 'past' : 'upcoming', weekends: false, avail: false, place: '' });
+      Object.assign(ui.markets, { view: 'list', filter: isPast(m, state.today) ? 'past' : 'coming', status: '', weekends: false, avail: false, place: '', showOut: true });
       ui.open.add(id);
       ui.focus = { kind: 'market', id };
     }

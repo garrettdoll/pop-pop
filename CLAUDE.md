@@ -38,7 +38,7 @@ Fields beyond the original brief: `application.paymentDeadline`; `recurrenceRule
 - **status**: `unknown` (needs Garrett) · `researching` · `to-apply` · `applied` · `waitlisted` · `accepted` · `paid` · `declined` · `lapsed` (e.g. payment deadline missed) · `completed` · `skipped`. Garrett doesn't remember what he applied to, so **don't mark a market `applied` unless an email or he says so.**
 - **application.state**: `open` · `upcoming` · `closed` · `waitlisted` · `unknown`.
 - **fit.rating**: `good` · `maybe` · `poor` · `unknown`. Assess streetwear fit at intake and say why in `fit.note`. Flag rule conflicts (food-only, vintage-only, handmade-only…) with a `fit-conflict` flag.
-- **flags**: what shows as ⚠️ on the card. Types in use: `unconfirmed` (with `field`), `fit-conflict`, `postponed`, `verify`. Remove an `unconfirmed` flag when the thing is confirmed. (The app does this itself when Garrett taps a status.)
+- **flags**: types in use: `unconfirmed` (with `field`), `fit-conflict`, `postponed`, `info`, `verify`. To keep cards short, only `fit-conflict`, `postponed`, `info` and `verify` show as a ⚠️ heads-up on the open card; every other flag (e.g. `unconfirmed`) is listed under "Claude's notes" inside the card. So write a flag's `text` for Garrett, in plain words, and use a heads-up type only for something he should see before deciding. Remove an `unconfirmed` flag when the thing is confirmed. (The app does this itself when Garrett taps a status.)
 - **history**: append `{at, by: "claude", change}` for every change you make. Set `lastVerified` to today.
 - **results**: Garrett's own optional sales log (`salesTotal, boothFee, thumbs, bestSellers, footTraffic, notes`). **Never nag him to fill it in** and don't invent it.
 
