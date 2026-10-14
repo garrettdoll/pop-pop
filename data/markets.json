@@ -46,6 +46,11 @@
         "rating": "unknown",
         "note": null
       },
+      "setup": {
+        "setting": null,
+        "tent": null,
+        "note": null
+      },
       "links": {
         "apply": null,
         "event": null,
@@ -130,6 +135,11 @@
       "vendorRules": null,
       "fit": {
         "rating": "unknown",
+        "note": null
+      },
+      "setup": {
+        "setting": null,
+        "tent": null,
         "note": null
       },
       "links": {
@@ -218,6 +228,11 @@
         "rating": "unknown",
         "note": null
       },
+      "setup": {
+        "setting": null,
+        "tent": null,
+        "note": null
+      },
       "links": {
         "apply": null,
         "event": "https://fadmarket.co/fall-st-paul",
@@ -265,7 +280,14 @@
       "organizerId": "brooklyn-flea",
       "status": "paid",
       "kind": "event",
-      "dates": [],
+      "dates": [
+        {
+          "date": "2026-10-18",
+          "start": "10:00",
+          "end": null,
+          "rainDate": null
+        }
+      ],
       "recurrence": null,
       "location": {
         "venue": null,
@@ -285,11 +307,19 @@
         "booth": 150,
         "notes": "Paid $150 booth on 2026-09-29. Asked Lena (BQ Flea) about upgrading to $200 for more space."
       },
-      "requirements": [],
+      "requirements": [
+        "Arrive any time from 8am. The fair opens at 10am.",
+        "Unloading zone is on Pearl Street. No parking inside the market: after unloading, move your vehicle to street parking or the garage by the market."
+      ],
       "vendorRules": null,
       "fit": {
         "rating": "unknown",
         "note": null
+      },
+      "setup": {
+        "setting": "outdoor",
+        "tent": "optional",
+        "note": "Lena (BQ Flea), Oct 12 email: \"The market is outdoors. Tents are optional, so it's up to you whether you bring one.\" Your space is 10x10 ft."
       },
       "links": {
         "apply": null,
@@ -297,13 +327,8 @@
         "vendorInfo": null
       },
       "contact": null,
-      "notes": "Paid a $150 booth on 2026-09-29 and asked Lena about upgrading to $200 for more space. Lena's Jul 1 email said Sep 13 was the scheduled final BQ Flea day, so this DUMBO flea is a separate, later event.",
+      "notes": "Paid a $150 booth on 2026-09-29 and asked Lena about upgrading to $200 for more space. Lena's Jul 1 email said Sep 13 was the scheduled final BQ Flea day, so this DUMBO flea is a separate, later event. Oct 12 email from Lena: you are confirmed for the Furniture & Decor Fair in DUMBO on Sunday Oct 18, with a 10x10 ft space. She did not mention the $200 upgrade.",
       "flags": [
-        {
-          "type": "unconfirmed",
-          "field": "dates",
-          "text": "Event date not stated in the email"
-        },
         {
           "type": "unconfirmed",
           "field": "fees",
@@ -315,7 +340,7 @@
         "ref": "Build brief appendix (inbox review as of 2026-10-03)",
         "addedAt": "2026-10-03"
       },
-      "lastVerified": "2026-10-03",
+      "lastVerified": "2026-10-14",
       "results": {
         "salesTotal": null,
         "boothFee": null,
@@ -334,6 +359,11 @@
           "at": "2026-10-03",
           "by": "claude",
           "change": "Email sweep: no date for the DUMBO flea anywhere in the inbox, and no reply from Lena after your Sep 29 email."
+        },
+        {
+          "at": "2026-10-14",
+          "by": "claude",
+          "change": "Oct 12 email from Lena answered your tent question and gave the date: Sun Oct 18, opens 10am, arrive from 8am, 10x10 ft space, outdoors, tents optional, unload on Pearl St. Added the date and setup, cleared the date flag."
         }
       ]
     },
@@ -374,6 +404,11 @@
       "vendorRules": null,
       "fit": {
         "rating": "unknown",
+        "note": null
+      },
+      "setup": {
+        "setting": null,
+        "tent": null,
         "note": null
       },
       "links": {
@@ -454,20 +489,31 @@
         "rating": "unknown",
         "note": null
       },
+      "setup": {
+        "setting": "outdoor",
+        "tent": null,
+        "note": "BKPU titles this listing \"Fort Greene Park Artisans Bazaar (OUTDOORS)\" (Oct 4 email). Nothing said about tents."
+      },
       "links": {
         "apply": null,
         "event": "https://brooklynpop-up.com/market-details/fort-greene-park-artisans-bazaar/r/recJUr0FbK4XTYISB",
         "vendorInfo": null
       },
       "contact": null,
-      "notes": "50+ weekly vendors. Applications are per Saturday on your BKPU dashboard. Open as of Oct 4 for the general (non-food) bazaar: Sat Nov 28 (closes Oct 14) and Sat Dec 5 (closes Oct 21). Nov 21 shows \"Applications Closed\", and listings for Oct 10 to Nov 14 are not open. Anything labeled FOOD & BEVERAGE VENDORS is for food and drink makers only. Deadlines run about 45 days before each Saturday.",
-      "flags": [],
+      "notes": "50+ weekly vendors. Applications are per Saturday on your BKPU dashboard. Open as of Oct 4 for the general (non-food) bazaar: Sat Nov 28 (closes Oct 14) and Sat Dec 5 (closes Oct 21). Nov 21 shows \"Applications Closed\", and listings for Oct 10 to Nov 14 are not open. Anything labeled FOOD & BEVERAGE VENDORS is for food and drink makers only. Deadlines run about 45 days before each Saturday. Oct 4 email: BKPU confirmed your application for the Sat Dec 19 listing and said they will let you know if you get a spot (no decision date given).",
+      "flags": [
+        {
+          "type": "verify",
+          "field": null,
+          "text": "You applied for this Sat Dec 19 and also for the FAD holiday pop-up in DUMBO, Dec 19+20 (FAD has not confirmed its dates). If both say yes, you will have to pick one."
+        }
+      ],
       "source": {
         "type": "seed",
         "ref": "Build brief appendix (inbox review as of 2026-10-03)",
         "addedAt": "2026-10-03"
       },
-      "lastVerified": "2026-10-04",
+      "lastVerified": "2026-10-14",
       "results": {
         "salesTotal": null,
         "boothFee": null,
@@ -492,6 +538,11 @@
           "by": "app",
           "change": "Status: unknown → applied",
           "op": "mut4lg2x-az3g"
+        },
+        {
+          "at": "2026-10-14",
+          "by": "claude",
+          "change": "Added setup (outdoor, from the BKPU listing title). Oct 4 BKPU email confirms an application for the Dec 19 Saturday; flagged the overlap with the FAD DUMBO holiday pop-up."
         }
       ],
       "recurrenceRule": {
@@ -543,6 +594,11 @@
         "rating": "poor",
         "note": "Vendor categories are pet, Halloween/harvest and food only. Streetwear likely does not qualify."
       },
+      "setup": {
+        "setting": "outdoor",
+        "tent": null,
+        "note": "Inferred, not stated for this event: it is in Fort Greene Park, and BKPU labels its Fort Greene Park listings \"(OUTDOORS)\". Nothing said about tents."
+      },
       "links": {
         "apply": null,
         "event": "https://brooklynpop-up.com/market-details/fort-greene-artisans-market-december/r/recWKpktmpzEKHVbb",
@@ -572,7 +628,7 @@
         "ref": "Build brief appendix (inbox review as of 2026-10-03)",
         "addedAt": "2026-10-03"
       },
-      "lastVerified": "2026-10-04",
+      "lastVerified": "2026-10-14",
       "results": {
         "salesTotal": null,
         "boothFee": null,
@@ -591,6 +647,11 @@
           "at": "2026-10-04",
           "by": "claude",
           "change": "From BKPU vendor dashboard screenshot (Upcoming Events, Oct 4): only a food and beverage listing exists for Oct 24, which supports skipping this one."
+        },
+        {
+          "at": "2026-10-14",
+          "by": "claude",
+          "change": "Added setup (outdoor, inferred from the park venue and BKPU labeling)."
         }
       ]
     },
@@ -631,6 +692,11 @@
       "vendorRules": null,
       "fit": {
         "rating": "unknown",
+        "note": null
+      },
+      "setup": {
+        "setting": null,
+        "tent": null,
         "note": null
       },
       "links": {
@@ -721,6 +787,11 @@
         "rating": "unknown",
         "note": null
       },
+      "setup": {
+        "setting": null,
+        "tent": null,
+        "note": null
+      },
       "links": {
         "apply": null,
         "event": "https://brooklynpop-up.com/market-details/brooklyn-museum+of+the+city+of+new+york-december/r/recMiVSoOHuFO8dta",
@@ -805,6 +876,11 @@
       "vendorRules": null,
       "fit": {
         "rating": "unknown",
+        "note": null
+      },
+      "setup": {
+        "setting": null,
+        "tent": null,
         "note": null
       },
       "links": {
@@ -895,6 +971,11 @@
       "vendorRules": "Accepted in the Clothing Design category.",
       "fit": {
         "rating": "unknown",
+        "note": null
+      },
+      "setup": {
+        "setting": null,
+        "tent": null,
         "note": null
       },
       "links": {
@@ -998,6 +1079,11 @@
         "rating": "unknown",
         "note": null
       },
+      "setup": {
+        "setting": null,
+        "tent": null,
+        "note": null
+      },
       "links": {
         "apply": null,
         "event": null,
@@ -1073,6 +1159,11 @@
         "rating": "maybe",
         "note": "Organizer said the usual shopper merch price is about $20-30, so BKSB prices felt high there."
       },
+      "setup": {
+        "setting": null,
+        "tent": null,
+        "note": null
+      },
       "links": {
         "apply": null,
         "event": null,
@@ -1144,6 +1235,11 @@
       "vendorRules": null,
       "fit": {
         "rating": "unknown",
+        "note": null
+      },
+      "setup": {
+        "setting": null,
+        "tent": null,
         "note": null
       },
       "links": {
@@ -1230,6 +1326,11 @@
         "rating": "unknown",
         "note": null
       },
+      "setup": {
+        "setting": null,
+        "tent": null,
+        "note": null
+      },
       "links": {
         "apply": null,
         "event": null,
@@ -1302,6 +1403,11 @@
       "vendorRules": null,
       "fit": {
         "rating": "unknown",
+        "note": null
+      },
+      "setup": {
+        "setting": null,
+        "tent": null,
         "note": null
       },
       "links": {
@@ -1384,6 +1490,11 @@
         "rating": "unknown",
         "note": null
       },
+      "setup": {
+        "setting": null,
+        "tent": null,
+        "note": null
+      },
       "links": {
         "apply": null,
         "event": null,
@@ -1464,6 +1575,11 @@
         "rating": "unknown",
         "note": null
       },
+      "setup": {
+        "setting": null,
+        "tent": null,
+        "note": null
+      },
       "links": {
         "apply": null,
         "event": null,
@@ -1542,6 +1658,11 @@
       "vendorRules": null,
       "fit": {
         "rating": "unknown",
+        "note": null
+      },
+      "setup": {
+        "setting": null,
+        "tent": null,
         "note": null
       },
       "links": {
@@ -1630,6 +1751,11 @@
         "rating": "unknown",
         "note": null
       },
+      "setup": {
+        "setting": null,
+        "tent": null,
+        "note": null
+      },
       "links": {
         "apply": null,
         "event": null,
@@ -1690,6 +1816,11 @@
       "vendorRules": null,
       "fit": {
         "rating": "unknown",
+        "note": null
+      },
+      "setup": {
+        "setting": null,
+        "tent": null,
         "note": null
       },
       "links": {
@@ -1768,6 +1899,11 @@
         "rating": "unknown",
         "note": null
       },
+      "setup": {
+        "setting": null,
+        "tent": null,
+        "note": null
+      },
       "links": {
         "apply": null,
         "event": null,
@@ -1835,6 +1971,11 @@
       "vendorRules": null,
       "fit": {
         "rating": "unknown",
+        "note": null
+      },
+      "setup": {
+        "setting": null,
+        "tent": null,
         "note": null
       },
       "links": {
@@ -1912,6 +2053,11 @@
       "fit": {
         "rating": "maybe",
         "note": "A general community market in Bushwick, one of your core neighborhoods, with a low table fee and no clothing restriction. The crowd and usual price points are unknown."
+      },
+      "setup": {
+        "setting": null,
+        "tent": null,
+        "note": null
       },
       "links": {
         "apply": null,
@@ -2004,6 +2150,11 @@
       "fit": {
         "rating": "maybe",
         "note": "A general community market in Bushwick, one of your core neighborhoods, with a low table fee and no clothing restriction. The crowd and usual price points are unknown."
+      },
+      "setup": {
+        "setting": null,
+        "tent": null,
+        "note": null
       },
       "links": {
         "apply": null,

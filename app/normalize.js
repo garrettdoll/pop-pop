@@ -3,6 +3,9 @@
 // can't blank the screen. Problems are collected and shown in Settings instead of thrown.
 import { STATUSES, isISO } from './dates.js';
 
+const SETTINGS = ['indoor', 'outdoor', 'both'];
+const TENT_RULES = ['required', 'provided', 'optional', 'not-allowed'];
+
 const obj = (v) => (v && typeof v === 'object' && !Array.isArray(v) ? v : {});
 const arr = (v) => (Array.isArray(v) ? v : []);
 const str = (v) => (typeof v === 'string' ? v : v == null ? null : String(v));
@@ -28,6 +31,16 @@ export function normalizeMarket(raw, problems = []) {
       application[k] = null;
     }
   }
+  const setup = { setting: null, tent: null, note: null, ...obj(m.setup) };
+  if (setup.setting != null && !SETTINGS.includes(setup.setting)) {
+    problems.push(`${label}: unknown setup.setting "${setup.setting}", shown as not stated`);
+    setup.setting = null;
+  }
+  if (setup.tent != null && !TENT_RULES.includes(setup.tent)) {
+    problems.push(`${label}: unknown setup.tent "${setup.tent}", shown as not stated`);
+    setup.tent = null;
+  }
+  setup.note = str(setup.note);
   return {
     ...m,
     id, name: str(m.name) || '(untitled market)', organizerId: str(m.organizerId),
@@ -39,6 +52,7 @@ export function normalizeMarket(raw, problems = []) {
     requirements: arr(m.requirements).map(String),
     vendorRules: str(m.vendorRules),
     fit: { rating: 'unknown', note: null, ...obj(m.fit) },
+    setup,
     links: { apply: null, event: null, vendorInfo: null, ...obj(m.links) },
     contact: m.contact ?? null,
     notes: typeof m.notes === 'string' ? m.notes : '',

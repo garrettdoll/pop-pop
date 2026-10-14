@@ -165,6 +165,36 @@ const eventRel = (m, today) => {
   return next ? D.relDays(next.date, today) : null;
 };
 
+// ---------- setup: indoor/outdoor and tent rules ----------
+
+export const SETTINGS = ['indoor', 'outdoor', 'both'];
+export const TENT_RULES = ['required', 'provided', 'optional', 'not-allowed'];
+export const SETTING_LABEL = { indoor: 'Indoor', outdoor: 'Outdoor', both: 'Indoor + outdoor' };
+/** Short wording for the collapsed card. */
+export const TENT_LABEL = { required: 'Tent required', provided: 'Tent provided', optional: 'Tent optional', 'not-allowed': 'No tents' };
+/** Longer wording for the open card. */
+export const TENT_LONG = {
+  required: 'Required. Bring your own.', provided: 'Provided by the organizer', optional: 'Optional. Up to you.', 'not-allowed': 'Not allowed',
+};
+
+/**
+ * What the card says about indoor/outdoor and tents. Vendors are often vague, so "not stated" is its own answer:
+ * unknown is never shown as "no tent needed". Indoor markets don't nag about a tent that's rarely relevant.
+ * parts: [{ text, kind }] where kind is 'strong' (a rule to act on), 'known' or 'unknown'.
+ */
+export function setupInfo(m) {
+  const { setting = null, tent = null, note = null } = m.setup || {};
+  const parts = [];
+  if (setting) parts.push({ text: SETTING_LABEL[setting], kind: 'known' });
+  if (tent) parts.push({ text: TENT_LABEL[tent], kind: tent === 'required' || tent === 'not-allowed' ? 'strong' : 'known' });
+  else if (setting !== 'indoor') parts.push({ text: setting ? 'Tent not stated' : 'Setup not stated', kind: 'unknown' });
+  return {
+    setting, tent, note, parts,
+    text: parts.map((x) => x.text).join(' · '),
+    known: !!(setting || tent),
+  };
+}
+
 /**
  * The one thing to do about a market, in plain words.
  * Returns { text, urgent } where urgent means "do this within a week" (or it's blocked on something).

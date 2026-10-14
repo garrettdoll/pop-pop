@@ -373,6 +373,41 @@ await test('Home and Markets: stat tiles, weekend strip, tabs, "Not going" tucke
   await t.close();
 });
 
+await test('cards say indoor/outdoor and tent rules, and say "not stated" instead of guessing', async () => {
+  const t = await open({
+    hash: '#/markets',
+    route: (page) => page.route('**/data/markets.json*', (r) => r.fulfill({ json: { version: 1, markets: [
+      { id: 'opt', name: 'Optional Tent Market', status: 'paid', dates: [{ date: '2026-10-17' }], setup: { setting: 'outdoor', tent: 'optional', note: 'Lena said: tents are optional.' } },
+      { id: 'req', name: 'Required Tent Market', status: 'accepted', dates: [{ date: '2026-10-24' }], setup: { setting: 'outdoor', tent: 'required', note: 'Organizer FAQ.' } },
+      { id: 'ind', name: 'Indoor Market', status: 'applied', dates: [{ date: '2026-10-31' }], setup: { setting: 'indoor' } },
+      { id: 'blank', name: 'Silent Organizer Market', status: 'unknown', dates: [{ date: '2026-11-07' }] },
+      { id: 'badval', name: 'Bad Value Market', status: 'unknown', dates: [{ date: '2026-11-14' }], setup: { setting: 'underwater', tent: 'maybe' } },
+      { id: 'gone', name: 'Skipped Market', status: 'skipped', dates: [{ date: '2026-11-21' }], setup: { setting: 'outdoor' } },
+    ] } })),
+  });
+  const line = async (id) => (await card(t.page, id).locator('.card-setup').first().innerText()).replace(/\s+/g, ' ').trim();
+  assert.equal(await line('opt'), 'Outdoor Tent optional'); // the middle dot between them is drawn by CSS
+  assert.equal(await line('req'), 'Outdoor Tent required');
+  assert.equal(await line('ind'), 'Indoor');
+  assert.equal(await line('blank'), 'Setup not stated');
+  assert.equal(await line('badval'), 'Setup not stated'); // bad values never show as fact
+  // skipped markets are out of the running, so they carry no setup line
+  await t.page.locator('details.notgoing > summary').click();
+  assert.equal(await card(t.page, 'gone').locator('.card-setup').count(), 0);
+  // the open card spells it out and shows where the answer came from
+  await expand(t.page, 'opt');
+  const optText = await card(t.page, 'opt').innerText();
+  assert.match(optText, /Indoor or outdoor:\s*Outdoor/i);
+  assert.match(optText, /Tent:\s*Optional\. Up to you\./i);
+  assert.match(optText, /Lena said: tents are optional\./);
+  await expand(t.page, 'blank');
+  const blank = await card(t.page, 'blank').innerText();
+  assert.match(blank, /Indoor or outdoor:\s*not stated/i);
+  assert.match(blank, /Tent:\s*not stated/i);
+  assert.match(blank, /Worth asking before you pack/);
+  await t.close();
+});
+
 await test('malformed data never blanks the screen, and problems are listed in Settings', async () => {
   const t = await open({
     hash: '#/markets',

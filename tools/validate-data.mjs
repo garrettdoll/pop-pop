@@ -47,6 +47,11 @@ function checkMarket(m, where) {
   for (const d of m.dates || []) { checkDate(`${at} dates`, d.date); checkDate(`${at} rainDate`, d.rainDate); }
   for (const k of ['opens', 'closes', 'decisionBy', 'paymentDeadline']) checkDate(`${at} application.${k}`, m.application && m.application[k]);
   checkDate(`${at} lastVerified`, m.lastVerified);
+  if (m.setup != null) {
+    if (m.setup.setting != null && !['indoor', 'outdoor', 'both'].includes(m.setup.setting)) err(`${at}: setup.setting must be indoor, outdoor, both or null`);
+    if (m.setup.tent != null && !['required', 'provided', 'optional', 'not-allowed'].includes(m.setup.tent)) err(`${at}: setup.tent must be required, provided, optional, not-allowed or null`);
+    if ((m.setup.setting || m.setup.tent) && !m.setup.note) warn(`${at}: setup has an answer but no note saying where it came from`);
+  }
   for (const f of m.flags || []) if (!f.text) err(`${at}: a flag has no text`);
   for (const h of m.history || []) {
     if (!h.at || !h.by || !h.change) err(`${at}: a history entry needs at, by and change`);

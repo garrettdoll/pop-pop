@@ -31,13 +31,14 @@ Formatting: 2-space JSON with a trailing newline (same as `JSON.stringify(x, nul
 
 ### A market (see any card in `markets.json` for a full example)
 
-`id, name, organizerId, status, kind ("event" | "recurring"), dates[{date,start,end,rainDate}], recurrence (text), location{venue,address,neighborhood,borough}, application{opens,closes,decisionBy,paymentDeadline,state}, fees{application,booth,notes}, requirements[], vendorRules, fit{rating,note}, links{apply,event,vendorInfo}, contact, notes, flags[{type,field,text}], source{type,ref,addedAt}, lastVerified, results{...}, history[{at,by,change}]`
+`id, name, organizerId, status, kind ("event" | "recurring"), dates[{date,start,end,rainDate}], recurrence (text), location{venue,address,neighborhood,borough}, application{opens,closes,decisionBy,paymentDeadline,state}, fees{application,booth,notes}, requirements[], vendorRules, fit{rating,note}, setup{setting,tent,note}, links{apply,event,vendorInfo}, contact, notes, flags[{type,field,text}], source{type,ref,addedAt}, lastVerified, results{...}, history[{at,by,change}]`
 
 Fields beyond the original brief: `application.paymentDeadline`; `recurrenceRule {weekdays:[0-6], start, end, from, until}` on recurring markets (this is what drives the calendar and "next date"); `archived: true` for a history card whose dates are unknown but clearly over.
 
 - **status**: `unknown` (needs Garrett) · `researching` · `to-apply` · `applied` · `waitlisted` · `accepted` · `paid` · `declined` · `lapsed` (e.g. payment deadline missed) · `completed` · `skipped`. Garrett doesn't remember what he applied to, so **don't mark a market `applied` unless an email or he says so.**
 - **application.state**: `open` · `upcoming` · `closed` · `waitlisted` · `unknown`.
 - **fit.rating**: `good` · `maybe` · `poor` · `unknown`. Assess streetwear fit at intake and say why in `fit.note`. Flag rule conflicts (food-only, vintage-only, handmade-only…) with a `fit-conflict` flag.
+- **setup**: whether it is **indoor or outdoor** and what the **tent rule** is. `setting`: `indoor` · `outdoor` · `both` · `null`. `tent`: `required` · `provided` · `optional` (allowed, not required) · `not-allowed` · `null`. `note`: the organizer's own wording and where it came from ("Lena, Oct 12 email: …"). Vendors are often vague about tents, so **leave a field `null` unless something actually says it**; the card then shows "not stated", which is the honest answer. Never read silence as "no tent needed". `setting` may be inferred only from an obvious venue (a public park is outdoor), and then say "Inferred" in `note`. The card puts `Outdoor · Tent optional` on the collapsed card and the full wording inside. Every market carries a `setup` block (nulls when unknown) so the shape is easy to fill in later.
 - **flags**: types in use: `unconfirmed` (with `field`), `fit-conflict`, `postponed`, `info`, `verify`. To keep cards short, only `fit-conflict`, `postponed`, `info` and `verify` show as a ⚠️ heads-up on the open card; every other flag (e.g. `unconfirmed`) is listed under "Claude's notes" inside the card. So write a flag's `text` for Garrett, in plain words, and use a heads-up type only for something he should see before deciding. Remove an `unconfirmed` flag when the thing is confirmed. (The app does this itself when Garrett taps a status.)
 - **history**: append `{at, by: "claude", change}` for every change you make. Set `lastVerified` to today.
 - **results**: Garrett's own optional sales log (`salesTotal, boothFee, thumbs, bestSellers, footTraffic, notes`). **Never nag him to fill it in** and don't invent it.
@@ -63,7 +64,7 @@ Fields beyond the original brief: `application.paymentDeadline`; `recurrenceRule
 
 Garrett gives you a screenshot (from his phone or computer) of a market he saw, usually on Instagram.
 
-1. Read the image. Extract: name, organizer, dates and times, location, application open/close and decision dates, fees, requirements, vendor category rules, links, handles, contact info.
+1. Read the image. Extract: name, organizer, dates and times, location, application open/close and decision dates, fees, requirements, vendor category rules, **indoor/outdoor and tent rules (only if stated)**, links, handles, contact info.
 2. **Always add it, wherever it is.** Never skip or drop a screenshot because it's far away. Check `markets.json` first and update an existing card instead of adding a duplicate.
 3. Assess streetwear fit; flag rule conflicts.
 4. If the organizer isn't in `organizers.json`, add them (`unknown` or `not_signed_up`) and, if it matters, a question.
@@ -76,7 +77,7 @@ Account: `info@brooklynsoftboys.com` (Gmail connector).
 
 - **Read-only.** Never send, reply, archive, label, forward, mark spam or delete anything. Only search and read.
 - Scope each sweep to mail **since `settings.lastEmailSweep`** (use `after:YYYY/MM/DD` a day earlier for safety). Match senders to organizers with `emailSenders`. Also look for new market announcements from senders not in the list (VendorsMap, newsletters).
-- Look for: announcements, application openings and deadlines, acceptances, waitlist/decline notices, payment reminders and expirations, logistics reminders, and date changes.
+- Look for: announcements, application openings and deadlines, acceptances, waitlist/decline notices, payment reminders and expirations, logistics reminders, date changes, and any statement about **indoor/outdoor or tents** (fill `setup`).
 - Map email events to status changes: "Thank you for your application…" → `applied`; "accepted" → `accepted`; payment confirmed → `paid`; "waitlisted" → `waitlisted`; "declined" → `declined`; an expired payment notice → `lapsed`. Capture dates like "we will be in touch by [date]" as `application.decisionBy`.
 - **Evidence standard:** an email proving the thing happened is enough to set status. Evidence that something was *arranged* (a booth reserved, a spot kept) but not that it *happened* is not: keep status `unknown`, put the evidence in a ⚠️ flag, and ask.
 - Brooklyn Pop-Up acceptances sometimes land in spam, and applications go through their dashboard rather than email, so no email is not proof he didn't apply.

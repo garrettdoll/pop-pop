@@ -230,6 +230,23 @@ function controls(m, env, org) {
     form);
 }
 
+/** Collapsed card: "Outdoor · Tent optional". Unknowns are spelled out but muted, so you can see what's still missing. */
+function setupLine(info) {
+  if (!info.parts.length) return null;
+  return h('span', { class: 'card-setup', 'aria-label': `Setup: ${info.text}` },
+    info.parts.map((x) => h('span', { class: `cs-${x.kind}` }, x.text)));
+}
+
+/** Open card: the same facts in full, plus where the answer came from. */
+function setupField(m) {
+  const { setting, tent, note } = V.setupInfo(m);
+  return field('Setup',
+    h('div', {}, h('span', { class: 'muted' }, 'Indoor or outdoor: '), setting ? h('span', { class: 'strong' }, V.SETTING_LABEL[setting]) : muted('not stated')),
+    h('div', {}, h('span', { class: 'muted' }, 'Tent: '), tent ? h('span', { class: 'strong' }, V.TENT_LONG[tent]) : muted('not stated')),
+    note ? h('p', { class: 'small' }, note) : null,
+    !setting && !tent ? h('p', { class: 'small muted' }, 'The organizer hasn’t said. Worth asking before you pack.') : null);
+}
+
 /** The line under the title: the status sticker, the one next step, and a weekday chip when it matters. */
 function statusLine(m, org, env, avail, live) {
   const step = V.nextStep(m, org, env.today);
@@ -274,6 +291,7 @@ export function marketCard(m, env, opts = {}) {
     h('span', { class: 'card-main' },
       h('span', { class: 'card-title' }, opts.nested ? nestedTitle(m) : m.name),
       h('span', { class: 'card-meta' }, opts.nested ? nestedMeta(m) : [V.shortDates(m), place(m)].filter(Boolean).join(' · ')),
+      live && !opts.nested ? setupLine(V.setupInfo(m)) : null,
       statusLine(m, org, env, avail, live)),
     h('span', { class: 'chev' }, icon('chevron', { size: 20 })));
 
@@ -299,6 +317,7 @@ export function marketCard(m, env, opts = {}) {
     controls(m, env, org),
     whenField(m, env),
     whereField(m),
+    setupField(m),
     more('Application, fees & rules',
       applicationField(m), feesField(m),
       m.requirements.length ? field('Requirements', h('ul', { class: 'plain-list' }, m.requirements.map((r) => h('li', {}, r)))) : null,
@@ -339,6 +358,7 @@ export function marketGroup(items, env, opts = {}) {
     h('span', { class: 'card-main' },
       h('span', { class: 'card-title' }, first.name),
       h('span', { class: 'card-meta' }, [run, place(first)].filter(Boolean).join(' · ')),
+      !out && items.every((m) => V.setupInfo(m).text === V.setupInfo(first).text) ? setupLine(V.setupInfo(first)) : null,
       h('span', { class: 'card-status' },
         sameStatus ? sticker(first.status, first.id) : null,
         h('span', { class: `step${sameStep && steps[0].urgent ? ' urgent' : ''}` }, sameStep ? steps[0].text : `${items.length} dates, each on its own`))),

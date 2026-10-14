@@ -20,6 +20,7 @@ function findCard(item, env) {
       h('span', { class: 'tag verify' }, 'found by search, verify'),
       item.fit.rating !== 'unknown' ? fitTag(item.fit.rating) : null),
     fees.length ? h('p', { class: 'small' }, fees.join(' · ')) : null,
+    V.setupInfo(item).known ? h('p', { class: 'small' }, V.setupInfo(item).text) : null,
     item.vendorRules ? h('p', { class: 'small' }, item.vendorRules) : null,
     item.notes ? h('p', { class: 'small' }, item.notes) : null,
     item.application.closes ? h('p', { class: 'small' }, `Applications close ${D.fmtDay(item.application.closes)}`) : null,

@@ -3,7 +3,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import { normalizeMarket } from '../app/normalize.js';
 import {
-  statusGroup, headDate, compareByEvent, nextStep, needsAction, applyFor, dueSoon, shortDates, datesRun, groupSeries, weekendsAhead, weekendLabel, isHeadsUp,
+  statusGroup, headDate, compareByEvent, setupInfo, nextStep, needsAction, applyFor, dueSoon, shortDates, datesRun, groupSeries, weekendsAhead, weekendLabel, isHeadsUp,
 } from '../app/derive.js';
 
 const TODAY = '2026-10-14'; // a Wednesday
@@ -141,4 +141,40 @@ test('upcoming list sorts by event day, with skipped ones last', () => {
   const undated = mk({ id: 'd', name: 'D', status: 'unknown' });
   const order = [later, skipped, undated, soon].sort((x, y) => compareByEvent(x, y, TODAY)).map((m) => m.id);
   assert.deepEqual(order, ['a', 'b', 'd', 'c']);
+});
+
+test('setup: unknown is shown as "not stated", never as "no tent needed"', () => {
+  const blank = setupInfo(mk({ id: 'blank' }));
+  assert.equal(blank.known, false);
+  assert.equal(blank.text, 'Setup not stated');
+  assert.equal(blank.parts[0].kind, 'unknown');
+
+  const outdoorOnly = setupInfo(mk({ id: 'o', setup: { setting: 'outdoor' } }));
+  assert.equal(outdoorOnly.text, 'Outdoor · Tent not stated');
+
+  const indoorOnly = setupInfo(mk({ id: 'i', setup: { setting: 'indoor' } }));
+  assert.equal(indoorOnly.text, 'Indoor'); // a tent is rarely a question indoors, so no nagging
+
+  const optional = setupInfo(mk({ id: 'p', setup: { setting: 'outdoor', tent: 'optional', note: 'Lena said so' } }));
+  assert.equal(optional.text, 'Outdoor · Tent optional');
+  assert.equal(optional.note, 'Lena said so');
+  assert.deepEqual(optional.parts.map((x) => x.kind), ['known', 'known']);
+
+  const required = setupInfo(mk({ id: 'r', setup: { tent: 'required' } }));
+  assert.equal(required.text, 'Tent required'); // tent known, indoor/outdoor not asked about
+  assert.equal(required.parts[0].kind, 'strong');
+  assert.equal(setupInfo(mk({ id: 'n', setup: { tent: 'not-allowed' } })).text, 'No tents');
+});
+
+test('setup: a bad value from a hand-edited file becomes "not stated" and is reported', () => {
+  const problems = [];
+  const m = normalizeMarket({ id: 'bad', name: 'Bad', setup: { setting: 'underwater', tent: 'maybe', note: 5 } }, problems);
+  assert.equal(m.setup.setting, null);
+  assert.equal(m.setup.tent, null);
+  assert.equal(m.setup.note, '5');
+  assert.equal(problems.length, 2);
+  // missing entirely is fine and silent
+  const none = [];
+  assert.deepEqual(normalizeMarket({ id: 'x', name: 'X' }, none).setup, { setting: null, tent: null, note: null });
+  assert.equal(none.length, 0);
 });
