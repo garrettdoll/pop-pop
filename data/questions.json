@@ -316,12 +316,14 @@
     {
       "id": "q-012",
       "type": "question",
-      "text": "What is the link to the Monsta House Universe sign-up form? The text you pasted did not include it.",
+      "text": "What is the link to the Bushwick Vendors Market sign-up form (the Google Form you pasted)? The post's QR code goes to an Arts in Bushwick page that I can't open from here.",
       "input": "text",
       "related": {
         "marketIds": [
           "monsta-house-market-2026-11-14",
-          "monsta-house-market-2026-11-21"
+          "monsta-house-market-2026-11-21",
+          "bushwick-vendors-market-2026-12-12",
+          "bushwick-vendors-market-2026-12-13"
         ],
         "organizerIds": [
           "monsta-house-universe"

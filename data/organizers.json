@@ -170,26 +170,41 @@
     },
     {
       "id": "monsta-house-universe",
-      "name": "Monsta House Universe",
+      "name": "Bushwick Vendors Market (Monsta House Universe)",
       "account": {
         "status": "direct",
-        "note": "No account. You sign up for each market date with a Google Form. If you are selected, they email you to collect payment.",
+        "note": "No account. You sign up for each market date with a Google Form. If you are selected, they email you to collect payment. The Instagram post says to scan its QR code (an Arts in Bushwick page about the market) or use the link in their bio to apply.",
         "signupUrl": null,
         "dashboardUrl": null
       },
       "contacts": [],
       "emailSenders": [
-        "monstahouseuniverse.org"
+        "monstahouseuniverse.org",
+        "artsinbushwick.org"
       ],
       "website": "https://www.monstahouseuniverse.org",
-      "links": [],
+      "links": [
+        {
+          "label": "Bushwick Vendors Market page (Arts in Bushwick, from the post QR code)",
+          "url": "https://artsinbushwick.org/our-productions/bushwick-vendors-market/"
+        },
+        {
+          "label": "Instagram @bushwickvendorsmarket",
+          "url": "https://www.instagram.com/bushwickvendorsmarket/"
+        }
+      ],
       "howItWorks": "Only fill out the form when you are ready to pay. Pick your date(s) and table option, describe what you sell, and upload up to 5 photos (they also use them to promote you). If you are selected you get an email to pay. No refunds and no rescheduling under any circumstances. Vendors must arrive by 11:30am to set up, and you must actively promote the event.",
-      "notes": "A community organization: 75% of market proceeds go to their year-round community programming. The organizer name comes from their website address, so check it.",
+      "notes": "The public name on Instagram is the Bushwick Vendors Market (@bushwickvendorsmarket). The Google Form you pasted was branded Monsta House Universe and has the same address (87 George St), dates and hours, so they are treated as one market. How Monsta House, Bushwick Vendors Market and Arts in Bushwick relate (host, co-organizers) is not stated, so check it. Arts in Bushwick describes the market as a monthly community artists market run with Bushwick Vendors Market. 75% of market proceeds go to the Monsta House community programming.",
       "history": [
         {
           "at": "2026-10-14",
           "by": "claude",
           "change": "Created from the sign-up form text Garrett pasted"
+        },
+        {
+          "at": "2026-10-16",
+          "by": "claude",
+          "change": "From an Instagram screenshot: added the market's public name, Instagram and Arts in Bushwick page; flagged that the organizer relationship is unconfirmed."
         }
       ]
     }

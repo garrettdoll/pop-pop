@@ -2010,7 +2010,7 @@
     },
     {
       "id": "monsta-house-market-2026-11-14",
-      "name": "Monsta House Universe Market (87 George St)",
+      "name": "Bushwick Vendors Market, Fall",
       "organizerId": "monsta-house-universe",
       "status": "researching",
       "kind": "event",
@@ -2051,8 +2051,8 @@
       ],
       "vendorRules": "No flower (weed) or liquor vendors. 40+ vendors wanted each day.",
       "fit": {
-        "rating": "maybe",
-        "note": "A general community market in Bushwick, one of your core neighborhoods, with a low table fee and no clothing restriction. The crowd and usual price points are unknown."
+        "rating": "good",
+        "note": "A community market in Bushwick, one of your core neighborhoods, with low table fees. Their Instagram open call says \"bring your fashion, art, jewelry, handmade goods, body products, delicious bites & unique finds\", so clothing is welcome. The crowd and usual price points are still unknown."
       },
       "setup": {
         "setting": null,
@@ -2060,12 +2060,12 @@
         "note": null
       },
       "links": {
-        "apply": null,
+        "apply": "https://artsinbushwick.org/our-productions/bushwick-vendors-market/",
         "event": "https://www.monstahouseuniverse.org",
         "vendorInfo": null
       },
       "contact": null,
-      "notes": "Sat Nov 14, 1pm-6pm. Seen on a sign-up form you pasted on 2026-10-14. 75% of market proceeds go to the organizer's year-round community programming. Both Nov 14 and Nov 21 can be booked separately.",
+      "notes": "Sat Nov 14, 1pm-6pm. Seen on a sign-up form you pasted on 2026-10-14. 75% of market proceeds go to the organizer's year-round community programming. Both Nov 14 and Nov 21 can be booked separately. Oct 16: seen on an Instagram post from @bushwickvendorsmarket (\"Holiday Markets, vendor open call\": Fall markets Nov 14 & 21 and a Winter market Dec 12 & 13, all 1pm-6pm at 87 George St). It says to scan the QR code (or use the link in their bio) to apply. Same address, dates and hours as the Monsta House Universe form you pasted, so they are treated as one market.",
       "flags": [
         {
           "type": "unconfirmed",
@@ -2073,14 +2073,14 @@
           "text": "Sign-up deadline not stated"
         },
         {
-          "type": "unconfirmed",
-          "field": "links",
-          "text": "The form link was not in what you sent"
-        },
-        {
           "type": "info",
           "field": "fees",
           "text": "No refunds or rescheduling, under any circumstances. Arrive by 11:30am."
+        },
+        {
+          "type": "unconfirmed",
+          "field": "links",
+          "text": "Apply link is the Arts in Bushwick page from the post's QR code. I could not open it from here, so the direct sign-up form is not confirmed."
         }
       ],
       "source": {
@@ -2088,7 +2088,7 @@
         "ref": "Pasted text of the Monsta House Universe Google Form (Nov 14 + Nov 21)",
         "addedAt": "2026-10-14"
       },
-      "lastVerified": "2026-10-14",
+      "lastVerified": "2026-10-16",
       "results": {
         "salesTotal": null,
         "boothFee": null,
@@ -2102,12 +2102,17 @@
           "at": "2026-10-14",
           "by": "claude",
           "change": "Created from the sign-up form text Garrett pasted"
+        },
+        {
+          "at": "2026-10-16",
+          "by": "claude",
+          "change": "From an Instagram screenshot (@bushwickvendorsmarket): renamed from \"Monsta House Universe Market (87 George St)\" to the name on the post, added the apply link from the QR code, rated fit good (fashion is invited)."
         }
       ]
     },
     {
       "id": "monsta-house-market-2026-11-21",
-      "name": "Monsta House Universe Market (87 George St)",
+      "name": "Bushwick Vendors Market, Fall",
       "organizerId": "monsta-house-universe",
       "status": "researching",
       "kind": "event",
@@ -2148,8 +2153,8 @@
       ],
       "vendorRules": "No flower (weed) or liquor vendors. 40+ vendors wanted each day.",
       "fit": {
-        "rating": "maybe",
-        "note": "A general community market in Bushwick, one of your core neighborhoods, with a low table fee and no clothing restriction. The crowd and usual price points are unknown."
+        "rating": "good",
+        "note": "A community market in Bushwick, one of your core neighborhoods, with low table fees. Their Instagram open call says \"bring your fashion, art, jewelry, handmade goods, body products, delicious bites & unique finds\", so clothing is welcome. The crowd and usual price points are still unknown."
       },
       "setup": {
         "setting": null,
@@ -2157,12 +2162,12 @@
         "note": null
       },
       "links": {
-        "apply": null,
+        "apply": "https://artsinbushwick.org/our-productions/bushwick-vendors-market/",
         "event": "https://www.monstahouseuniverse.org",
         "vendorInfo": null
       },
       "contact": null,
-      "notes": "Sat Nov 21, 1pm-6pm. Seen on a sign-up form you pasted on 2026-10-14. 75% of market proceeds go to the organizer's year-round community programming. Both Nov 14 and Nov 21 can be booked separately.",
+      "notes": "Sat Nov 21, 1pm-6pm. Seen on a sign-up form you pasted on 2026-10-14. 75% of market proceeds go to the organizer's year-round community programming. Both Nov 14 and Nov 21 can be booked separately. Oct 16: seen on an Instagram post from @bushwickvendorsmarket (\"Holiday Markets, vendor open call\": Fall markets Nov 14 & 21 and a Winter market Dec 12 & 13, all 1pm-6pm at 87 George St). It says to scan the QR code (or use the link in their bio) to apply. Same address, dates and hours as the Monsta House Universe form you pasted, so they are treated as one market.",
       "flags": [
         {
           "type": "unconfirmed",
@@ -2170,14 +2175,14 @@
           "text": "Sign-up deadline not stated"
         },
         {
-          "type": "unconfirmed",
-          "field": "links",
-          "text": "The form link was not in what you sent"
-        },
-        {
           "type": "info",
           "field": "fees",
           "text": "No refunds or rescheduling, under any circumstances. Arrive by 11:30am."
+        },
+        {
+          "type": "unconfirmed",
+          "field": "links",
+          "text": "Apply link is the Arts in Bushwick page from the post's QR code. I could not open it from here, so the direct sign-up form is not confirmed."
         }
       ],
       "source": {
@@ -2185,7 +2190,7 @@
         "ref": "Pasted text of the Monsta House Universe Google Form (Nov 14 + Nov 21)",
         "addedAt": "2026-10-14"
       },
-      "lastVerified": "2026-10-14",
+      "lastVerified": "2026-10-16",
       "results": {
         "salesTotal": null,
         "boothFee": null,
@@ -2199,6 +2204,181 @@
           "at": "2026-10-14",
           "by": "claude",
           "change": "Created from the sign-up form text Garrett pasted"
+        },
+        {
+          "at": "2026-10-16",
+          "by": "claude",
+          "change": "From an Instagram screenshot (@bushwickvendorsmarket): renamed from \"Monsta House Universe Market (87 George St)\" to the name on the post, added the apply link from the QR code, rated fit good (fashion is invited)."
+        }
+      ]
+    },
+    {
+      "id": "bushwick-vendors-market-2026-12-12",
+      "name": "Bushwick Vendors Market, Winter",
+      "organizerId": "monsta-house-universe",
+      "status": "unknown",
+      "kind": "event",
+      "dates": [
+        {
+          "date": "2026-12-12",
+          "start": "13:00",
+          "end": "18:00",
+          "rainDate": null
+        }
+      ],
+      "recurrence": null,
+      "location": {
+        "venue": null,
+        "address": "87 George St, Bushwick, Brooklyn",
+        "neighborhood": "Bushwick",
+        "borough": "Brooklyn"
+      },
+      "application": {
+        "opens": null,
+        "closes": null,
+        "decisionBy": null,
+        "paymentDeadline": null,
+        "state": "open"
+      },
+      "fees": {
+        "application": null,
+        "booth": null,
+        "notes": "Winter fees are not posted in what you sent. The Fall dates were $65-$75 for a table."
+      },
+      "requirements": [],
+      "vendorRules": "Open call for makers, creatives and small businesses: fashion, art, jewelry, handmade goods, body products, food and unique finds.",
+      "fit": {
+        "rating": "good",
+        "note": "A community market in Bushwick, one of your core neighborhoods, with low table fees. Their Instagram open call says \"bring your fashion, art, jewelry, handmade goods, body products, delicious bites & unique finds\", so clothing is welcome. The crowd and usual price points are still unknown."
+      },
+      "setup": {
+        "setting": null,
+        "tent": null,
+        "note": null
+      },
+      "links": {
+        "apply": "https://artsinbushwick.org/our-productions/bushwick-vendors-market/",
+        "event": null,
+        "vendorInfo": null
+      },
+      "contact": null,
+      "notes": "Sat/Sun Dec 12, 1pm-6pm. Oct 16: seen on an Instagram post from @bushwickvendorsmarket (\"Holiday Markets, vendor open call\": Fall markets Nov 14 & 21 and a Winter market Dec 12 & 13, all 1pm-6pm at 87 George St). It says to scan the QR code (or use the link in their bio) to apply. Both Winter days are listed together as \"December 12 & 13\"; whether they are booked separately is not stated.",
+      "flags": [
+        {
+          "type": "verify",
+          "field": null,
+          "text": "Same weekend as the BKPU Red Hook Holiday Market (Dec 12-13), which you have been accepted to. You would have to pick one."
+        },
+        {
+          "type": "unconfirmed",
+          "field": "application",
+          "text": "Sign-up deadline, fees and whether the Fall form also covers Winter are not stated"
+        }
+      ],
+      "source": {
+        "type": "screenshot",
+        "ref": "Instagram post by @bushwickvendorsmarket: Holiday Markets vendor open call",
+        "addedAt": "2026-10-16"
+      },
+      "lastVerified": "2026-10-16",
+      "results": {
+        "salesTotal": null,
+        "boothFee": null,
+        "thumbs": null,
+        "bestSellers": null,
+        "footTraffic": null,
+        "notes": null
+      },
+      "history": [
+        {
+          "at": "2026-10-16",
+          "by": "claude",
+          "change": "Created from an Instagram screenshot (Winter market, Dec 12 & 13, 87 George St). Flagged the clash with the Red Hook booking."
+        }
+      ]
+    },
+    {
+      "id": "bushwick-vendors-market-2026-12-13",
+      "name": "Bushwick Vendors Market, Winter",
+      "organizerId": "monsta-house-universe",
+      "status": "unknown",
+      "kind": "event",
+      "dates": [
+        {
+          "date": "2026-12-13",
+          "start": "13:00",
+          "end": "18:00",
+          "rainDate": null
+        }
+      ],
+      "recurrence": null,
+      "location": {
+        "venue": null,
+        "address": "87 George St, Bushwick, Brooklyn",
+        "neighborhood": "Bushwick",
+        "borough": "Brooklyn"
+      },
+      "application": {
+        "opens": null,
+        "closes": null,
+        "decisionBy": null,
+        "paymentDeadline": null,
+        "state": "open"
+      },
+      "fees": {
+        "application": null,
+        "booth": null,
+        "notes": "Winter fees are not posted in what you sent. The Fall dates were $65-$75 for a table."
+      },
+      "requirements": [],
+      "vendorRules": "Open call for makers, creatives and small businesses: fashion, art, jewelry, handmade goods, body products, food and unique finds.",
+      "fit": {
+        "rating": "good",
+        "note": "A community market in Bushwick, one of your core neighborhoods, with low table fees. Their Instagram open call says \"bring your fashion, art, jewelry, handmade goods, body products, delicious bites & unique finds\", so clothing is welcome. The crowd and usual price points are still unknown."
+      },
+      "setup": {
+        "setting": null,
+        "tent": null,
+        "note": null
+      },
+      "links": {
+        "apply": "https://artsinbushwick.org/our-productions/bushwick-vendors-market/",
+        "event": null,
+        "vendorInfo": null
+      },
+      "contact": null,
+      "notes": "Sat/Sun Dec 13, 1pm-6pm. Oct 16: seen on an Instagram post from @bushwickvendorsmarket (\"Holiday Markets, vendor open call\": Fall markets Nov 14 & 21 and a Winter market Dec 12 & 13, all 1pm-6pm at 87 George St). It says to scan the QR code (or use the link in their bio) to apply. Both Winter days are listed together as \"December 12 & 13\"; whether they are booked separately is not stated.",
+      "flags": [
+        {
+          "type": "verify",
+          "field": null,
+          "text": "Same weekend as the BKPU Red Hook Holiday Market (Dec 12-13), which you have been accepted to. You would have to pick one."
+        },
+        {
+          "type": "unconfirmed",
+          "field": "application",
+          "text": "Sign-up deadline, fees and whether the Fall form also covers Winter are not stated"
+        }
+      ],
+      "source": {
+        "type": "screenshot",
+        "ref": "Instagram post by @bushwickvendorsmarket: Holiday Markets vendor open call",
+        "addedAt": "2026-10-16"
+      },
+      "lastVerified": "2026-10-16",
+      "results": {
+        "salesTotal": null,
+        "boothFee": null,
+        "thumbs": null,
+        "bestSellers": null,
+        "footTraffic": null,
+        "notes": null
+      },
+      "history": [
+        {
+          "at": "2026-10-16",
+          "by": "claude",
+          "change": "Created from an Instagram screenshot (Winter market, Dec 12 & 13, 87 George St). Flagged the clash with the Red Hook booking."
         }
       ]
     }
